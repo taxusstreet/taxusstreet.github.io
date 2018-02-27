@@ -8,4 +8,4 @@ data.shop = [{
   "desc": "lorem ipsum",
   "price": 20,
   "images": ["shirt.jpg", "shirt2.jpg", "shirt3.jpg"]
-} ]
+}]
