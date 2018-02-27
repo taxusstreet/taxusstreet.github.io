@@ -50,7 +50,7 @@ class App extends Component {
       url
     }))
     const elem = document.getElementById(url);
-    if(elem) { window.scrollTo(0, elemPos.offsetTop); }
+    if(elem) { window.scrollTo(0, elem.offsetTop); }
   }
   render() {
     return (
