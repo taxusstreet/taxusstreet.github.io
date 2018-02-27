@@ -1,0 +1,45 @@
+.intro-section {
+  background: $grey;
+  color: white;
+  overflow: auto;
+  padding: 0;
+}
+
+.intro-section__text {
+  margin: 100px auto;
+  padding: 50px 0;
+  position: relative;
+  width: 580px;
+  white-space: nowrap;
+}
+
+.intro-section__text__logo {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.intro-section__text-wrapper {
+  border-left: 2px solid white;
+  display: inline-block;
+  margin-left: 30px;
+  padding-left: 30px;
+  width: 400px;
+  white-space: normal;
+
+  h1 {
+    text-align: left;
+  }
+}
+
+.beansContainer {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}

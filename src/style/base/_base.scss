@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:200,200i,400,400i');
+
+.page-section {
+  box-sizing: border-box;
+  min-height: 200px;
+  padding: 70px 50px 100px 50px;
+  width: 100vw;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1em;
+    font-weight: 200;
+    line-height: 1.5em;
+  }
+}
+
+a {
+  color: orange;
+}
+
+.page-section__wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+
+  .page-section__items-centered {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.back-button {
+  color: $orange;
+  cursor: pointer;
+  margin-bottom: 0;
+}

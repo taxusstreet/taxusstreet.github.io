@@ -1,0 +1,47 @@
+.shop-item {
+  color: $grey;
+  cursor: pointer;
+  display: inline-block;
+  height: 400px;
+  margin-right: 10px;
+  // outline: 1px solid white;
+  overflow: visible;
+  position: relative;
+
+  img {
+    background: white;
+    // filter: drop-shadow(1px 1px 3px $grey);
+    height: 85%;
+    transition: all .2s;
+  }
+
+  .shop-item__text {
+    bottom: 0px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+
+    h3 {
+      margin: 5px 0;
+
+    }
+    p {
+      color: gold;
+      margin: 0;
+    }
+  }
+
+  &:hover {
+    img {
+      filter: drop-shadow(1px 1px 4px #225223);
+    }
+
+    .shop-item__text {
+      h3 {
+        color: white;
+      }
+    }
+  }
+}
