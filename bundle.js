@@ -15650,7 +15650,7 @@ var App = function (_Component) {
       });
       var elem = document.getElementById(url);
       if (elem) {
-        window.scrollTo(0, elemPos.offsetTop);
+        window.scrollTo(0, elem.offsetTop);
       }
     };
 
