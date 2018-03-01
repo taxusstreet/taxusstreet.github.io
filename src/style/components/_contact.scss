@@ -1,0 +1,62 @@
+.contact-section {
+  background: $light-grey;
+  color: white;
+  display: block;
+  padding: 0;
+
+  height: 200px;
+}
+
+.contact__button-wrapper {
+  background: $light-grey;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 100%;
+  padding: 60px 65px;
+  width: 50%;
+
+  &:hover {
+     // background: gold;
+     // color: $grey;
+
+     color: gold;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 0;
+    max-width: 340px;
+  }
+}
+
+.contact__button {
+  // border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 25px;
+  // text-align: center;
+
+}
+
+.contact__link-wrapper {
+  background: #5b44a7;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1.5em;
+  float: left;
+  height: 100%;
+  padding: 65px;
+  width: 50%;
+}

@@ -52,10 +52,6 @@ export default class RoastsSection extends Component {
             })}
             </div>
           </div>
-          {this.state.currentRoast ?
-            <RoastView currentRoast={this.state.currentRoast}
-            clearCurrentRoast={this.clearCurrentRoast}/> :
-            null}
       </div>
     );
   }

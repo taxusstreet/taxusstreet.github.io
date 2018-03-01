@@ -10,6 +10,7 @@ import Intro from './Intro';
 import RoastsSection from './RoastsSection';
 import ShopSection from './ShopSection';
 import Insta from './Insta';
+import Contact from './Contact';
 import Footer from './Footer';
 
 class App extends Component {
@@ -69,7 +70,8 @@ class App extends Component {
                   }
                   let id = sections[i].getAttribute('id');
                   this.updateUrl(id)
-                  document.getElementById(id + '-link').classList.add('nav__list__item--active');
+                  const navLink = document.getElementById(id + '-link');
+                  if(navLink) { document.getElementById(id + '-link').classList.add('nav__list__item--active'); }
                   return;
                 }
               }
@@ -81,6 +83,7 @@ class App extends Component {
         <Intro />
         <RoastsSection roasts={this.state.roasts} updateUrl={this.updateUrl} currentRoast={this.state.currentRoast}/>
         <ShopSection shopItems={this.state.shopItems} updateUrl={this.updateUrl} />
+        <Contact />
         <Footer />
       </div>
     )

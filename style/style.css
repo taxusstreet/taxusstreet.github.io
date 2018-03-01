@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Overpass:200,200i,400,400i);body {
+@import url(https://fonts.googleapis.com/css?family=Overpass:200,200i,400,400i,800i);body {
   font-family: 'Overpass', sans-serif; }
 
 .page-section {
@@ -23,13 +23,13 @@ a {
     display: flex;
     justify-content: center; }
 
-.lock {
-  overflow: hidden; }
-
 .back-button {
   color: #f6a942;
   cursor: pointer;
-  margin-bottom: 0; }
+  font-weight: 200;
+  text-decoration: none; }
+  .back-button:hover {
+    text-decoration: underline; }
 
 .nav {
   box-sizing: border-box;
@@ -175,6 +175,7 @@ a {
   color: white;
   position: fixed;
   padding: 50px 100px;
+  overflow-y: scroll;
   width: 100vw;
   height: 100vh;
   left: 0;
@@ -182,16 +183,45 @@ a {
   z-index: 100; }
   .roast-view-container .roast-view-wrapper {
     margin: auto;
-    max-width: 700px; }
-  .roast-view-container a {
-    color: gold;
-    display: block;
-    margin-bottom: 10px; }
+    max-width: 700px;
+    position: relative; }
+  .roast-view-container .roast-text-wrapper {
+    position: relative; }
+  .roast-view-container .roast-text-wrapper__left {
+    border-right: 1px solid white;
+    box-sizing: border-box;
+    font-weight: 200;
+    padding: 10px 20px 15px 20px;
+    position: relative;
+    margin-top: 30px;
+    text-align: right;
+    width: 50%; }
   .roast-view-container img {
     width: 100%;
-    height: 400px; }
-  .roast-view-container h1 {
+    height: 400px;
+    margin-top: 5px; }
+  .roast-view-container .roast__title {
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 0;
     text-transform: uppercase; }
+  .roast-view-container .sub-head {
+    margin: 3px 0;
+    text-transform: capitalize; }
+  .roast-view-container .desc-label {
+    margin: 15px 0 10px 0; }
+  .roast-view-container .taste-notes-container {
+    margin: 0 0 20px 0; }
+  .roast-view-container .taste-note {
+    margin: 0 0 0 8px; }
+  .roast-view-container .roast-level {
+    margin: 10px 0 0 auto; }
+  .roast-view-container .buy-button {
+    position: absolute;
+    right: -295px;
+    top: 60px; }
 
 .shop-section {
   background: #327941;
@@ -332,6 +362,52 @@ a {
     position: absolute;
     right: 0;
     width: 350px; }
+
+.contact-section {
+  background: #322F30;
+  color: white;
+  display: block;
+  padding: 0;
+  height: 200px; }
+
+.contact__button-wrapper {
+  background: #322F30;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 100%;
+  padding: 60px 65px;
+  width: 50%; }
+  .contact__button-wrapper:hover {
+    color: gold; }
+  .contact__button-wrapper h1 {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase; }
+  .contact__button-wrapper p {
+    margin-top: 0;
+    max-width: 340px; }
+
+.contact__button {
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 25px; }
+
+.contact__link-wrapper {
+  background: #5b44a7;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1.5em;
+  float: left;
+  height: 100%;
+  padding: 65px;
+  width: 50%; }
 
 footer {
   background: #231F20;

@@ -8,6 +8,7 @@
   // text-align: center;
 
   padding: 50px 100px;
+  overflow-y: scroll;
   width: 100vw;
   height: 100vh;
   left: 0;
@@ -17,19 +18,63 @@
   .roast-view-wrapper {
     margin: auto;
     max-width: 700px;
+    position: relative;
   }
 
-  a {
-    color: gold;
-    display: block;
-    margin-bottom: 10px;
+  .roast-text-wrapper {
+    position: relative;
+  }
+
+  .roast-text-wrapper__left {
+    border-right: 1px solid white;
+    box-sizing: border-box;
+    font-weight: 200;
+    padding: 10px 20px 15px 20px;
+    position: relative;
+    margin-top: 30px;
+    text-align: right;
+    width: 50%;
   }
 
   img {
     width: 100%;
     height: 400px;
+    margin-top: 5px;
   }
-  h1 {
+  .roast__title {
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 0;
+    // text-align: center;
     text-transform: uppercase;
+  }
+
+  .sub-head {
+    margin: 3px 0;
+    text-transform: capitalize;
+  }
+
+  .desc-label {
+    margin: 15px 0 10px 0;
+  }
+
+  .taste-notes-container {
+    margin: 0 0 20px 0;
+  }
+
+  .taste-note {
+    margin: 0 0 0 8px;
+  }
+
+  .roast-level {
+    margin: 10px 0 0 auto;
+  }
+
+  .buy-button {
+    position: absolute;
+    right: -295px;
+    top: 60px;
   }
 }
