@@ -8,10 +8,14 @@ const Nav = (props) => {
     <div className="nav">
       <ul className="nav__list">
         <li id="info-link" className="nav__list__item nav__list__item--active">
-          <Link to="/roasts">Info</Link>
+          <a href="/#info">Info</a>
         </li>
-        <li id="roasts-link" className="nav__list__item">Roasts</li>
-        <li id="shop-link" className="nav__list__item">Shop</li>
+        <li id="roasts-link" className="nav__list__item">
+          <a href="/#roasts">Roasts</a>
+        </li>
+        <li id="shop-link" className="nav__list__item">
+          <a href="/#shop">Shop</a>
+        </li>
       </ul>
     </div>
   );

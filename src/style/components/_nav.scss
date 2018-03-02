@@ -17,6 +17,7 @@
 }
 
 .nav__list__item {
+  color: white;
   cursor: pointer;
   display: inline;
   font-size: 1.1em;
@@ -24,6 +25,10 @@
   margin: 2px 10px;
 }
 
-.nav__list__item--active {
+.nav__list__item a {
+  color: white;
+}
+
+.nav__list__item--active a {
   color: $orange;
 }

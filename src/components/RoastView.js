@@ -285,7 +285,7 @@ class RoastView extends Component {
               <p className="desc-label">Notes:</p>
               <div className="taste-notes-container">
                 {this.state.roast.taste.map((note, i) => {
-                  return <span key={i} className="taste-note">{note}</span>
+                  return <span key={i} style={{color: this.state.roast.color, outlineColor: this.state.roast.color}} className="taste-note">{note}</span>
                 })}
               </div>
               <p className="desc-label">Roast level:</p>

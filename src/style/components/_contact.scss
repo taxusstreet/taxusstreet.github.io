@@ -14,7 +14,7 @@
   display: block;
   float: left;
   height: 100%;
-  padding: 60px 65px;
+  padding: 45px 40px;
   width: 50%;
 
   &:hover {
@@ -34,8 +34,10 @@
   }
 
   p {
-    margin-top: 0;
-    max-width: 340px;
+    border-top: 1px dotted white;
+    margin-top: 10px;
+    max-width: 380px;
+    padding-top: 10px;
   }
 }
 
@@ -53,10 +55,21 @@
 .contact__link-wrapper {
   background: #5b44a7;
   box-sizing: border-box;
-  display: block;
+  display: flex;
   font-size: 1.5em;
   float: left;
   height: 100%;
-  padding: 65px;
+  justify-content: space-around;
+  padding: 72px 100px;
   width: 50%;
+
+  svg {
+    fill: rgba(255, 255, 255, .5);
+    // margin: 0 10px;
+
+    &:hover {
+      cursor: pointer;
+      fill: gold;
+    }
+  }
 }

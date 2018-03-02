@@ -88,8 +88,10 @@ $color: purple;
 .taste-notes-container {
   margin-top: 10px;
   .taste-note {
+    color: gold;
+    font-size: .8em;
     margin-right: 8px;
-    outline: 1px solid white;
+    outline: 1px solid gold;
     padding: 2px 4px;
   }
 }

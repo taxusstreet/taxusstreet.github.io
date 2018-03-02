@@ -23,7 +23,7 @@ const RoastContainer = (props) => {
       <p className="desc-label">Notes:</p>
       <div className="taste-notes-container">
         {props.roast.taste.map((note, i) => {
-          return <span key={i} className="taste-note">{note}</span>
+          return <span key={i} className="taste-note" style={{color: props.roast.color, outlineColor: props.roast.color}}>{note}</span>
         })}
       </div>
       <p className="desc-label">Roast level:</p>

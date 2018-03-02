@@ -53,6 +53,7 @@ class App extends Component {
     const elem = document.getElementById(url);
     if(elem) { window.scrollTo(0, elem.offsetTop); }
   }
+
   render() {
     return (
       <div className="container"
