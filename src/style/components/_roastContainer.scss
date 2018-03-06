@@ -95,3 +95,9 @@ $color: purple;
     padding: 2px 4px;
   }
 }
+
+@media (max-width: $xs-break) {
+  .roast-container {
+    width: 100%;
+  }
+}

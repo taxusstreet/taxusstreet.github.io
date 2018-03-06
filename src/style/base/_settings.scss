@@ -1,7 +1,14 @@
-$grey: #231F20;
-$orange: #f6a942;
-$light-grey: #322F30;
+@import url('https://fonts.googleapis.com/css?family=Overpass:200,200i,400,400i,700i');
 
 body {
   font-family: 'Overpass', sans-serif;
 }
+
+//colors
+$grey: #231F20;
+$orange: #f6a942;
+$light-grey: #322F30;
+
+//media query breaks
+$xs-break: 550px;
+$sm-break: 850px;

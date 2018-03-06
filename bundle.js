@@ -2796,6 +2796,8 @@ var RoastView = function (_Component) {
     //   }))
     // }
     value: function render() {
+      var _this2 = this;
+
       (function () {
         var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
         if (window.ShopifyBuy) {
@@ -3072,7 +3074,7 @@ var RoastView = function (_Component) {
                   this.state.roast.taste.map(function (note, i) {
                     return _react2.default.createElement(
                       'span',
-                      { key: i, className: 'taste-note' },
+                      { key: i, style: { color: _this2.state.roast.color, outlineColor: _this2.state.roast.color }, className: 'taste-note' },
                       note
                     );
                   })
@@ -3229,7 +3231,7 @@ exports.default = ShopView;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(41);
-module.exports = __webpack_require__(92);
+module.exports = __webpack_require__(95);
 
 
 /***/ }),
@@ -14123,7 +14125,7 @@ var _Contact = __webpack_require__(90);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
-var _Footer = __webpack_require__(91);
+var _Footer = __webpack_require__(94);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -14270,20 +14272,28 @@ var Nav = function Nav(props) {
         'li',
         { id: 'info-link', className: 'nav__list__item nav__list__item--active' },
         _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/roasts' },
+          'a',
+          { href: '/#info' },
           'Info'
         )
       ),
       _react2.default.createElement(
         'li',
         { id: 'roasts-link', className: 'nav__list__item' },
-        'Roasts'
+        _react2.default.createElement(
+          'a',
+          { href: '/#roasts' },
+          'Roasts'
+        )
       ),
       _react2.default.createElement(
         'li',
         { id: 'shop-link', className: 'nav__list__item' },
-        'Shop'
+        _react2.default.createElement(
+          'a',
+          { href: '/#shop' },
+          'Shop'
+        )
       )
     )
   );
@@ -14944,7 +14954,7 @@ var RoastContainer = function RoastContainer(props) {
       props.roast.taste.map(function (note, i) {
         return _react2.default.createElement(
           'span',
-          { key: i, className: 'taste-note' },
+          { key: i, className: 'taste-note', style: { color: props.roast.color, outlineColor: props.roast.color } },
           note
         );
       })
@@ -15191,30 +15201,56 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Fb = __webpack_require__(91);
+
+var _Fb2 = _interopRequireDefault(_Fb);
+
+var _Instagram = __webpack_require__(92);
+
+var _Instagram2 = _interopRequireDefault(_Instagram);
+
+var _Twitter = __webpack_require__(93);
+
+var _Twitter2 = _interopRequireDefault(_Twitter);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Contact = function Contact() {
   return _react2.default.createElement(
-    "div",
-    { className: "contact-section page-section" },
+    'div',
+    { className: 'contact-section page-section' },
     _react2.default.createElement(
-      "div",
-      { className: "contact__button-wrapper" },
+      'div',
+      { className: 'contact__button-wrapper' },
       _react2.default.createElement(
-        "h1",
+        'h1',
         null,
-        "Write To Us!"
+        'Write To Us!'
       ),
       _react2.default.createElement(
-        "p",
+        'p',
         null,
-        "Contact us about any of our products, or to inquire into wholesale options."
+        'Contact us about any of our products, or to inquire into wholesale options... or just to say hi!'
       )
     ),
     _react2.default.createElement(
-      "div",
-      { className: "contact__link-wrapper" },
-      "facebook | twitter |\xA0instagram"
+      'div',
+      { className: 'contact__link-wrapper' },
+      _react2.default.createElement(
+        'a',
+        { href: 'https://www.facebook.com/taxusstreetcoffee/' },
+        _react2.default.createElement(_Fb2.default, null)
+      ),
+      _react2.default.createElement(
+        'a',
+        { href: 'https://www.instagram.com/taxusstreetcoffee/' },
+        _react2.default.createElement(_Instagram2.default, null)
+      ),
+      _react2.default.createElement(
+        'a',
+        { href: 'https://twitter.com/taxusstreetcoffee/' },
+        _react2.default.createElement(_Twitter2.default, null)
+      )
     )
   );
 };
@@ -15223,6 +15259,99 @@ exports.default = Contact;
 
 /***/ }),
 /* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Fb = function Fb() {
+	return _react2.default.createElement(
+		"svg",
+		{ version: "1.1",
+			xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", xmlnsa: "http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/",
+			x: "0px", y: "0px", width: "50px", height: "50px", viewBox: "0 0 257.7 257.7",
+			xmlSpace: "preserve" },
+		_react2.default.createElement("defs", null),
+		_react2.default.createElement("path", { className: "st0", d: "M243.5,0H14.2C6.4,0,0,6.4,0,14.2v229.3c0,7.9,6.4,14.2,14.2,14.2h123.4v-99.8h-33.6V119h33.6V90.3 c0-33.3,20.3-51.4,50-51.4c14.2,0,26.5,1.1,30,1.5v34.8l-20.6,0c-16.1,0-19.3,7.7-19.3,18.9V119h38.5l-5,38.9h-33.5v99.8h65.7 c7.9,0,14.2-6.4,14.2-14.2V14.2C257.7,6.4,251.3,0,243.5,0z" })
+	);
+};
+
+exports.default = Fb;
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Fb = function Fb() {
+	return _react2.default.createElement(
+		"svg",
+		{ version: "1.1",
+			xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", xmlnsa: "http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/",
+			x: "0px", y: "0px", width: "50px", height: "50px", viewBox: "0 0 130 130",
+			xmlSpace: "preserve" },
+		_react2.default.createElement("circle", { className: "st0", cx: "65", cy: "65", r: "16" }),
+		_react2.default.createElement("path", { className: "st0", d: "M102.4,36.7c-0.9-2.2-1.9-3.8-3.6-5.5c-1.7-1.7-3.3-2.7-5.5-3.6c-1.7-0.7-4.2-1.4-8.9-1.7 c-5.1-0.2-6.6-0.3-19.4-0.3c-1.6,0-3,0-4.3,0v0c-8.9,0-10.7,0.1-15.1,0.3c-4.7,0.2-7.2,1-8.9,1.7c-2.2,0.9-3.8,1.9-5.5,3.6 c-1.7,1.7-2.7,3.3-3.6,5.5c-0.7,1.7-1.4,4.2-1.7,8.9c-0.2,5.1-0.3,6.6-0.3,19.4s0,14.3,0.3,19.4c0.2,4.7,1,7.2,1.7,8.9 c0.9,2.2,1.9,3.8,3.6,5.5s3.3,2.7,5.5,3.6c1.7,0.7,4.2,1.4,8.9,1.7c5.1,0.2,6.6,0.3,19.4,0.3c12.8,0,14.3,0,19.4-0.3 c4.7-0.2,7.2-1,8.9-1.7c2.2-0.9,3.8-1.9,5.5-3.6c1.7-1.7,2.7-3.3,3.6-5.5c0.7-1.7,1.4-4.2,1.7-8.9c0.2-5.1,0.3-6.6,0.3-19.4 s-0.1-14.3-0.3-19.4C103.9,40.9,103.1,38.4,102.4,36.7z M65,89.6c-13.6,0-24.7-11-24.7-24.6c0-13.6,11-24.6,24.6-24.7c0,0,0,0,0,0 h0c0,0,0,0,0,0c13.6,0,24.6,11,24.6,24.7C89.6,78.6,78.6,89.6,65,89.6z M90.6,45.1c-3.2,0-5.8-2.6-5.8-5.8c0-3.2,2.6-5.8,5.8-5.8v0 c3.2,0,5.8,2.6,5.8,5.8S93.8,45.1,90.6,45.1z" }),
+		_react2.default.createElement("path", { className: "st0", d: "M129.9,28.2c-0.4-5.2-1.3-8.7-3.1-12.4c-1.5-3-3.2-5.3-5.6-7.6c-4.3-4.1-9.6-6.6-15.8-7.5 c-3-0.4-3.6-0.6-19.2-0.6H65C37.9,0,30,0,28.4,0.2c-5.6,0.5-9,1.3-12.8,3.2c-2.9,1.4-5.2,3.1-7.5,5.5C4,13.1,1.5,18.4,0.6,24.7 C0.2,27.7,0,28.3,0,43.8C0,49,0,55.8,0,65c0,27.1,0,35,0.2,36.6c0.5,5.4,1.3,8.8,3.1,12.6c3.4,7.1,10,12.5,17.8,14.5 c2.7,0.7,5.6,1.1,9.4,1.2c1.6,0.1,18,0.1,34.4,0.1c16.4,0,32.8,0,34.4-0.1c4.4-0.2,7-0.5,9.8-1.3c7.8-2,14.2-7.3,17.8-14.5 c1.8-3.6,2.7-7.2,3.1-12.3c0.1-1.1,0.1-19,0.1-36.8C130,47.1,130,29.3,129.9,28.2z M112.7,84.8c-0.2,5.1-1,8.6-2.2,11.6 c-1.2,3.2-2.9,5.8-5.5,8.5c-2.7,2.7-5.3,4.3-8.5,5.5c-3.1,1.2-6.5,2-11.7,2.2C79.7,112.9,78,113,65,113c-13,0-14.7-0.1-19.8-0.3 c-5.1-0.2-8.6-1-11.7-2.2c-3.2-1.2-5.8-2.9-8.5-5.5c-2.7-2.7-4.3-5.3-5.5-8.5c-1.2-3.1-2-6.5-2.2-11.7C17.1,79.7,17,78,17,65 s0.1-14.7,0.3-19.8c0.2-5.1,1-8.6,2.2-11.6c1.2-3.2,2.9-5.8,5.5-8.5c2.7-2.7,5.3-4.3,8.5-5.5c3.1-1.2,6.5-2,11.6-2.2 C50.3,17.1,52,17,65,17c0,0,0,0,0,0h0c0,0,0,0,0,0c13,0,14.7,0.1,19.8,0.3c5.1,0.2,8.6,1,11.7,2.2c3.2,1.2,5.8,2.9,8.5,5.5 c2.7,2.7,4.3,5.3,5.5,8.5c1.2,3.1,2,6.5,2.2,11.7c0.2,5.1,0.3,6.8,0.3,19.8S112.9,79.7,112.7,84.8z" })
+	);
+};
+
+exports.default = Fb;
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Fb = function Fb() {
+	return _react2.default.createElement(
+		"svg",
+		{ version: "1.1",
+			xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", xmlnsa: "http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/",
+			x: "0px", y: "0px", width: "50px", height: "41", viewBox: "0 0 250 203.1",
+			xmlSpace: "preserve" },
+		_react2.default.createElement("path", { className: "st0", d: "M78.6,203.1c94.3,0,145.9-78.2,145.9-145.9c0-2.2,0-4.4-0.1-6.6c10-7.3,18.7-16.3,25.6-26.5\r c-9.4,4.1-19.3,6.9-29.5,8.1c10.7-6.4,18.7-16.5,22.5-28.4c-10.1,6-21.1,10.2-32.6,12.4c-19.4-20.7-51.9-21.7-72.6-2.2\r c-13.3,12.5-19,31.2-14.8,49C81.9,60.9,43.4,41.4,17.4,9.4C3.8,32.8,10.7,62.8,33.3,77.8c-8.2-0.2-16.1-2.4-23.3-6.4\r c0,0.2,0,0.4,0,0.6c0,24.4,17.2,45.4,41.2,50.3c-7.6,2.1-15.5,2.4-23.2,0.9c6.7,20.9,26,35.2,47.9,35.6c-18.2,14.3-40.6,22-63.7,22\r c-4.1,0-8.2-0.3-12.2-0.7C23.5,195.2,50.7,203.1,78.6,203.1" })
+	);
+};
+
+exports.default = Fb;
+
+/***/ }),
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15254,7 +15383,7 @@ var Footer = function Footer() {
 exports.default = Footer;
 
 /***/ }),
-/* 92 */
+/* 95 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

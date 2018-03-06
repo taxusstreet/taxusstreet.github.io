@@ -1,4 +1,7 @@
 .shop-section {
   background: #327941;
   overflow: visible;
+  .page-section__wrapper {
+    max-width: 1200px;
+  }
 }

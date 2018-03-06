@@ -12,9 +12,9 @@ const Contact = () => {
         <p>Contact us about any of our products, or to inquire into wholesale options... or just to say hi!</p>
       </div>
       <div className="contact__link-wrapper">
-        <Fb />
-        <Instagram />
-        <Twitter />
+        <a href="https://www.facebook.com/taxusstreetcoffee/"><Fb /></a>
+        <a href="https://www.instagram.com/taxusstreetcoffee/"><Instagram /></a>
+        <a href="https://twitter.com/taxusstreetcoffee/"><Twitter /></a>
       </div>
     </div>
   );
