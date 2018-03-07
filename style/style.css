@@ -107,7 +107,8 @@ a {
 @media (max-width: 550px) {
   .intro-section__text {
     padding: 50px 50px 10px 50px;
-    white-space: normal; }
+    white-space: normal;
+    width: 100%; }
   .intro-section__text__logo {
     display: block;
     height: 140px;
@@ -263,6 +264,10 @@ a {
   top: 60px; }
 
 @media (max-width: 850px) {
+  .roast-view-container {
+    padding: 50px; }
+  .roast-image {
+    height: 250px; }
   .roast-text-wrapper__left {
     border-right: none;
     margin-top: 10px;
@@ -498,6 +503,16 @@ a {
     right: 0;
     width: 350px; }
 
+@media (max-width: 850px) {
+  .instafeed-wrapper .instafeed-title {
+    color: white;
+    font-size: .9em;
+    padding: 3px 20px 0 20px; }
+  .instafeed-wrapper .instafeed {
+    height: 300px; }
+  .instafeed-wrapper .instafeed-fade {
+    width: 50px; } }
+
 .contact-section {
   background: #322F30;
   color: white;
@@ -556,6 +571,7 @@ a {
   .contact__button-wrapper {
     width: 100%; }
   .contact__link-wrapper {
+    padding: 72px 50px;
     width: 100%; } }
 
 footer {

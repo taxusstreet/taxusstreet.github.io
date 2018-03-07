@@ -87,3 +87,22 @@ $insta-bg: #322F30;
   }
 
 }
+
+@media(max-width: $sm-break) {
+  .instafeed-wrapper {
+
+    .instafeed-title {
+      color: white;
+      font-size: .9em;
+      padding: 3px 20px 0 20px;
+    }
+
+    .instafeed {
+      height: 300px;
+    }
+
+    .instafeed-fade {
+      width: 50px;
+    }
+  }
+}

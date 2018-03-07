@@ -61,7 +61,6 @@
     font-weight: 800;
     margin: 0;
     margin-top: 0;
-    // text-align: center;
     text-transform: uppercase;
   }
 
@@ -82,12 +81,21 @@
   }
 
 @media (max-width: $sm-break) {
+  .roast-view-container {
+    padding: 50px;
+  }
+
+  .roast-image {
+    height: 250px;
+  }
+
   .roast-text-wrapper__left {
     border-right: none;
     margin-top: 10px;
     padding: 0;
     text-align: left;
     width: 100%;
+
     .taste-note {
       margin: 0 8px 0 0;
     }
