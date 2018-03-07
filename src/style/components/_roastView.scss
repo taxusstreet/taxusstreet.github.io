@@ -111,3 +111,9 @@
     top: auto;
   }
 }
+
+@media (max-width: $xs-break) {
+  .roast-view-container {
+    padding: 50px 20px;
+  }
+}

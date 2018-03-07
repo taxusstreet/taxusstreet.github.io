@@ -15,3 +15,10 @@ footer {
   color: #322F30;
   text-align: center;
 }
+
+@media (max-width: $sm-break) {
+  .footer-image {
+    margin-left: calc(50vw - 200px);
+    width: 400px;
+  }
+}

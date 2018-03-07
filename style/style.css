@@ -110,14 +110,12 @@ a {
     white-space: normal;
     width: 100%; }
   .intro-section__text__logo {
-    display: block;
-    height: 140px;
-    width: 140px; }
+    display: block; }
   .intro-section__text-wrapper {
     border: none;
     margin: 20px 0;
     padding: 0;
-    width: 60%; } }
+    width: 80%; } }
 
 .roasts-section {
   background: gold;
@@ -282,6 +280,10 @@ a {
     position: relative;
     right: auto;
     top: auto; } }
+
+@media (max-width: 550px) {
+  .roast-view-container {
+    padding: 50px 20px; } }
 
 .shop-section {
   background: #327941;
@@ -588,3 +590,8 @@ footer {
 .footer__copyright {
   color: #322F30;
   text-align: center; }
+
+@media (max-width: 850px) {
+  .footer-image {
+    margin-left: calc(50vw - 200px);
+    width: 400px; } }
