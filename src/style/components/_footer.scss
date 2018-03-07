@@ -18,6 +18,8 @@ footer {
 
 @media (max-width: $sm-break) {
   .footer-image {
+    box-sizing: border-box;
+    margin: 0;
     margin-left: calc(50vw - 200px);
     width: 400px;
   }

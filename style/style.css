@@ -419,9 +419,10 @@ a {
         left: 0px;
         position: absolute;
         top: auto;
-        width: 100%; }
+        width: 100%;
+        white-space: nowrap; }
         .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs .shop-item-image__thumb {
-          float: left;
+          display: inline-block;
           margin-right: 10px;
           width: auto; }
           .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs .shop-item-image__thumb img {
@@ -593,5 +594,7 @@ footer {
 
 @media (max-width: 850px) {
   .footer-image {
+    box-sizing: border-box;
+    margin: 0;
     margin-left: calc(50vw - 200px);
     width: 400px; } }
