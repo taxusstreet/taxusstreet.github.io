@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="contact-section page-section">
       <div className="contact__button-wrapper">
         <h1>Write To Us!</h1>
-        <p>Contact us about any of our products, or to inquire into wholesale options... or just to say hi!</p>
+        <p>Contact us about any of our products, or to inquire into wholesale options</p>
       </div>
       <div className="contact__link-wrapper">
         <a href="https://www.facebook.com/taxusstreetcoffee/"><Fb /></a>

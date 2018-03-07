@@ -3,7 +3,7 @@
   cursor: pointer;
   display: inline-block;
   height: 400px;
-  margin-right: 10px;
+  margin: 10px;
   // outline: 1px solid white;
   overflow: visible;
   position: relative;
@@ -24,9 +24,10 @@
     width: 100%;
 
     h3 {
-      margin: 5px 0;
-
+      color: black;
+      margin: 5px 0 0 0;
     }
+
     p {
       color: gold;
       margin: 0;
@@ -42,6 +43,20 @@
       h3 {
         color: white;
       }
+    }
+  }
+}
+
+@media (max-width: $xs-break) {
+  .shop-item {
+    height: auto;
+    img {
+      height: auto;
+      width: 100%;
+    }
+
+    .shop-item__text {
+      position: relative;
     }
   }
 }

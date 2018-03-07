@@ -274,7 +274,7 @@ class RoastView extends Component {
         <div className="roast-view-container">
           <div className="roast-view-wrapper">
             <Link className="back-button" to="/roasts">back</Link>
-            <img />
+            <img className="roast-image"/>
             <div className="roast-text-wrapper">
               <div className="roast-text-wrapper__left">
               <h1
@@ -303,7 +303,7 @@ class RoastView extends Component {
         </div>
       );
     } else {
-      return(<div>test</div>)
+      return(<div>Roast Not Found</div>)
     }
   }
 };

@@ -82,8 +82,8 @@ a {
 
 .intro-section__text__logo {
   display: inline-block;
-  width: 120px;
-  height: 120px; }
+  height: 120px;
+  width: 120px; }
   .intro-section__text__logo img {
     width: 100%; }
 
@@ -103,6 +103,20 @@ a {
   position: absolute;
   top: 0;
   width: 100vw; }
+
+@media (max-width: 550px) {
+  .intro-section__text {
+    padding: 50px 50px 10px 50px;
+    white-space: normal; }
+  .intro-section__text__logo {
+    display: block;
+    height: 140px;
+    width: 140px; }
+  .intro-section__text-wrapper {
+    border: none;
+    margin: 20px 0;
+    padding: 0;
+    width: 60%; } }
 
 .roasts-section {
   background: gold;
@@ -216,14 +230,17 @@ a {
   margin-top: 30px;
   text-align: right;
   width: 50%; }
-  .roast-text-wrapper__left img {
-    width: 100%;
-    height: 400px;
-    margin-top: 5px; }
   .roast-text-wrapper__left .taste-notes-container {
     margin: 0 0 20px 0; }
   .roast-text-wrapper__left .taste-note {
     margin: 0 0 0 8px; }
+  .roast-text-wrapper__left .roast-level {
+    margin: 10px 0 0 auto; }
+
+.roast-image {
+  width: 100%;
+  height: 400px;
+  margin-top: 5px; }
 
 .roast__title {
   font-size: 2.5em;
@@ -240,9 +257,6 @@ a {
 .desc-label {
   margin: 15px 0 10px 0; }
 
-.roast-level {
-  margin: 10px 0 0 auto; }
-
 .buy-button {
   position: absolute;
   right: -295px;
@@ -257,8 +271,8 @@ a {
     width: 100%; }
     .roast-text-wrapper__left .taste-note {
       margin: 0 8px 0 0; }
-  .roast-level {
-    margin: 0 0 20px 0; }
+    .roast-text-wrapper__left .roast-level {
+      margin: 0 0 20px 0; }
   .buy-button {
     position: relative;
     right: auto;
@@ -275,7 +289,7 @@ a {
   cursor: pointer;
   display: inline-block;
   height: 400px;
-  margin-right: 10px;
+  margin: 10px;
   overflow: visible;
   position: relative; }
   .shop-item img {
@@ -290,7 +304,8 @@ a {
     text-transform: capitalize;
     width: 100%; }
     .shop-item .shop-item__text h3 {
-      margin: 5px 0; }
+      color: black;
+      margin: 5px 0 0 0; }
     .shop-item .shop-item__text p {
       color: gold;
       margin: 0; }
@@ -299,12 +314,22 @@ a {
   .shop-item:hover .shop-item__text h3 {
     color: white; }
 
+@media (max-width: 550px) {
+  .shop-item {
+    height: auto; }
+    .shop-item img {
+      height: auto;
+      width: 100%; }
+    .shop-item .shop-item__text {
+      position: relative; } }
+
 .shop-view-container {
   animation-fill-mode: forwards;
   background: #327941;
   box-sizing: border-box;
   color: white;
   position: fixed;
+  overflow-y: scroll;
   padding: 50px 100px;
   width: 100vw;
   height: 100vh;
@@ -335,16 +360,83 @@ a {
       .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs .shop-item-image__thumb--active {
         outline: 3px solid coral;
         outline-offset: -3px; }
-  .shop-view-container a {
-    color: gold;
-    display: block;
-    margin-bottom: 10px; }
   .shop-view-container img {
     display: block;
     width: 100%;
     margin: 0 auto; }
   .shop-view-container h1 {
     text-transform: uppercase; }
+
+.shop-text-wrapper {
+  position: relative; }
+
+.shop-text-wrapper__left {
+  border-right: 1px solid white;
+  box-sizing: border-box;
+  font-weight: 200;
+  padding: 10px 20px 15px 20px;
+  position: relative;
+  margin-top: 30px;
+  text-align: right;
+  width: 50%; }
+
+.shop__title {
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 800;
+  margin: 0;
+  margin-top: 0;
+  text-transform: uppercase; }
+
+.shop__desc {
+  line-height: 1.3em; }
+
+.shop__price {
+  color: gold; }
+
+.buy-button {
+  position: absolute;
+  right: -295px;
+  top: 60px; }
+
+@media (max-width: 850px) {
+  .shop-view-container {
+    padding: 50px 50px; }
+    .shop-view-container .shop-item-image__wrapper {
+      background: white;
+      position: relative;
+      width: auto; }
+      .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs {
+        bottom: -80px;
+        height: 70px;
+        left: 0px;
+        position: absolute;
+        top: auto;
+        width: 100%; }
+        .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs .shop-item-image__thumb {
+          float: left;
+          margin-right: 10px;
+          width: auto; }
+          .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs .shop-item-image__thumb img {
+            height: 70px;
+            width: auto; }
+        .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs .shop-item-image__thumb--active {
+          outline: 3px solid coral;
+          outline-offset: -3px; }
+  .shop-text-wrapper__left {
+    border-right: none;
+    margin-top: 100px;
+    padding: 0;
+    text-align: left;
+    width: 100%; }
+  .buy-button {
+    position: relative;
+    right: auto;
+    top: auto; } }
+
+@media (max-width: 550px) {
+  .shop-view-container {
+    padding: 50px 20px; } }
 
 .instafeed-wrapper {
   background: #322F30;

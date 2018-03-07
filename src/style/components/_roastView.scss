@@ -36,12 +36,6 @@
     text-align: right;
     width: 50%;
 
-    img {
-      width: 100%;
-      height: 400px;
-      margin-top: 5px;
-    }
-
     .taste-notes-container {
       margin: 0 0 20px 0;
     }
@@ -49,6 +43,16 @@
     .taste-note {
       margin: 0 0 0 8px;
     }
+
+    .roast-level {
+      margin: 10px 0 0 auto;
+    }
+  }
+
+  .roast-image {
+    width: 100%;
+    height: 400px;
+    margin-top: 5px;
   }
 
   .roast__title {
@@ -70,9 +74,6 @@
     margin: 15px 0 10px 0;
   }
 
-  .roast-level {
-    margin: 10px 0 0 auto;
-  }
 
   .buy-button {
     position: absolute;
@@ -90,10 +91,10 @@
     .taste-note {
       margin: 0 8px 0 0;
     }
-  }
 
-  .roast-level {
-    margin: 0 0 20px 0;
+    .roast-level {
+      margin: 0 0 20px 0;
+    }
   }
 
   .buy-button {

@@ -4,7 +4,7 @@
   box-sizing: border-box;
   color: white;
   position: fixed;
-  // text-align: center;
+  overflow-y: scroll;
 
   padding: 50px 100px;
   width: 100vw;
@@ -49,12 +49,6 @@
     }
   }
 
-  a {
-    color: gold;
-    display: block;
-    margin-bottom: 10px;
-  }
-
   img {
     display: block;
     width: 100%;
@@ -62,5 +56,101 @@
   }
   h1 {
     text-transform: uppercase;
+  }
+}
+
+  .shop-text-wrapper {
+    position: relative;
+  }
+
+  .shop-text-wrapper__left {
+    border-right: 1px solid white;
+    box-sizing: border-box;
+    font-weight: 200;
+    padding: 10px 20px 15px 20px;
+    position: relative;
+    margin-top: 30px;
+    text-align: right;
+    width: 50%;
+  }
+
+  .shop__title {
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+
+  .shop__desc {
+    line-height: 1.3em;
+  }
+
+  .shop__price {
+    color: gold;
+  }
+
+  .buy-button {
+    position: absolute;
+    right: -295px;
+    top: 60px;
+  }
+
+@media (max-width: $sm-break) {
+  .shop-view-container {
+    padding: 50px 50px;
+
+    .shop-item-image__wrapper {
+      background: white;
+      position: relative;
+      width: auto;
+
+      .shop-item-image__thumbs {
+        bottom: -80px;
+        height: 70px;
+        left: 0px;
+        position: absolute;
+        top: auto;
+        width: 100%;
+
+        .shop-item-image__thumb {
+          float: left;
+          margin-right: 10px;
+          width: auto;
+
+          img {
+            height: 70px;
+            width: auto;
+          }
+        }
+
+        .shop-item-image__thumb--active {
+          outline: 3px solid coral;
+          outline-offset: -3px;
+        }
+      }
+    }
+  }
+
+  .shop-text-wrapper__left {
+    border-right: none;
+    margin-top: 100px;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+
+  }
+
+  .buy-button {
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+}
+
+@media (max-width: $xs-break) {
+  .shop-view-container {
+    padding: 50px 20px;
   }
 }

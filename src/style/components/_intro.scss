@@ -15,8 +15,8 @@
 
 .intro-section__text__logo {
   display: inline-block;
-  width: 120px;
   height: 120px;
+  width: 120px;
 
   img {
     width: 100%;
@@ -42,4 +42,24 @@
   position: absolute;
   top: 0;
   width: 100vw;
+}
+
+@media (max-width: $xs-break) {
+  .intro-section__text {
+    padding: 50px 50px 10px 50px;
+    white-space: normal;
+  }
+
+  .intro-section__text__logo {
+    display: block;
+    height: 140px;
+    width: 140px;
+  }
+
+  .intro-section__text-wrapper {
+    border: none;
+    margin: 20px 0;
+    padding: 0;
+    width: 60%;
+  }
 }
