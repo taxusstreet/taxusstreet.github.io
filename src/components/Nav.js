@@ -16,6 +16,9 @@ const Nav = (props) => {
         <li id="shop-link" className="nav__list__item">
           <a href="/#shop">Shop</a>
         </li>
+        <li id="shop-link" className="nav__list__item">
+          <a href="/Contact">Contact</a>
+        </li>
       </ul>
     </div>
   );

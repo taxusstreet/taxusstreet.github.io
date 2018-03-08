@@ -21,6 +21,36 @@ $insta-bg: #322F30;
     }
   }
 
+  .arrows-wrapper {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 10;
+
+    .arrow {
+      border: 15px solid transparent;
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .left-arrow {
+      border-right-color: white;
+
+      &:hover {
+        border-right-color: gold;
+      }
+    }
+
+    .right-arrow {
+      border-left-color: white;
+
+      &:hover {
+        border-left-color: gold;
+      }
+    }
+  }
+
   .instafeed {
     color: gold;
     height: 400px;

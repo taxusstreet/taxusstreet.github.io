@@ -32,3 +32,9 @@
 .nav__list__item--active a {
   color: $orange;
 }
+
+@media (max-width: $sm-break) {
+  .nav__list__item--active a {
+    color: white;
+  }
+}

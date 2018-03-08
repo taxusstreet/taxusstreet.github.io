@@ -2708,6 +2708,12 @@ var Insta = function (_Component) {
           ),
           ' on Instagram'
         ),
+        _react2.default.createElement(
+          'div',
+          { className: 'arrows-wrapper' },
+          _react2.default.createElement('div', { className: 'arrow left-arrow' }),
+          _react2.default.createElement('div', { className: 'arrow right-arrow' })
+        ),
         _react2.default.createElement('div', { className: 'instafeed', id: 'instafeed' }),
         _react2.default.createElement('div', { className: 'instafeed-fade' })
       );
@@ -3043,7 +3049,7 @@ var RoastView = function (_Component) {
               { className: 'back-button', to: '/roasts' },
               'back'
             ),
-            _react2.default.createElement('img', { className: 'roast-image' }),
+            _react2.default.createElement('img', { className: 'roast-image', src: 'images/' + this.state.roast.image }),
             _react2.default.createElement(
               'div',
               { className: 'roast-text-wrapper' },
@@ -3494,7 +3500,7 @@ exports.default = ShopView;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(41);
-module.exports = __webpack_require__(95);
+module.exports = __webpack_require__(96);
 
 
 /***/ }),
@@ -3518,6 +3524,10 @@ var _App = __webpack_require__(81);
 
 var _App2 = _interopRequireDefault(_App);
 
+var _ContactView = __webpack_require__(95);
+
+var _ContactView2 = _interopRequireDefault(_ContactView);
+
 var _RoastView = __webpack_require__(38);
 
 var _RoastView2 = _interopRequireDefault(_RoastView);
@@ -3528,13 +3538,6 @@ var _ShopView2 = _interopRequireDefault(_ShopView);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-//
-// import App from './components/App';
-//
-// ReactDOM.render(<App />, document.querySelector('.container'));
-
 _reactDom2.default.render(_react2.default.createElement(
   _reactRouterDom.BrowserRouter,
   null,
@@ -3543,12 +3546,18 @@ _reactDom2.default.render(_react2.default.createElement(
     null,
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _App2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/info', component: _App2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/contact', component: _ContactView2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/roasts', component: _App2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/shop', component: _App2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { path: '/roasts/:id', component: _RoastView2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { path: '/shop/:id', component: _ShopView2.default })
   )
-), document.querySelector('#app'));
+), document.querySelector('#app')); // import React from 'react';
+// import ReactDOM from 'react-dom';
+//
+// import App from './components/App';
+//
+// ReactDOM.render(<App />, document.querySelector('.container'));
 
 /***/ }),
 /* 42 */
@@ -14557,6 +14566,15 @@ var Nav = function Nav(props) {
           { href: '/#shop' },
           'Shop'
         )
+      ),
+      _react2.default.createElement(
+        'li',
+        { id: 'shop-link', className: 'nav__list__item' },
+        _react2.default.createElement(
+          'a',
+          { href: '/Contact' },
+          'Contact'
+        )
       )
     )
   );
@@ -15462,6 +15480,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(6);
+
 var _Fb = __webpack_require__(91);
 
 var _Fb2 = _interopRequireDefault(_Fb);
@@ -15481,17 +15501,21 @@ var Contact = function Contact() {
     'div',
     { className: 'contact-section page-section' },
     _react2.default.createElement(
-      'div',
-      { className: 'contact__button-wrapper' },
+      _reactRouterDom.Link,
+      { to: '/contact' },
       _react2.default.createElement(
-        'h1',
-        null,
-        'Write To Us!'
-      ),
-      _react2.default.createElement(
-        'p',
-        null,
-        'Contact us about any of our products, or to inquire into wholesale options'
+        'div',
+        { className: 'contact__button-wrapper' },
+        _react2.default.createElement(
+          'h1',
+          null,
+          'Write To Us!'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Contact us about any of our products, or to inquire into wholesale options'
+        )
       )
     ),
     _react2.default.createElement(
@@ -15645,6 +15669,62 @@ exports.default = Footer;
 
 /***/ }),
 /* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(6);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ContactView = function ContactView() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'page-section', id: 'contact-view' },
+    _react2.default.createElement(
+      'div',
+      { className: 'page-section__wrapper' },
+      _react2.default.createElement(
+        _reactRouterDom.Link,
+        { className: 'back-button', to: '/' },
+        'back'
+      ),
+      _react2.default.createElement(
+        'h1',
+        null,
+        'Contact Us'
+      ),
+      _react2.default.createElement(
+        'p',
+        null,
+        'We we\'ll be in touch soon.'
+      ),
+      _react2.default.createElement(
+        'form',
+        { action: 'https://formspree.io/your@email.com',
+          method: 'POST' },
+        _react2.default.createElement('input', { type: 'text', name: 'name', required: true, placeholder: 'Name' }),
+        _react2.default.createElement('input', { type: 'email', name: '_replyto', required: true, placeholder: 'Email' }),
+        _react2.default.createElement('textarea', { required: true, placeholder: 'Message' }),
+        _react2.default.createElement('input', { className: 'button', type: 'submit', value: 'Send' })
+      )
+    )
+  );
+};
+
+exports.default = ContactView;
+
+/***/ }),
+/* 96 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

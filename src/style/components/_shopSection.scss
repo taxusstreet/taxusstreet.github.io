@@ -1,7 +1,11 @@
 .shop-section {
   background: #327941;
+  background: $grey;
   overflow: visible;
   .page-section__wrapper {
     max-width: 1200px;
+  }
+  h1 {
+    color: white;
   }
 }

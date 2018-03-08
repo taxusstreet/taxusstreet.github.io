@@ -12,7 +12,7 @@ class Insta extends Component {
         resolution: 'standard_resolution',
         template: '<div class="img_container"><a href="{{link}}"><img src="{{image}}" /></a><p>{{caption}}</p></div>'
     });
-    
+
     feed.run();
   }
 
@@ -20,6 +20,10 @@ class Insta extends Component {
     return(
       <div className="instafeed-wrapper">
         <p className="instafeed-title">Keep up with <a href="https://www.instagram.com/taxusstreetcoffee/">@taxusstreetcoffee</a> on Instagram</p>
+        <div className="arrows-wrapper">
+          <div className="arrow left-arrow"></div>
+          <div className="arrow right-arrow"></div>
+        </div>
         <div className="instafeed" id="instafeed"></div>
         <div className="instafeed-fade"></div>
       </div>

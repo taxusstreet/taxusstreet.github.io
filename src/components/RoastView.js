@@ -274,7 +274,7 @@ class RoastView extends Component {
         <div className="roast-view-container">
           <div className="roast-view-wrapper">
             <Link className="back-button" to="/roasts">back</Link>
-            <img className="roast-image"/>
+            <img className="roast-image" src={`images/${this.state.roast.image}`}/>
             <div className="roast-text-wrapper">
               <div className="roast-text-wrapper__left">
               <h1

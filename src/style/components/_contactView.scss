@@ -1,0 +1,39 @@
+#contact-view {
+  background: $grey;
+  color: white;
+  min-height: 100vh;
+
+  h1 {
+    text-align: left;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  p {
+    color: gold;
+    margin-top: 0;
+  }
+
+  input , textarea {
+    border: none;
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 100%;
+    &:focus {
+      outline: 2px solid gold;
+      outline-offset: 1px;
+    }
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  .button {
+    background: gold;
+    padding: 5px 10px;
+    width: auto;
+  }
+}

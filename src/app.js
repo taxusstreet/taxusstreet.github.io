@@ -10,6 +10,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import App from './components/App';
+import ContactView from './components/ContactView';
 import RoastView from './components/RoastView';
 import ShopView from './components/ShopView';
 
@@ -18,6 +19,7 @@ ReactDOM.render((
     <Switch>
       <Route exact path="/" component={App} />
       <Route exact path="/info" component={App} />
+      <Route exact path="/contact" component={ContactView} />
       <Route exact path="/roasts" component={App} />
       <Route exact path="/shop" component={App} />
       <Route path="/roasts/:id" component={RoastView} />

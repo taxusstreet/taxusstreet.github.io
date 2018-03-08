@@ -33,7 +33,9 @@ a {
 .back-button {
   color: #f6a942;
   cursor: pointer;
+  display: block;
   font-weight: 200;
+  margin-bottom: 5px;
   text-decoration: none; }
   .back-button:hover {
     text-decoration: underline; }
@@ -66,6 +68,10 @@ a {
 
 .nav__list__item--active a {
   color: #f6a942; }
+
+@media (max-width: 850px) {
+  .nav__list__item--active a {
+    color: white; } }
 
 .intro-section {
   background: #231F20;
@@ -242,9 +248,9 @@ a {
     margin: 10px 0 0 auto; }
 
 .roast-image {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 400px;
-  margin-top: 5px; }
+  height: 400px; }
 
 .roast__title {
   font-size: 2.5em;
@@ -292,9 +298,12 @@ a {
 
 .shop-section {
   background: #327941;
+  background: #231F20;
   overflow: visible; }
   .shop-section .page-section__wrapper {
     max-width: 1200px; }
+  .shop-section h1 {
+    color: white; }
 
 .shop-item {
   color: #231F20;
@@ -316,7 +325,7 @@ a {
     text-transform: capitalize;
     width: 100%; }
     .shop-item .shop-item__text h3 {
-      color: black;
+      color: white;
       margin: 5px 0 0 0; }
     .shop-item .shop-item__text p {
       color: gold;
@@ -338,6 +347,7 @@ a {
 .shop-view-container {
   animation-fill-mode: forwards;
   background: #327941;
+  background: #231F20;
   box-sizing: border-box;
   color: white;
   position: fixed;
@@ -465,6 +475,24 @@ a {
     text-decoration: none; }
     .instafeed-wrapper .instafeed-title a:hover {
       text-decoration: underline; }
+  .instafeed-wrapper .arrows-wrapper {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 10; }
+    .instafeed-wrapper .arrows-wrapper .arrow {
+      border: 15px solid transparent;
+      display: inline-block;
+      margin: 0 10px; }
+    .instafeed-wrapper .arrows-wrapper .left-arrow {
+      border-right-color: white; }
+      .instafeed-wrapper .arrows-wrapper .left-arrow:hover {
+        border-right-color: gold; }
+    .instafeed-wrapper .arrows-wrapper .right-arrow {
+      border-left-color: white; }
+      .instafeed-wrapper .arrows-wrapper .right-arrow:hover {
+        border-left-color: gold; }
   .instafeed-wrapper .instafeed {
     color: gold;
     height: 400px;
@@ -537,9 +565,12 @@ a {
   height: 100%;
   padding: 45px 40px;
   width: 50%; }
-  .contact__button-wrapper:hover {
+  .contact__button-wrapper:hover h1 {
+    color: gold; }
+  .contact__button-wrapper:hover p {
     color: gold; }
   .contact__button-wrapper h1 {
+    color: white;
     font-size: 2em;
     font-style: italic;
     font-weight: 800;
@@ -548,6 +579,7 @@ a {
     text-transform: uppercase; }
   .contact__button-wrapper p {
     border-top: 1px dotted white;
+    color: white;
     margin-top: 10px;
     max-width: 380px;
     padding-top: 10px; }
@@ -581,6 +613,34 @@ a {
   .contact__link-wrapper {
     padding: 72px 50px;
     width: 100%; } }
+
+#contact-view {
+  background: #231F20;
+  color: white;
+  min-height: 100vh; }
+  #contact-view h1 {
+    text-align: left;
+    margin: 0;
+    margin-top: 50px; }
+  #contact-view p {
+    color: gold;
+    margin-top: 0; }
+  #contact-view input, #contact-view textarea {
+    border: none;
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 100%; }
+    #contact-view input:focus, #contact-view textarea:focus {
+      outline: 2px solid gold;
+      outline-offset: 1px; }
+  #contact-view textarea {
+    height: 200px; }
+  #contact-view .button {
+    background: gold;
+    padding: 5px 10px;
+    width: auto; }
 
 footer {
   background: #231F20;

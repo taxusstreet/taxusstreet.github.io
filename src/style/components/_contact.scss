@@ -17,10 +17,16 @@
   width: 50%;
 
   &:hover {
-     color: gold;
+     h1 {
+       color: gold;
+     }
+     p {
+       color: gold;
+     }
   }
 
   h1 {
+    color: white;
     font-size: 2em;
     font-style: italic;
     font-weight: 800;
@@ -31,6 +37,7 @@
 
   p {
     border-top: 1px dotted white;
+    color: white;
     margin-top: 10px;
     max-width: 380px;
     padding-top: 10px;

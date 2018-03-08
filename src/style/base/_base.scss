@@ -40,7 +40,9 @@ a {
 .back-button {
   color: $orange;
   cursor: pointer;
+  display: block;
   font-weight: 200;
+  margin-bottom: 5px;
   text-decoration: none;
 
   &:hover {
