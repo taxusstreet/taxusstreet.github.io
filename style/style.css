@@ -111,12 +111,16 @@ a {
     white-space: normal;
     width: 100%; }
   .intro-section__text__logo {
-    display: block; }
+    display: block;
+    margin: 0 auto; }
   .intro-section__text-wrapper {
     border: none;
     margin: 20px 0;
     padding: 0;
-    width: 80%; } }
+    width: 100%; }
+    .intro-section__text-wrapper h1 {
+      font-size: 8vw;
+      text-align: center; } }
 
 .roasts-section {
   background: gold;
@@ -597,5 +601,5 @@ footer {
   .footer-image {
     box-sizing: border-box;
     margin: 0;
-    margin-left: calc(50vw - 200px);
-    width: 400px; } }
+    margin-left: auto;
+    width: 100%; } }

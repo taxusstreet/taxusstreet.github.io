@@ -18,7 +18,6 @@ export default class ShopView extends Component {
   }
   render() {
     const button = this.state.item.button;
-    console.log(button);
     (function () {
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
       if (window.ShopifyBuy) {
@@ -50,6 +49,8 @@ export default class ShopView extends Component {
           let container = null
           if(document.getElementById(`product-component-${button.container}`).innerHTML == '') {
             container = document.getElementById(`product-component-${button.container}`);
+          } else {
+            return
           }
           ui.createComponent('product', {
             id: [button.id],

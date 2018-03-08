@@ -54,12 +54,18 @@
 
   .intro-section__text__logo {
     display: block;
+    margin: 0 auto;
   }
 
   .intro-section__text-wrapper {
     border: none;
     margin: 20px 0;
     padding: 0;
-    width: 80%;
+    width: 100%;
+
+    h1 {
+      font-size: 8vw;
+      text-align: center;
+    }
   }
 }
