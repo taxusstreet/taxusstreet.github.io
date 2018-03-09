@@ -8,7 +8,7 @@ const ContactView = () => {
       <div className="page-section__wrapper">
         <Link className="back-button" to="/">back</Link>
         <h1>Contact Us</h1>
-        <p>We we'll be in touch soon.</p>
+        <p>We'll be in touch soon.</p>
         <form action="https://formspree.io/your@email.com"
         method="POST">
           <input type="text" name="name" required placeholder="Name" />

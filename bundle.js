@@ -15706,7 +15706,7 @@ var ContactView = function ContactView() {
       _react2.default.createElement(
         'p',
         null,
-        'We we\'ll be in touch soon.'
+        'We\'ll be in touch soon.'
       ),
       _react2.default.createElement(
         'form',
