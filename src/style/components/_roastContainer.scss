@@ -1,6 +1,6 @@
 $color: purple;
 
-.roast-container {
+a .roast-container {
   background: $grey;
   color: white;
   cursor: pointer;
@@ -128,6 +128,7 @@ $color: purple;
 .out-of-stock {
   background: orangered;
   color: white;
+  font-size: .9em;
   font-weight: 600;
   position: absolute;
   right: -30px;

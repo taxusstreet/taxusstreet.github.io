@@ -121,8 +121,6 @@ a {
     padding: 50px 50px 10px 50px;
     white-space: normal;
     width: 100%; }
-    .intro-section__text h1 {
-      font-size: 1.3em; }
   .intro-section__text__logo {
     display: block;
     float: none;
@@ -133,14 +131,14 @@ a {
     padding: 0;
     width: 100%; }
     .intro-section__text-wrapper h1 {
-      font-size: 8vw;
+      font-size: 7vw;
       text-align: center; } }
 
 .roasts-section {
   background: gold;
   overflow: auto; }
 
-.roast-container {
+a .roast-container {
   background: #231F20;
   color: white;
   cursor: pointer;
@@ -152,21 +150,21 @@ a {
   position: relative;
   width: 225px;
   transition: box-shadow .2s; }
-  .roast-container * {
+  a .roast-container * {
     pointer-events: none; }
-  .roast-container .heading-container {
+  a .roast-container .heading-container {
     height: 70px; }
-    .roast-container .heading-container .heading-container__text {
+    a .roast-container .heading-container .heading-container__text {
       left: 20px;
       position: absolute;
       transition: .5s; }
-    .roast-container .heading-container h2 {
+    a .roast-container .heading-container h2 {
       text-transform: uppercase;
       margin-bottom: 0; }
-    .roast-container .heading-container .origin {
+    a .roast-container .heading-container .origin {
       margin: 0;
       text-transform: capitalize; }
-  .roast-container .bean-container {
+  a .roast-container .bean-container {
     float: left;
     height: 40px;
     left: -80px;
@@ -175,18 +173,18 @@ a {
     top: 25px;
     transition: .5s;
     width: 50px; }
-    .roast-container .bean-container svg {
+    a .roast-container .bean-container svg {
       position: absolute;
       right: 0;
       top: 0; }
-  .roast-container:hover {
+  a .roast-container:hover {
     box-shadow: 0px 1px 5px orangered; }
-    .roast-container:hover .bean-container {
+    a .roast-container:hover .bean-container {
       left: 0px; }
-    .roast-container:hover .heading-container__text {
+    a .roast-container:hover .heading-container__text {
       left: 80px;
       position: absolute; }
-  .roast-container .desc-label {
+  a .roast-container .desc-label {
     margin-top: 20px;
     margin-bottom: 0; }
 
@@ -238,6 +236,7 @@ a {
 .out-of-stock {
   background: orangered;
   color: white;
+  font-size: .9em;
   font-weight: 600;
   position: absolute;
   right: -30px;
@@ -587,11 +586,14 @@ a {
   .instafeed-wrapper .instafeed-title {
     color: white;
     font-size: .9em;
-    padding: 3px 20px 0 20px; }
+    padding: 3px 20px 0 20px;
+    text-align: center; }
   .instafeed-wrapper .instafeed {
     height: 300px; }
   .instafeed-wrapper .instafeed-fade {
-    width: 50px; } }
+    width: 50px; }
+  .instafeed-wrapper .arrows-wrapper {
+    display: none; } }
 
 .contact-section {
   background: #322F30;
@@ -625,6 +627,7 @@ a {
     border-top: 1px dotted white;
     color: white;
     margin-top: 10px;
+    margin-bottom: 0;
     max-width: 380px;
     padding-top: 10px; }
 
@@ -653,6 +656,7 @@ a {
 
 @media screen and (max-width: 850px) {
   .contact__button-wrapper {
+    height: auto;
     width: 100%; }
   .contact__link-wrapper {
     padding: 72px 50px;

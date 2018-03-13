@@ -125,6 +125,7 @@ $insta-bg: #322F30;
       color: white;
       font-size: .9em;
       padding: 3px 20px 0 20px;
+      text-align: center;
     }
 
     .instafeed {
@@ -133,6 +134,10 @@ $insta-bg: #322F30;
 
     .instafeed-fade {
       width: 50px;
+    }
+
+    .arrows-wrapper {
+      display: none;
     }
   }
 }
