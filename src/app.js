@@ -20,9 +20,9 @@ ReactDOM.render((
       <Route exact path="/" component={App} />
       <Route exact path="/info" component={App} />
       <Route exact path="/contact" component={ContactView} />
-      <Route exact path="/roasts" component={App} />
+      <Route exact path="/coffees" component={App} />
       <Route exact path="/shop" component={App} />
-      <Route path="/roasts/:id" component={RoastView} />
+      <Route path="/coffees/:id" component={RoastView} />
       <Route path="/shop/:id" component={ShopView} />
     </Switch>
   </BrowserRouter>

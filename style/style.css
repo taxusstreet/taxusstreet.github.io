@@ -84,13 +84,15 @@ a {
   margin: 100px auto;
   padding: 50px 0;
   position: relative;
-  width: 580px;
+  width: 620px;
   white-space: nowrap; }
 
 .intro-section__text__logo {
   display: inline-block;
   height: 120px;
-  width: 120px; }
+  width: 120px;
+  float: left;
+  margin-top: 50px; }
   .intro-section__text__logo img {
     width: 100%; }
 
@@ -102,7 +104,10 @@ a {
   width: 400px;
   white-space: normal; }
   .intro-section__text-wrapper h1 {
+    margin: 10px 0;
     text-align: left; }
+  .intro-section__text-wrapper p {
+    margin-top: 0; }
 
 .beansContainer {
   height: 100%;
@@ -116,8 +121,11 @@ a {
     padding: 50px 50px 10px 50px;
     white-space: normal;
     width: 100%; }
+    .intro-section__text h1 {
+      font-size: 1.3em; }
   .intro-section__text__logo {
     display: block;
+    float: none;
     margin: 0 auto; }
   .intro-section__text-wrapper {
     border: none;
@@ -178,10 +186,28 @@ a {
     .roast-container:hover .heading-container__text {
       left: 80px;
       position: absolute; }
+  .roast-container .desc-label {
+    margin-top: 20px;
+    margin-bottom: 0; }
 
-.desc-label {
-  margin-top: 20px;
-  margin-bottom: 0; }
+.roast-container__price {
+  color: #f6a942;
+  margin: 20px 0 0 0; }
+
+.roast-container--out-of-stock {
+  cursor: not-allowed; }
+
+.roast-container__bar {
+  height: 8px;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+
+.roast-container__top-bar {
+  top: 0; }
+
+.roast-container__bottom-bar {
+  bottom: 0; }
 
 .roast-level {
   background: linear-gradient(to right, white, transparent);
@@ -190,7 +216,7 @@ a {
   max-width: 200px;
   position: relative; }
   .roast-level .roast-level__bar {
-    border-right: 3px solid orange;
+    border-right: 3px solid #f6a942;
     height: calc(100% + 4px);
     left: 0;
     position: absolute;
@@ -208,6 +234,17 @@ a {
 @media (max-width: 550px) {
   .roast-container {
     width: 100%; } }
+
+.out-of-stock {
+  background: orangered;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  right: -30px;
+  text-align: center;
+  top: 40px;
+  transform: rotate(45deg);
+  width: 155px; }
 
 .roast-view-container {
   animation-fill-mode: forwards;
@@ -265,12 +302,19 @@ a {
   text-transform: capitalize; }
 
 .desc-label {
-  margin: 15px 0 10px 0; }
+  margin: 15px 0 10px 0;
+  line-height: 1.4; }
+  .desc-label span {
+    color: gold; }
 
 .buy-button {
   position: absolute;
   right: -295px;
+  text-align: left;
   top: 60px; }
+  .buy-button h2 {
+    color: #f6a942;
+    margin-bottom: 15px; }
 
 @media (max-width: 850px) {
   .roast-view-container {
@@ -324,9 +368,11 @@ a {
     width: 100%; }
     .shop-item .shop-item__text h3 {
       color: white;
+      text-transform: uppercase;
       margin: 5px 0 0 0; }
     .shop-item .shop-item__text p {
-      color: gold;
+      color: #f6a942;
+      font-weight: 600;
       margin: 0; }
   .shop-item:hover img {
     filter: drop-shadow(1px 1px 4px #225223); }

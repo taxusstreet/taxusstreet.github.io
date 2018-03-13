@@ -14,7 +14,6 @@ class RoastView extends Component {
 
   componentWillMount = () => {
     const id = this.props.match.params.id;
-    document.getElementsByTagName('body')[0].classList.add('lock');
     var roast = data.roasts.filter(function( obj ) {
       return norm(obj.title) == id;
     })[0];
@@ -22,19 +21,8 @@ class RoastView extends Component {
       roast
     }))
 
-    // require('../../shopify-setup.js');
   }
 
-  // ComponentDidMount() {
-  //   console.log('test');
-  //   document.getElementsByTagName('body')[0].classList.add('lock');
-  //   var roast = data.roasts.filter(function( obj ) {
-  //     return norm(obj.title) == this.props.match.params.id;
-  //   })[0];
-  //   this.setState(() => ({
-  //     roast
-  //   }))
-  // }
   render() {
     (function () {
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -273,7 +261,7 @@ class RoastView extends Component {
       return(
         <div className="roast-view-container">
           <div className="roast-view-wrapper">
-            <Link className="back-button" to="/roasts">back</Link>
+            <Link className="back-button" to="/coffees">back</Link>
             <img className="roast-image" src={`images/${this.state.roast.image}`}/>
             <div className="roast-text-wrapper">
               <div className="roast-text-wrapper__left">
@@ -288,6 +276,9 @@ class RoastView extends Component {
                   return <span key={i} style={{color: this.state.roast.color, outlineColor: this.state.roast.color}} className="taste-note">{note}</span>
                 })}
               </div>
+              <p className="desc-label">Processing: <span style={{color: this.state.roast.color}}>{this.state.roast.processing}</span></p>
+              <p className="desc-label">Growing Altitude: <span style={{color: this.state.roast.color}}>{this.state.roast.altitude}</span></p>
+              <p className="desc-label">Variety: <span style={{color: this.state.roast.color}}>{this.state.roast.variety}</span></p>
               <p className="desc-label">Roast level:</p>
               <div className="roast-level">
                 <div
@@ -295,6 +286,7 @@ class RoastView extends Component {
                   className="roast-level__bar"></div>
               </div>
               <div className="buy-button">
+                <h2>${this.state.roast.price} - {this.state.roast.size}oz.</h2>
                 <div id={"product-component-" + this.state.roast.button}></div>
               </div>
               </div>

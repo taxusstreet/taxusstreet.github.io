@@ -1,25 +1,43 @@
 data.roasts = [{
-  "title": "el obraje",
-  "origin": "nariño, colombia",
-  "level": 80,
-  "color": "#448473",
-  "taste": ["cinnamon", "caramel", "raisins"],
-  "image": "colombian.jpg",
-  "button": "cb865f11799"
-},{
   "title": "La Fisga",
   "origin": "Cubulco, Guatamala",
+  "price": 14,
+  "size": 12,
   "level": 40,
   "color": "#D34F27",
   "taste": ["strawberry", "plum", "milk chocolate"],
+  "processing": "Washed",
+  "altitude": "1800m",
+  "variety": "The producer, Roberto Cantã, says he is unsure of the variety. He recieved the seeds from his father-in-law.",
   "image": "guat.jpg",
-  "button": "cb865f11799"
+  "button": "cb865f11799",
+  "in-stock": true
 },{
   "title": "Wote Kanga",
-  "origin": "Yergacheffe, Ehiopia",
+  "origin": "Yergacheffe, Ethiopia",
+  "price": 14,
+  "size": 12,
   "level": 10,
   "color": "#924da8",
   "taste": ["pineapple", "blueberry", "pine"],
+  "processing": "Natural/Dry Processed",
+  "altitude": "1800m-2200m",
+  "variety": "Heirloom",
   "image": "ethiopian.jpg",
-  "button": "cb865f11799"
+  "button": "cb865f11799",
+  "in-stock": true
+},{
+  "title": "El Obraje",
+  "origin": "Nariño, Colombia",
+  "price": 12,
+  "size": 12,
+  "level": 80,
+  "color": "#448473",
+  "taste": ["cinnamon", "caramel", "raisins"],
+  "processing": "Washed",
+  "variety": "Castillo, Caturra",
+  "altitude": "2000m",
+  "image": "colombian.jpg",
+  "button": "cb865f11799",
+  "in-stock": false
 }];

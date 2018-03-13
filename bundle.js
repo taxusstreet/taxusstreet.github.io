@@ -424,48 +424,6 @@ module.exports = invariant;
 "use strict";
 
 
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * 
- */
-
-function makeEmptyFunction(arg) {
-  return function () {
-    return arg;
-  };
-}
-
-/**
- * This function accepts and discards inputs; it has no side effects. This is
- * primarily useful idiomatically for overridable function endpoints which
- * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
- */
-var emptyFunction = function emptyFunction() {};
-
-emptyFunction.thatReturns = makeEmptyFunction;
-emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
-emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
-emptyFunction.thatReturnsNull = makeEmptyFunction(null);
-emptyFunction.thatReturnsThis = function () {
-  return this;
-};
-emptyFunction.thatReturnsArgument = function (arg) {
-  return arg;
-};
-
-module.exports = emptyFunction;
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -503,7 +461,7 @@ var _Route2 = __webpack_require__(33);
 
 var _Route3 = _interopRequireDefault(_Route2);
 
-var _Router2 = __webpack_require__(18);
+var _Router2 = __webpack_require__(19);
 
 var _Router3 = _interopRequireDefault(_Router2);
 
@@ -538,6 +496,48 @@ exports.StaticRouter = _StaticRouter3.default;
 exports.Switch = _Switch3.default;
 exports.matchPath = _matchPath3.default;
 exports.withRouter = _withRouter3.default;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * 
+ */
+
+function makeEmptyFunction(arg) {
+  return function () {
+    return arg;
+  };
+}
+
+/**
+ * This function accepts and discards inputs; it has no side effects. This is
+ * primarily useful idiomatically for overridable function endpoints which
+ * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+ */
+var emptyFunction = function emptyFunction() {};
+
+emptyFunction.thatReturns = makeEmptyFunction;
+emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+emptyFunction.thatReturnsThis = function () {
+  return this;
+};
+emptyFunction.thatReturnsArgument = function (arg) {
+  return arg;
+};
+
+module.exports = emptyFunction;
 
 /***/ }),
 /* 7 */
@@ -868,7 +868,7 @@ module.exports = emptyObject;
 
 
 
-var emptyFunction = __webpack_require__(5);
+var emptyFunction = __webpack_require__(6);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -1021,6 +1021,22 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var norm = function norm(str) {
+  return str.split(' ').join('').toLowerCase();
+};
+
+exports.default = norm;
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1035,7 +1051,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(8);
   var warning = __webpack_require__(12);
-  var ReactPropTypesSecret = __webpack_require__(15);
+  var ReactPropTypesSecret = __webpack_require__(16);
   var loggedTypeFailures = {};
 }
 
@@ -1085,7 +1101,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1103,7 +1119,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1197,7 +1213,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 };
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1290,7 +1306,7 @@ var createTransitionManager = function createTransitionManager() {
 exports.default = createTransitionManager;
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1300,7 +1316,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Router = __webpack_require__(19);
+var _Router = __webpack_require__(20);
 
 var _Router2 = _interopRequireDefault(_Router);
 
@@ -1309,7 +1325,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _Router2.default; // Written in this round about way for babel-transform-imports
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1459,7 +1475,7 @@ Router.childContextTypes = {
 exports.default = Router;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1544,7 +1560,7 @@ var matchPath = function matchPath(pathname) {
 exports.default = matchPath;
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1637,22 +1653,6 @@ var createTransitionManager = function createTransitionManager() {
 exports.default = createTransitionManager;
 
 /***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var norm = function norm(str) {
-  return str.split(' ').join('').toLowerCase();
-};
-
-exports.default = norm;
-
-/***/ }),
 /* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1707,7 +1707,7 @@ module.exports = ExecutionEnvironment;
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(5);
+var emptyFunction = __webpack_require__(6);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -2351,7 +2351,7 @@ var _propTypes = __webpack_require__(3);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _matchPath = __webpack_require__(20);
+var _matchPath = __webpack_require__(21);
 
 var _matchPath2 = _interopRequireDefault(_matchPath);
 
@@ -2744,9 +2744,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(6);
+var _reactRouterDom = __webpack_require__(5);
 
-var _norm = __webpack_require__(22);
+var _norm = __webpack_require__(14);
 
 var _norm2 = _interopRequireDefault(_norm);
 
@@ -2768,7 +2768,6 @@ var RoastView = function (_Component) {
 
     _this.componentWillMount = function () {
       var id = _this.props.match.params.id;
-      document.getElementsByTagName('body')[0].classList.add('lock');
       var roast = data.roasts.filter(function (obj) {
         return (0, _norm2.default)(obj.title) == id;
       })[0];
@@ -2777,8 +2776,6 @@ var RoastView = function (_Component) {
           roast: roast
         };
       });
-
-      // require('../../shopify-setup.js');
     };
 
     _this.state = {
@@ -2789,18 +2786,6 @@ var RoastView = function (_Component) {
 
   _createClass(RoastView, [{
     key: 'render',
-
-
-    // ComponentDidMount() {
-    //   console.log('test');
-    //   document.getElementsByTagName('body')[0].classList.add('lock');
-    //   var roast = data.roasts.filter(function( obj ) {
-    //     return norm(obj.title) == this.props.match.params.id;
-    //   })[0];
-    //   this.setState(() => ({
-    //     roast
-    //   }))
-    // }
     value: function render() {
       var _this2 = this;
 
@@ -3046,7 +3031,7 @@ var RoastView = function (_Component) {
             { className: 'roast-view-wrapper' },
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { className: 'back-button', to: '/roasts' },
+              { className: 'back-button', to: '/coffees' },
               'back'
             ),
             _react2.default.createElement('img', { className: 'roast-image', src: 'images/' + this.state.roast.image }),
@@ -3088,6 +3073,36 @@ var RoastView = function (_Component) {
                 _react2.default.createElement(
                   'p',
                   { className: 'desc-label' },
+                  'Processing: ',
+                  _react2.default.createElement(
+                    'span',
+                    { style: { color: this.state.roast.color } },
+                    this.state.roast.processing
+                  )
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'desc-label' },
+                  'Growing Altitude: ',
+                  _react2.default.createElement(
+                    'span',
+                    { style: { color: this.state.roast.color } },
+                    this.state.roast.altitude
+                  )
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'desc-label' },
+                  'Variety: ',
+                  _react2.default.createElement(
+                    'span',
+                    { style: { color: this.state.roast.color } },
+                    this.state.roast.variety
+                  )
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'desc-label' },
                   'Roast level:'
                 ),
                 _react2.default.createElement(
@@ -3100,6 +3115,15 @@ var RoastView = function (_Component) {
                 _react2.default.createElement(
                   'div',
                   { className: 'buy-button' },
+                  _react2.default.createElement(
+                    'h2',
+                    null,
+                    '$',
+                    this.state.roast.price,
+                    ' - ',
+                    this.state.roast.size,
+                    'oz.'
+                  ),
                   _react2.default.createElement('div', { id: "product-component-" + this.state.roast.button })
                 )
               )
@@ -3140,9 +3164,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(6);
+var _reactRouterDom = __webpack_require__(5);
 
-var _norm = __webpack_require__(22);
+var _norm = __webpack_require__(14);
 
 var _norm2 = _interopRequireDefault(_norm);
 
@@ -3432,7 +3456,7 @@ var ShopView = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'shop-item-image__wrapper' },
-            _react2.default.createElement(
+            this.state.item.images.length > 1 ? _react2.default.createElement(
               'div',
               { className: 'shop-item-image__thumbs' },
               this.state.item.images.map(function (image, i) {
@@ -3452,7 +3476,7 @@ var ShopView = function (_Component) {
                   _react2.default.createElement('img', { src: "images/" + image })
                 );
               })
-            ),
+            ) : null,
             _react2.default.createElement('img', { src: "images/" + this.state.currentImage })
           ),
           _react2.default.createElement(
@@ -3518,7 +3542,7 @@ var _reactDom = __webpack_require__(44);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(6);
+var _reactRouterDom = __webpack_require__(5);
 
 var _App = __webpack_require__(81);
 
@@ -3547,9 +3571,9 @@ _reactDom2.default.render(_react2.default.createElement(
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _App2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/info', component: _App2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/contact', component: _ContactView2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/roasts', component: _App2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/coffees', component: _App2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/shop', component: _App2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { path: '/roasts/:id', component: _RoastView2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { path: '/coffees/:id', component: _RoastView2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { path: '/shop/:id', component: _ShopView2.default })
   )
 ), document.querySelector('#app')); // import React from 'react';
@@ -3579,7 +3603,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var m = __webpack_require__(7),
     n = __webpack_require__(11),
-    p = __webpack_require__(5),
+    p = __webpack_require__(6),
     q = "function" === typeof Symbol && Symbol["for"],
     r = q ? Symbol["for"]("react.element") : 60103,
     t = q ? Symbol["for"]("react.call") : 60104,
@@ -3714,8 +3738,8 @@ if (process.env.NODE_ENV !== "production") {
     var emptyObject = __webpack_require__(11);
     var invariant = __webpack_require__(8);
     var warning = __webpack_require__(12);
-    var emptyFunction = __webpack_require__(5);
-    var checkPropTypes = __webpack_require__(14);
+    var emptyFunction = __webpack_require__(6);
+    var checkPropTypes = __webpack_require__(15);
 
     // TODO: this is special because it gets imported during build.
 
@@ -5114,7 +5138,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var aa = __webpack_require__(0),
     l = __webpack_require__(23),
     B = __webpack_require__(7),
-    C = __webpack_require__(5),
+    C = __webpack_require__(6),
     ba = __webpack_require__(24),
     da = __webpack_require__(25),
     ea = __webpack_require__(26),
@@ -7158,7 +7182,7 @@ module.exports = isNode;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var React=__webpack_require__(0);var invariant=__webpack_require__(8);var warning=__webpack_require__(12);var ExecutionEnvironment=__webpack_require__(23);var _assign=__webpack_require__(7);var emptyFunction=__webpack_require__(5);var EventListener=__webpack_require__(24);var getActiveElement=__webpack_require__(25);var shallowEqual=__webpack_require__(26);var containsNode=__webpack_require__(27);var focusNode=__webpack_require__(28);var emptyObject=__webpack_require__(11);var checkPropTypes=__webpack_require__(14);var hyphenateStyleName=__webpack_require__(49);var camelizeStyleName=__webpack_require__(51);/**
+ */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var React=__webpack_require__(0);var invariant=__webpack_require__(8);var warning=__webpack_require__(12);var ExecutionEnvironment=__webpack_require__(23);var _assign=__webpack_require__(7);var emptyFunction=__webpack_require__(6);var EventListener=__webpack_require__(24);var getActiveElement=__webpack_require__(25);var shallowEqual=__webpack_require__(26);var containsNode=__webpack_require__(27);var focusNode=__webpack_require__(28);var emptyObject=__webpack_require__(11);var checkPropTypes=__webpack_require__(15);var hyphenateStyleName=__webpack_require__(49);var camelizeStyleName=__webpack_require__(51);/**
  * WARNING: DO NOT manually require this module.
  * This is a replacement for `invariant(...)` used by the error code system
  * and will _only_ be required by the corresponding babel pass.
@@ -10315,7 +10339,7 @@ var _createBrowserHistory = __webpack_require__(56);
 
 var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
-var _Router = __webpack_require__(18);
+var _Router = __webpack_require__(19);
 
 var _Router2 = _interopRequireDefault(_Router);
 
@@ -10395,13 +10419,13 @@ exports.default = BrowserRouter;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var emptyFunction = __webpack_require__(5);
+var emptyFunction = __webpack_require__(6);
 var invariant = __webpack_require__(8);
 var warning = __webpack_require__(12);
 var assign = __webpack_require__(7);
 
-var ReactPropTypesSecret = __webpack_require__(15);
-var checkPropTypes = __webpack_require__(14);
+var ReactPropTypesSecret = __webpack_require__(16);
+var checkPropTypes = __webpack_require__(15);
 
 module.exports = function (isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -10918,9 +10942,9 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
 
 
-var emptyFunction = __webpack_require__(5);
+var emptyFunction = __webpack_require__(6);
 var invariant = __webpack_require__(8);
-var ReactPropTypesSecret = __webpack_require__(15);
+var ReactPropTypesSecret = __webpack_require__(16);
 
 module.exports = function () {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -10998,11 +11022,11 @@ var _invariant = __webpack_require__(4);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _LocationUtils = __webpack_require__(16);
+var _LocationUtils = __webpack_require__(17);
 
 var _PathUtils = __webpack_require__(9);
 
-var _createTransitionManager = __webpack_require__(17);
+var _createTransitionManager = __webpack_require__(18);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -11318,7 +11342,7 @@ var _createHashHistory = __webpack_require__(58);
 
 var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
 
-var _Router = __webpack_require__(18);
+var _Router = __webpack_require__(19);
 
 var _Router2 = _interopRequireDefault(_Router);
 
@@ -11408,11 +11432,11 @@ var _invariant = __webpack_require__(4);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _LocationUtils = __webpack_require__(16);
+var _LocationUtils = __webpack_require__(17);
 
 var _PathUtils = __webpack_require__(9);
 
-var _createTransitionManager = __webpack_require__(17);
+var _createTransitionManager = __webpack_require__(18);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -11768,7 +11792,7 @@ var _createMemoryHistory = __webpack_require__(61);
 
 var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
-var _Router = __webpack_require__(19);
+var _Router = __webpack_require__(20);
 
 var _Router2 = _interopRequireDefault(_Router);
 
@@ -11865,9 +11889,9 @@ var _warning2 = _interopRequireDefault(_warning);
 
 var _PathUtils = __webpack_require__(9);
 
-var _LocationUtils = __webpack_require__(16);
+var _LocationUtils = __webpack_require__(17);
 
-var _createTransitionManager = __webpack_require__(17);
+var _createTransitionManager = __webpack_require__(18);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -12949,7 +12973,7 @@ var _LocationUtils = __webpack_require__(13);
 
 var _PathUtils = __webpack_require__(10);
 
-var _createTransitionManager = __webpack_require__(21);
+var _createTransitionManager = __webpack_require__(22);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -13273,7 +13297,7 @@ var _LocationUtils = __webpack_require__(13);
 
 var _PathUtils = __webpack_require__(10);
 
-var _createTransitionManager = __webpack_require__(21);
+var _createTransitionManager = __webpack_require__(22);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -13610,7 +13634,7 @@ var _PathUtils = __webpack_require__(10);
 
 var _LocationUtils = __webpack_require__(13);
 
-var _createTransitionManager = __webpack_require__(21);
+var _createTransitionManager = __webpack_require__(22);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -13830,7 +13854,7 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _PathUtils = __webpack_require__(9);
 
-var _Router = __webpack_require__(19);
+var _Router = __webpack_require__(20);
 
 var _Router2 = _interopRequireDefault(_Router);
 
@@ -14066,7 +14090,7 @@ var _invariant = __webpack_require__(4);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _matchPath = __webpack_require__(20);
+var _matchPath = __webpack_require__(21);
 
 var _matchPath2 = _interopRequireDefault(_matchPath);
 
@@ -14168,7 +14192,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _matchPath = __webpack_require__(20);
+var _matchPath = __webpack_require__(21);
 
 var _matchPath2 = _interopRequireDefault(_matchPath);
 
@@ -14371,7 +14395,7 @@ var _propTypes = __webpack_require__(3);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRouterDom = __webpack_require__(6);
+var _reactRouterDom = __webpack_require__(5);
 
 var _Nav = __webpack_require__(82);
 
@@ -14527,7 +14551,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(6);
+var _reactRouterDom = __webpack_require__(5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14551,11 +14575,11 @@ var Nav = function Nav(props) {
       ),
       _react2.default.createElement(
         'li',
-        { id: 'roasts-link', className: 'nav__list__item' },
+        { className: 'nav__list__item' },
         _react2.default.createElement(
           'a',
-          { href: '/#roasts' },
-          'Roasts'
+          { href: '/#coffees' },
+          'Coffees'
         )
       ),
       _react2.default.createElement(
@@ -14652,11 +14676,13 @@ var Intro = function (_Component) {
               null,
               'Taxus Street Coffee'
             ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'We are a locally owned and operated coffee roastery sourcing, roasting, and brewing coffee with excellence.'
-            )
+            data.bio.map(function (item) {
+              return _react2.default.createElement(
+                'p',
+                null,
+                item
+              );
+            })
           )
         ),
         _react2.default.createElement(_Insta2.default, null)
@@ -15139,14 +15165,14 @@ var RoastsSection = function (_Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'roasts-section page-section', id: 'roasts' },
+        { className: 'roasts-section page-section', id: 'coffees' },
         _react2.default.createElement(
           'div',
           { className: 'page-section__wrapper' },
           _react2.default.createElement(
             'h1',
             null,
-            'Roasts'
+            'Coffees'
           ),
           _react2.default.createElement(
             'div',
@@ -15185,77 +15211,96 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(5);
+
 var _Bean = __webpack_require__(87);
 
 var _Bean2 = _interopRequireDefault(_Bean);
+
+var _norm = __webpack_require__(14);
+
+var _norm2 = _interopRequireDefault(_norm);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var RoastContainer = function RoastContainer(props) {
   return _react2.default.createElement(
-    'div',
-    {
-      className: 'roast-container',
-      onClick: function onClick(e) {
-        props.handleViewRoast(props.roast, e.target);
-        props.updateUrl('roasts/' + props.roast.title.split(' ').join('').toLowerCase());
-      },
-      style: { borderTop: props.roast.color + ' 6px solid', borderBottom: props.roast.color + ' 6px solid' } },
+    _reactRouterDom.Link,
+    { to: props.roast['in-stock'] ? 'coffees/' + (0, _norm2.default)(props.roast.title) : 'coffees' },
     _react2.default.createElement(
       'div',
-      { className: 'heading-container' },
+      { className: props.roast['in-stock'] ? "roast-container" : "roast-container roast-container--out-of-stock" },
       _react2.default.createElement(
         'div',
-        { className: 'bean-container' },
-        _react2.default.createElement(_Bean2.default, { color: props.roast.color })
+        { className: 'heading-container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'bean-container' },
+          _react2.default.createElement(_Bean2.default, { color: props.roast.color })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'heading-container__text' },
+          _react2.default.createElement(
+            'h2',
+            null,
+            props.roast.title
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'origin' },
+            props.roast.origin
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'p',
+        { className: 'desc-label' },
+        'Notes:'
       ),
       _react2.default.createElement(
         'div',
-        { className: 'heading-container__text' },
-        _react2.default.createElement(
-          'h2',
-          null,
-          props.roast.title
-        ),
-        _react2.default.createElement(
-          'p',
-          { className: 'origin' },
-          props.roast.origin
-        )
-      )
-    ),
-    _react2.default.createElement(
-      'p',
-      { className: 'desc-label' },
-      'Notes:'
-    ),
-    _react2.default.createElement(
-      'div',
-      { className: 'taste-notes-container' },
-      props.roast.taste.map(function (note, i) {
-        return _react2.default.createElement(
-          'span',
-          { key: i, className: 'taste-note', style: { color: props.roast.color, outlineColor: props.roast.color } },
-          note
-        );
-      })
-    ),
-    _react2.default.createElement(
-      'p',
-      { className: 'desc-label' },
-      'Roast level:'
-    ),
-    _react2.default.createElement(
-      'div',
-      { className: 'roast-level' },
-      _react2.default.createElement('div', {
-        style: { width: props.roast.level + "%" },
-        className: 'roast-level__bar' })
+        { className: 'taste-notes-container' },
+        props.roast.taste.map(function (note, i) {
+          return _react2.default.createElement(
+            'span',
+            { key: i, className: 'taste-note', style: { color: props.roast.color, outlineColor: props.roast.color } },
+            note
+          );
+        })
+      ),
+      _react2.default.createElement(
+        'p',
+        { className: 'desc-label' },
+        'Roast level:'
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'roast-level' },
+        _react2.default.createElement('div', {
+          style: { width: props.roast.level + "%" },
+          className: 'roast-level__bar' })
+      ),
+      _react2.default.createElement(
+        'h3',
+        { className: 'roast-container__price' },
+        '$',
+        props.roast.price
+      ),
+      _react2.default.createElement('div', { className: 'roast-container__bar roast-container__top-bar', style: { backgroundColor: props.roast.color } }),
+      _react2.default.createElement('div', { className: 'roast-container__bar roast-container__bottom-bar', style: { backgroundColor: props.roast.color } }),
+      !props.roast['in-stock'] ? _react2.default.createElement(
+        'div',
+        { className: 'out-of-stock' },
+        'OUT OF STOCK'
+      ) : null
     )
   );
 };
 
 exports.default = RoastContainer;
+
+// style={{borderTop: props.roast.color + ' 6px solid', borderBottom: props.roast.color + ' 6px solid'}}>
 
 /***/ }),
 /* 87 */
@@ -15428,9 +15473,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(6);
+var _reactRouterDom = __webpack_require__(5);
 
-var _norm = __webpack_require__(22);
+var _norm = __webpack_require__(14);
 
 var _norm2 = _interopRequireDefault(_norm);
 
@@ -15480,7 +15525,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(6);
+var _reactRouterDom = __webpack_require__(5);
 
 var _Fb = __webpack_require__(91);
 
@@ -15509,12 +15554,12 @@ var Contact = function Contact() {
         _react2.default.createElement(
           'h1',
           null,
-          'Write To Us!'
+          'Write To Us'
         ),
         _react2.default.createElement(
           'p',
           null,
-          'Contact us about any of our products, or to inquire into wholesale options'
+          'Pick up, wholesale, questions, or concerns? Reach out, and we\'ll get back to you soon.'
         )
       )
     ),
@@ -15682,7 +15727,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(6);
+var _reactRouterDom = __webpack_require__(5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

@@ -11,8 +11,8 @@ const Contact = () => {
     <div className="contact-section page-section">
       <Link to="/contact">
         <div className="contact__button-wrapper">
-          <h1>Write To Us!</h1>
-          <p>Contact us about any of our products, or to inquire into wholesale options</p>
+          <h1>Write To Us</h1>
+          <p>Pick up, wholesale, questions, or concerns? Reach out, and we'll get back to you soon.</p>
         </div>
       </Link>
       <div className="contact__link-wrapper">

@@ -1,19 +1,19 @@
 data.shop = [
   {
     "title": "mug",
-    "desc": "16oz handmade ceramic mug. Dishwasher/microwave safe.",
+    "desc": "16oz ceramic mug. Dishwasher/microwave safe. Each mug was made by hand in Fredericksburg, Virginia",
     "price": 15,
-    "images": ["mug.png", "mug2.png"],
+    "images": ["mug.jpg"],
     "button": {
       "container": "715ab16b7a1",
       "id": 11911632580
     }
   },
   {
-    "title": "Black TS Tee",
-    "desc": "Black cotton Gilden brand tee with silkscreened TS Logo.",
+    "title": "Black Logo Tee",
+    "desc": "100% cotton Next Level tee with silkscreened TS Logo, and 'Taxus Street Coffee' on the rear neckline.",
     "price": 20,
-    "images": ["shirt.jpg", "shirt2.jpg", "shirt3.jpg"],
+    "images": ["shirt.jpg", "shirt2.jpg"],
     "button": {
       "container": "d2ba0e92739",
       "id": 11521702660

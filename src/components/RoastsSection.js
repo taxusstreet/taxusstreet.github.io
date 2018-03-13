@@ -38,9 +38,9 @@ export default class RoastsSection extends Component {
   }
   render() {
     return (
-      <div className="roasts-section page-section" id="roasts">
+      <div className="roasts-section page-section" id="coffees">
         <div className="page-section__wrapper">
-          <h1>Roasts</h1>
+          <h1>Coffees</h1>
             <div className="page-section__items-centered">
             {this.props.roasts.map((roast, i) => {
               return (
