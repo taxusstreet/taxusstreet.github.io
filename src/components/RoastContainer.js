@@ -7,7 +7,7 @@ import norm from '../utils/norm.js';
 
 const RoastContainer = (props) => {
   return (
-    <Link to={props.roast['in-stock'] ? `coffees/${norm(props.roast.title)}` : 'coffees'}>
+    <Link to={`coffees/${norm(props.roast.title)}`}>
       <div className={props.roast['in-stock'] ? "roast-container" : "roast-container roast-container--out-of-stock"}>
         <div className="heading-container">
           <div className="bean-container">

@@ -13,6 +13,7 @@ import App from './components/App';
 import ContactView from './components/ContactView';
 import RoastView from './components/RoastView';
 import ShopView from './components/ShopView';
+import RetailLocationsView from './components/RetailLocationsView';
 
 ReactDOM.render((
   <BrowserRouter>
@@ -24,6 +25,7 @@ ReactDOM.render((
       <Route exact path="/shop" component={App} />
       <Route path="/coffees/:id" component={RoastView} />
       <Route path="/shop/:id" component={ShopView} />
+      <Route exact path="/retail-locations" component={RetailLocationsView} />
     </Switch>
   </BrowserRouter>
 ), document.querySelector('#app'));

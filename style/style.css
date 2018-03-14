@@ -229,9 +229,14 @@ a .roast-container {
     outline: 1px solid gold;
     padding: 2px 4px; }
 
-@media (max-width: 550px) {
-  .roast-container {
-    width: 100%; } }
+@media (max-width: 850px) {
+  a .roast-container:hover {
+    box-shadow: none; }
+    a .roast-container:hover .bean-container {
+      left: -80px; }
+    a .roast-container:hover .heading-container__text {
+      left: 20px;
+      position: absolute; } }
 
 .out-of-stock {
   background: orangered;
@@ -671,7 +676,7 @@ a .roast-container {
     margin: 0;
     margin-top: 50px; }
   #contact-view p {
-    color: gold;
+    color: #f6a942;
     margin-top: 0; }
   #contact-view input, #contact-view textarea {
     border: none;
@@ -687,8 +692,20 @@ a .roast-container {
     height: 200px; }
   #contact-view .button {
     background: gold;
-    padding: 5px 10px;
+    padding: 10px 20px;
     width: auto; }
+
+#retail-locations-view {
+  background: #231F20;
+  color: white;
+  padding-top: 120px;
+  min-height: 100vh; }
+  #retail-locations-view h1 {
+    text-align: left; }
+  #retail-locations-view h2 {
+    color: #f6a942; }
+  #retail-locations-view p {
+    margin: 0; }
 
 footer {
   background: #231F20;

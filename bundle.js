@@ -3524,7 +3524,7 @@ exports.default = ShopView;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(41);
-module.exports = __webpack_require__(96);
+module.exports = __webpack_require__(97);
 
 
 /***/ }),
@@ -3560,7 +3560,18 @@ var _ShopView = __webpack_require__(39);
 
 var _ShopView2 = _interopRequireDefault(_ShopView);
 
+var _RetailLocationsView = __webpack_require__(96);
+
+var _RetailLocationsView2 = _interopRequireDefault(_RetailLocationsView);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+//
+// import App from './components/App';
+//
+// ReactDOM.render(<App />, document.querySelector('.container'));
 
 _reactDom2.default.render(_react2.default.createElement(
   _reactRouterDom.BrowserRouter,
@@ -3574,14 +3585,10 @@ _reactDom2.default.render(_react2.default.createElement(
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/coffees', component: _App2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/shop', component: _App2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { path: '/coffees/:id', component: _RoastView2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { path: '/shop/:id', component: _ShopView2.default })
+    _react2.default.createElement(_reactRouterDom.Route, { path: '/shop/:id', component: _ShopView2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/retail-locations', component: _RetailLocationsView2.default })
   )
-), document.querySelector('#app')); // import React from 'react';
-// import ReactDOM from 'react-dom';
-//
-// import App from './components/App';
-//
-// ReactDOM.render(<App />, document.querySelector('.container'));
+), document.querySelector('#app'));
 
 /***/ }),
 /* 42 */
@@ -14599,6 +14606,15 @@ var Nav = function Nav(props) {
           { href: '/Contact' },
           'Contact'
         )
+      ),
+      _react2.default.createElement(
+        'li',
+        { id: 'shop-link', className: 'nav__list__item' },
+        _react2.default.createElement(
+          'a',
+          { href: '/retail-locations' },
+          'Locations'
+        )
       )
     )
   );
@@ -15226,7 +15242,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var RoastContainer = function RoastContainer(props) {
   return _react2.default.createElement(
     _reactRouterDom.Link,
-    { to: props.roast['in-stock'] ? 'coffees/' + (0, _norm2.default)(props.roast.title) : 'coffees' },
+    { to: 'coffees/' + (0, _norm2.default)(props.roast.title) },
     _react2.default.createElement(
       'div',
       { className: props.roast['in-stock'] ? "roast-container" : "roast-container roast-container--out-of-stock" },
@@ -15770,6 +15786,73 @@ exports.default = ContactView;
 
 /***/ }),
 /* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var RetailLocationsView = function RetailLocationsView() {
+    return _react2.default.createElement(
+        'div',
+        { className: 'page-section', id: 'retail-locations-view' },
+        _react2.default.createElement(
+            'div',
+            { className: 'page-section__wrapper' },
+            _react2.default.createElement(
+                _reactRouterDom.Link,
+                { className: 'back-button', to: '/' },
+                'back'
+            ),
+            _react2.default.createElement(
+                'h1',
+                null,
+                'Find our coffees at these locations'
+            ),
+            data.retailLocations.map(function (location, i) {
+                return _react2.default.createElement(
+                    'div',
+                    { key: i },
+                    _react2.default.createElement(
+                        'h2',
+                        null,
+                        location.title
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        location.address
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        location.city,
+                        ', ',
+                        location.state,
+                        ' ',
+                        location.zip
+                    )
+                );
+            })
+        )
+    );
+};
+
+exports.default = RetailLocationsView;
+
+/***/ }),
+/* 97 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

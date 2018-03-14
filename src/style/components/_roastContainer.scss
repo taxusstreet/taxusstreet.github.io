@@ -119,10 +119,23 @@ a .roast-container {
   }
 }
 
-@media (max-width: $xs-break) {
-  .roast-container {
-    width: 100%;
+@media (max-width: $sm-break) {
+  a .roast-container {
+    // width: 100%;
+
+    &:hover {
+      box-shadow: none;
+      .bean-container {
+        left: -80px;
+      }
+      .heading-container__text {
+        left: 20px;
+        position: absolute;
+      }
+    }
   }
+
+
 }
 
 .out-of-stock {
