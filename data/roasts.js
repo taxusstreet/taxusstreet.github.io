@@ -40,18 +40,4 @@ data.roasts = [{
   "image": "colombian.jpg",
   "button": "cb865f11799",
   "in-stock": false
-},{
-  "title": "jays roast",
-  "origin": "VA",
-  "price": 14,
-  "size": 15,
-  "level": 25,
-  "color": "#bc23b5",
-  "taste": ["apples", "salt"],
-  "processing": "Washed",
-  "variety": "Castillo, Caturra",
-  "altitude": "2500m",
-  "image": "coffeeeee.jpg",
-  "button": "cb865f11799",
-  "in-stock": true
 }];
