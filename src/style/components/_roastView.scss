@@ -113,7 +113,7 @@
 
 @media (max-width: $sm-break) {
   .roast-view-container {
-    padding: 50px;
+    padding: 50px 50px 100px 50px;
   }
 
   .roast-image {
@@ -134,17 +134,19 @@
     .roast-level {
       margin: 0 0 20px 0;
     }
+
+    .buy-button {
+      position: relative;
+      right: auto;
+      left: auto;
+      top: auto;
+    }
   }
 
-  .buy-button {
-    position: relative;
-    right: auto;
-    top: auto;
-  }
 }
 
 @media (max-width: $xs-break) {
   .roast-view-container {
-    padding: 50px 20px;
+    padding: 50px 20px 100px 20px;
   }
 }

@@ -14607,7 +14607,7 @@ var Nav = function Nav(props) {
       ),
       _react2.default.createElement(
         'li',
-        { className: 'nav__list__item' },
+        { id: 'coffees-link', className: 'nav__list__item' },
         _react2.default.createElement(
           'a',
           { href: '/#coffees' },

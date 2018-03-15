@@ -332,7 +332,7 @@ a .roast-container {
 
 @media (max-width: 850px) {
   .roast-view-container {
-    padding: 50px; }
+    padding: 50px 50px 100px 50px; }
   .roast-text-wrapper__left {
     border-right: none;
     margin-top: 10px;
@@ -343,14 +343,15 @@ a .roast-container {
       margin: 0 8px 0 0; }
     .roast-text-wrapper__left .roast-level {
       margin: 0 0 20px 0; }
-  .buy-button {
-    position: relative;
-    right: auto;
-    top: auto; } }
+    .roast-text-wrapper__left .buy-button {
+      position: relative;
+      right: auto;
+      left: auto;
+      top: auto; } }
 
 @media (max-width: 550px) {
   .roast-view-container {
-    padding: 50px 20px; } }
+    padding: 50px 20px 100px 20px; } }
 
 .shop-section {
   background: #327941;
