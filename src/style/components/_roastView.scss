@@ -14,6 +14,37 @@
   left: 0;
   top: 0;
   z-index: 100;
+
+  .buy-button {
+    position: absolute;
+    right: -295px;
+    right: auto;
+    left: calc(100% + 55px);
+    text-align: left;
+    top: 60px;
+    width: 300px;
+
+    h1 {
+      color: $orange;
+      margin-bottom: 20px;
+    }
+
+    .out-of-stock {
+      display: inline-block;
+
+      h2 {
+        background: orangered;
+        color: white;
+        margin-left: -17px;
+        padding: 10px 15px;
+        transform: rotate(-10deg);
+      }
+
+      p {
+        margin-top: 25px;
+      }
+    }
+  }
 }
 
   .roast-view-wrapper {
@@ -79,18 +110,6 @@
     }
   }
 
-
-  .buy-button {
-    position: absolute;
-    right: -295px;
-    text-align: left;
-    top: 60px;
-
-    h2 {
-      color: $orange;
-      margin-bottom: 15px;
-    }
-  }
 
 @media (max-width: $sm-break) {
   .roast-view-container {

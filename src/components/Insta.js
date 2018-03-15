@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// require('slick-carousel');
+
 const Instafeed = require("instafeed.js");
 
 class Insta extends Component {
@@ -14,6 +16,15 @@ class Insta extends Component {
     });
 
     feed.run();
+
+    // $('.variable-width').slick({
+    //   dots: true,
+    //   infinite: true,
+    //   speed: 300,
+    //   slidesToShow: 1,
+    //   centerMode: true,
+    //   variableWidth: true
+    // });
   }
 
   render() {

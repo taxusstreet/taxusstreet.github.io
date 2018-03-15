@@ -131,8 +131,7 @@ a {
     padding: 0;
     width: 100%; }
     .intro-section__text-wrapper h1 {
-      font-size: 7vw;
-      text-align: center; } }
+      font-size: 7vw; } }
 
 .roasts-section {
   background: gold;
@@ -187,6 +186,17 @@ a .roast-container {
   a .roast-container .desc-label {
     margin-top: 20px;
     margin-bottom: 0; }
+  a .roast-container .out-of-stock {
+    background: orangered;
+    color: white;
+    font-size: .9em;
+    font-weight: 600;
+    position: absolute;
+    right: -30px;
+    text-align: center;
+    top: 40px;
+    transform: rotate(45deg);
+    width: 155px; }
 
 .roast-container__price {
   color: #f6a942;
@@ -238,18 +248,6 @@ a .roast-container {
       left: 20px;
       position: absolute; } }
 
-.out-of-stock {
-  background: orangered;
-  color: white;
-  font-size: .9em;
-  font-weight: 600;
-  position: absolute;
-  right: -30px;
-  text-align: center;
-  top: 40px;
-  transform: rotate(45deg);
-  width: 155px; }
-
 .roast-view-container {
   animation-fill-mode: forwards;
   background: #231F20;
@@ -263,6 +261,27 @@ a .roast-container {
   left: 0;
   top: 0;
   z-index: 100; }
+  .roast-view-container .buy-button {
+    position: absolute;
+    right: -295px;
+    right: auto;
+    left: calc(100% + 55px);
+    text-align: left;
+    top: 60px;
+    width: 300px; }
+    .roast-view-container .buy-button h1 {
+      color: #f6a942;
+      margin-bottom: 20px; }
+    .roast-view-container .buy-button .out-of-stock {
+      display: inline-block; }
+      .roast-view-container .buy-button .out-of-stock h2 {
+        background: orangered;
+        color: white;
+        margin-left: -17px;
+        padding: 10px 15px;
+        transform: rotate(-10deg); }
+      .roast-view-container .buy-button .out-of-stock p {
+        margin-top: 25px; }
 
 .roast-view-wrapper {
   margin: auto;
@@ -310,15 +329,6 @@ a .roast-container {
   line-height: 1.4; }
   .desc-label span {
     color: gold; }
-
-.buy-button {
-  position: absolute;
-  right: -295px;
-  text-align: left;
-  top: 60px; }
-  .buy-button h2 {
-    color: #f6a942;
-    margin-bottom: 15px; }
 
 @media (max-width: 850px) {
   .roast-view-container {
@@ -379,7 +389,7 @@ a .roast-container {
       font-weight: 600;
       margin: 0; }
   .shop-item:hover img {
-    filter: drop-shadow(1px 1px 4px #225223); }
+    filter: drop-shadow(1px 1px 4px black); }
   .shop-item:hover .shop-item__text h3 {
     color: white; }
 
@@ -598,7 +608,11 @@ a .roast-container {
   .instafeed-wrapper .instafeed-fade {
     width: 50px; }
   .instafeed-wrapper .arrows-wrapper {
-    display: none; } }
+    display: none; }
+  .instafeed-wrapper .img_container:hover p {
+    display: none; }
+  .instafeed-wrapper a:hover img {
+    filter: none; } }
 
 .contact-section {
   background: #322F30;
@@ -706,6 +720,10 @@ a .roast-container {
     color: #f6a942; }
   #retail-locations-view p {
     margin: 0; }
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 8vw; } }
 
 footer {
   background: #231F20;

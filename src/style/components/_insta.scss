@@ -139,5 +139,18 @@ $insta-bg: #322F30;
     .arrows-wrapper {
       display: none;
     }
+    .img_container {
+      &:hover {
+        p {
+          display: none;
+        }
+      }
+    }
+
+    a:hover {
+      img {
+        filter: none;
+      }
+    }
   }
 }

@@ -12,6 +12,7 @@ const RetailLocationsView = () => {
                             <h2>{location.title}</h2>
                             <p>{location.address}</p>
                             <p>{location.city}, {location.state} {location.zip}</p>
+                            <p><a href={`tel:${location.phone}`}>{location.phone}</a></p>
                           </div>)
                 })}
             </div>

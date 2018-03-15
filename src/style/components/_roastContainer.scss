@@ -66,6 +66,20 @@ a .roast-container {
     margin-top: 20px;
     margin-bottom: 0;
   }
+
+  .out-of-stock {
+    background: orangered;
+    color: white;
+    font-size: .9em;
+    font-weight: 600;
+    position: absolute;
+    right: -30px;
+    text-align: center;
+    top: 40px;
+    transform: rotate(45deg);
+    width: 155px;
+  }
+
 }
 
 .roast-container__price {
@@ -136,17 +150,4 @@ a .roast-container {
   }
 
 
-}
-
-.out-of-stock {
-  background: orangered;
-  color: white;
-  font-size: .9em;
-  font-weight: 600;
-  position: absolute;
-  right: -30px;
-  text-align: center;
-  top: 40px;
-  transform: rotate(45deg);
-  width: 155px;
 }

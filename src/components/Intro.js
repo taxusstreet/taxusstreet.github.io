@@ -17,8 +17,8 @@ class Intro extends Component {
           <div className="intro-section__text__logo"><img src="images/logo-outlined-white.png"/></div>
           <div className="intro-section__text-wrapper">
             <h1>Taxus Street Coffee</h1>
-              {data.bio.map((item) => {
-                return (<p>{item}</p>);
+              {data.bio.map((item, i) => {
+                return (<p key={i}>{item}</p>);
               })}
           </div>
         </div>

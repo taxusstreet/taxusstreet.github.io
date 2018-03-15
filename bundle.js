@@ -2667,6 +2667,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+// require('slick-carousel');
+
 var Instafeed = __webpack_require__(84);
 
 var Insta = function (_Component) {
@@ -2690,6 +2692,15 @@ var Insta = function (_Component) {
       });
 
       feed.run();
+
+      // $('.variable-width').slick({
+      //   dots: true,
+      //   infinite: true,
+      //   speed: 300,
+      //   slidesToShow: 1,
+      //   centerMode: true,
+      //   variableWidth: true
+      // });
     }
   }, {
     key: 'render',
@@ -2789,6 +2800,7 @@ var RoastView = function (_Component) {
     value: function render() {
       var _this2 = this;
 
+      var button = this.state.roast.button;
       (function () {
         var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
         if (window.ShopifyBuy) {
@@ -2818,8 +2830,8 @@ var RoastView = function (_Component) {
 
           ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('product', {
-              id: [10621662276],
-              node: document.getElementById('product-component-cb865f11799'),
+              id: [button.id],
+              node: document.getElementById('product-component-' + button.container),
               moneyFormat: '%24%7B%7Bamount%7D%7D',
               options: {
                 "product": {
@@ -3116,7 +3128,7 @@ var RoastView = function (_Component) {
                   'div',
                   { className: 'buy-button' },
                   _react2.default.createElement(
-                    'h2',
+                    'h1',
                     null,
                     '$',
                     this.state.roast.price,
@@ -3124,7 +3136,20 @@ var RoastView = function (_Component) {
                     this.state.roast.size,
                     'oz.'
                   ),
-                  _react2.default.createElement('div', { id: "product-component-" + this.state.roast.button })
+                  this.state.roast["in-stock"] ? _react2.default.createElement('div', { id: "product-component-" + this.state.roast.button.container }) : _react2.default.createElement(
+                    'div',
+                    { className: 'out-of-stock' },
+                    _react2.default.createElement(
+                      'h2',
+                      null,
+                      'Out of stock!'
+                    ),
+                    _react2.default.createElement(
+                      'p',
+                      null,
+                      'Check back soon...'
+                    )
+                  )
                 )
               )
             )
@@ -14692,10 +14717,10 @@ var Intro = function (_Component) {
               null,
               'Taxus Street Coffee'
             ),
-            data.bio.map(function (item) {
+            data.bio.map(function (item, i) {
               return _react2.default.createElement(
                 'p',
-                null,
+                { key: i },
                 item
               );
             })
@@ -15792,7 +15817,7 @@ exports.default = ContactView;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+          value: true
 });
 
 var _react = __webpack_require__(0);
@@ -15804,49 +15829,58 @@ var _reactRouterDom = __webpack_require__(5);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var RetailLocationsView = function RetailLocationsView() {
-    return _react2.default.createElement(
-        'div',
-        { className: 'page-section', id: 'retail-locations-view' },
-        _react2.default.createElement(
-            'div',
-            { className: 'page-section__wrapper' },
-            _react2.default.createElement(
-                _reactRouterDom.Link,
-                { className: 'back-button', to: '/' },
-                'back'
-            ),
-            _react2.default.createElement(
-                'h1',
-                null,
-                'Find our coffees at these locations'
-            ),
-            data.retailLocations.map(function (location, i) {
-                return _react2.default.createElement(
+          return _react2.default.createElement(
                     'div',
-                    { key: i },
+                    { className: 'page-section', id: 'retail-locations-view' },
                     _react2.default.createElement(
-                        'h2',
-                        null,
-                        location.title
-                    ),
-                    _react2.default.createElement(
-                        'p',
-                        null,
-                        location.address
-                    ),
-                    _react2.default.createElement(
-                        'p',
-                        null,
-                        location.city,
-                        ', ',
-                        location.state,
-                        ' ',
-                        location.zip
+                              'div',
+                              { className: 'page-section__wrapper' },
+                              _react2.default.createElement(
+                                        _reactRouterDom.Link,
+                                        { className: 'back-button', to: '/' },
+                                        'back'
+                              ),
+                              _react2.default.createElement(
+                                        'h1',
+                                        null,
+                                        'Find our coffees at these locations'
+                              ),
+                              data.retailLocations.map(function (location, i) {
+                                        return _react2.default.createElement(
+                                                  'div',
+                                                  { key: i },
+                                                  _react2.default.createElement(
+                                                            'h2',
+                                                            null,
+                                                            location.title
+                                                  ),
+                                                  _react2.default.createElement(
+                                                            'p',
+                                                            null,
+                                                            location.address
+                                                  ),
+                                                  _react2.default.createElement(
+                                                            'p',
+                                                            null,
+                                                            location.city,
+                                                            ', ',
+                                                            location.state,
+                                                            ' ',
+                                                            location.zip
+                                                  ),
+                                                  _react2.default.createElement(
+                                                            'p',
+                                                            null,
+                                                            _react2.default.createElement(
+                                                                      'a',
+                                                                      { href: 'tel:' + location.phone },
+                                                                      location.phone
+                                                            )
+                                                  )
+                                        );
+                              })
                     )
-                );
-            })
-        )
-    );
+          );
 };
 
 exports.default = RetailLocationsView;

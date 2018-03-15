@@ -24,6 +24,7 @@ class RoastView extends Component {
   }
 
   render() {
+    const button = this.state.roast.button;
     (function () {
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
       if (window.ShopifyBuy) {
@@ -53,8 +54,8 @@ class RoastView extends Component {
 
         ShopifyBuy.UI.onReady(client).then(function (ui) {
           ui.createComponent('product', {
-            id: [10621662276],
-            node: document.getElementById('product-component-cb865f11799'),
+            id: [button.id],
+            node: document.getElementById(`product-component-${button.container}`),
             moneyFormat: '%24%7B%7Bamount%7D%7D',
             options: {
       "product": {
@@ -286,8 +287,14 @@ class RoastView extends Component {
                   className="roast-level__bar"></div>
               </div>
               <div className="buy-button">
-                <h2>${this.state.roast.price} - {this.state.roast.size}oz.</h2>
-                <div id={"product-component-" + this.state.roast.button}></div>
+                <h1>${this.state.roast.price} - {this.state.roast.size}oz.</h1>
+                {this.state.roast["in-stock"] ?
+                  <div id={"product-component-" + this.state.roast.button.container}></div> :
+                  <div className="out-of-stock">
+                    <h2>Out of stock!</h2>
+                    <p>Check back soon...</p>
+                  </div>
+                }
               </div>
               </div>
             </div>
