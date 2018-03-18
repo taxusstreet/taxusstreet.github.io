@@ -535,6 +535,7 @@ a .roast-container {
     .instafeed-wrapper .instafeed-title a:hover {
       text-decoration: underline; }
   .instafeed-wrapper .arrows-wrapper {
+    display: none;
     cursor: pointer;
     position: absolute;
     right: 0;

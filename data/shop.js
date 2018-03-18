@@ -2,7 +2,7 @@ data.shop = [
   {
     "title": "mug",
     "desc": "16oz ceramic mug. Dishwasher/microwave safe. Each mug was made by hand in Fredericksburg, Virginia",
-    "price": 15,
+    "price": 20,
     "images": ["mug.jpg"],
     "button": {
       "container": "715ab16b7a1",

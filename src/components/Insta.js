@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
+// require('jquery');
 // require('slick-carousel');
+
+import Slider from 'react-slick'
 
 const Instafeed = require("instafeed.js");
 
@@ -17,7 +20,9 @@ class Insta extends Component {
 
     feed.run();
 
-    // $('.variable-width').slick({
+    // $('.variable-width')
+    // console.log(document.querySelector('.variable-width'));
+    // document.querySelector('.variable-width').slick({
     //   dots: true,
     //   infinite: true,
     //   speed: 300,
@@ -28,6 +33,15 @@ class Insta extends Component {
   }
 
   render() {
+
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+
     return(
       <div className="instafeed-wrapper">
         <p className="instafeed-title">Keep up with <a href="https://www.instagram.com/taxusstreetcoffee/">@taxusstreetcoffee</a> on Instagram</p>
@@ -35,7 +49,7 @@ class Insta extends Component {
           <div className="arrow left-arrow"></div>
           <div className="arrow right-arrow"></div>
         </div>
-        <div className="instafeed" id="instafeed"></div>
+        <div className="instafeed variable-width" id="instafeed"></div>
         <div className="instafeed-fade"></div>
       </div>
     );
@@ -43,3 +57,5 @@ class Insta extends Component {
 };
 
 export default Insta;
+
+// <div className="instafeed variable-width" id="instafeed"></div>

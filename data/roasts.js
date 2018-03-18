@@ -1,7 +1,7 @@
 data.roasts = [{
   "title": "La Fisga",
-  "origin": "Cubulco, Guatamala",
-  "price": 14,
+  "origin": "Cubulco, Guatemala",
+  "price": 15,
   "size": 12,
   "level": 40,
   "color": "#D34F27",
@@ -18,7 +18,7 @@ data.roasts = [{
 },{
   "title": "Wote Kanga",
   "origin": "Yergacheffe, Ethiopia",
-  "price": 14,
+  "price": 16,
   "size": 12,
   "level": 10,
   "color": "#924da8",
@@ -35,7 +35,7 @@ data.roasts = [{
 },{
   "title": "El Obraje",
   "origin": "Nariño, Colombia",
-  "price": 12,
+  "price": 14,
   "size": 12,
   "level": 80,
   "color": "#448473",
@@ -48,5 +48,5 @@ data.roasts = [{
     "container": "1521069648001",
     "id": 10620411588
   },
-  "in-stock": false
+  "in-stock": true
 }];
