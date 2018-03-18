@@ -482,7 +482,7 @@ a .roast-container {
 
 @media (max-width: 850px) {
   .shop-view-container {
-    padding: 50px 50px; }
+    padding: 50px 50px 100px 50px; }
     .shop-view-container .shop-item-image__wrapper {
       background: white;
       position: relative;

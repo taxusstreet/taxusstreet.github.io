@@ -19450,7 +19450,7 @@ var ContactView = function ContactView() {
       ),
       _react2.default.createElement(
         'form',
-        { action: 'https://formspree.io/your@email.com',
+        { action: 'https://formspree.io/taxusstreetcoffee@gmail.com',
           method: 'POST' },
         _react2.default.createElement('input', { type: 'text', name: 'name', required: true, placeholder: 'Name' }),
         _react2.default.createElement('input', { type: 'email', name: '_replyto', required: true, placeholder: 'Email' }),
