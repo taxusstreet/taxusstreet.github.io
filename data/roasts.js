@@ -3,7 +3,7 @@ data.roasts = [{
   "origin": "Cubulco, Guatemala",
   "price": 15,
   "size": 12,
-  "level": 40,
+  "level": 50,
   "color": "#D34F27",
   "taste": ["strawberry", "plum", "milk chocolate"],
   "processing": "Washed",
