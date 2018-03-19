@@ -37,7 +37,7 @@ data.roasts = [{
   "origin": "Nariño, Colombia",
   "price": 14,
   "size": 12,
-  "level": 60,
+  "level": 65,
   "color": "#448473",
   "taste": ["cinnamon", "caramel", "raisins"],
   "processing": "Washed",
