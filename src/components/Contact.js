@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="contact__link-wrapper">
         <a href="https://www.facebook.com/taxusstreetcoffee/"><Fb /></a>
         <a href="https://www.instagram.com/taxusstreetcoffee/"><Instagram /></a>
-        <a href="https://twitter.com/taxusstreetcoffee/"><Twitter /></a>
+        <a href="https://twitter.com/taxusstreet/"><Twitter /></a>
       </div>
     </div>
   );

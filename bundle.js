@@ -19278,7 +19278,7 @@ var Contact = function Contact() {
       ),
       _react2.default.createElement(
         'a',
-        { href: 'https://twitter.com/taxusstreetcoffee/' },
+        { href: 'https://twitter.com/taxusstreet/' },
         _react2.default.createElement(_Twitter2.default, null)
       )
     )
