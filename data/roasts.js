@@ -16,7 +16,7 @@ data.roasts = [{
   },
   "in-stock": true
 },{
-  "title": "Wote Kanga",
+  "title": "Wote Konga",
   "origin": "Yergacheffe, Ethiopia",
   "price": 16,
   "size": 12,
