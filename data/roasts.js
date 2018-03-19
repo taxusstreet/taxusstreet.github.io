@@ -26,7 +26,7 @@ data.roasts = [{
   "processing": "Natural/Dry Processed",
   "altitude": "1800m-2200m",
   "variety": "Heirloom",
-  "image": "ethiopian.jpg",
+  "image": "fix.jpg",
   "button": {
     "container": "1521071458284",
     "id": 615240204320
