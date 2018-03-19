@@ -1,0 +1,35 @@
+.pop-up {
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px transparentize($grey, .5);
+  background: rgb(87, 147, 92);
+  bottom: 10px;
+  color: gold;
+  left: 10px;
+  margin: 10px;
+  text-align: center;
+  position: fixed;
+  width: calc(100vw - 40px);
+
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+
+  .x {
+    color: white;
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;
+    right: 13px;
+    top: 10px;
+  }
+}
+
+@media(max-width: $xs-break) {
+  .pop-up {
+    font-size: 2.8vw;
+
+    .x {
+      font-size: 4vw;
+      top: 2vw;
+    }
+  }
+}

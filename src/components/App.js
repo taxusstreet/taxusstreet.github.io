@@ -12,6 +12,7 @@ import ShopSection from './ShopSection';
 import Insta from './Insta';
 import Contact from './Contact';
 import Footer from './Footer';
+import PopUp from './PopUp';
 
 class App extends Component {
   constructor(props) {
@@ -86,6 +87,7 @@ class App extends Component {
         <ShopSection shopItems={this.state.shopItems} updateUrl={this.updateUrl} />
         <Contact />
         <Footer />
+        <PopUp />
       </div>
     )
   }

@@ -4551,7 +4551,7 @@ exports.default = ShopView;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(50);
-module.exports = __webpack_require__(122);
+module.exports = __webpack_require__(123);
 
 
 /***/ }),
@@ -4575,7 +4575,7 @@ var _App = __webpack_require__(89);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _ContactView = __webpack_require__(120);
+var _ContactView = __webpack_require__(121);
 
 var _ContactView2 = _interopRequireDefault(_ContactView);
 
@@ -4587,7 +4587,7 @@ var _ShopView = __webpack_require__(48);
 
 var _ShopView2 = _interopRequireDefault(_ShopView);
 
-var _RetailLocationsView = __webpack_require__(121);
+var _RetailLocationsView = __webpack_require__(122);
 
 var _RetailLocationsView2 = _interopRequireDefault(_RetailLocationsView);
 
@@ -15417,6 +15417,10 @@ var _Footer = __webpack_require__(119);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
+var _PopUp = __webpack_require__(120);
+
+var _PopUp2 = _interopRequireDefault(_PopUp);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -15511,7 +15515,8 @@ var App = function (_Component) {
         _react2.default.createElement(_RoastsSection2.default, { roasts: this.state.roasts, updateUrl: this.updateUrl, currentRoast: this.state.currentRoast }),
         _react2.default.createElement(_ShopSection2.default, { shopItems: this.state.shopItems, updateUrl: this.updateUrl }),
         _react2.default.createElement(_Contact2.default, null),
-        _react2.default.createElement(_Footer2.default, null)
+        _react2.default.createElement(_Footer2.default, null),
+        _react2.default.createElement(_PopUp2.default, null)
       );
     }
   }]);
@@ -19422,6 +19427,46 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var PopUpDiscount = function PopUpDiscount() {
+  return _react2.default.createElement(
+    "div",
+    { className: "pop-up" },
+    _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: data.popUp.message } }),
+    _react2.default.createElement(
+      "div",
+      {
+        onClick: function onClick(e) {
+          var target = e.target.parentNode;
+          target.style.opacity = 0;
+          setTimeout(function () {
+            target.parentNode.removeChild(target);
+          }, 1000);
+        },
+        className: "x" },
+      "\u2715"
+    )
+  );
+};
+
+exports.default = PopUpDiscount;
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
 var _reactRouterDom = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -19464,7 +19509,7 @@ var ContactView = function ContactView() {
 exports.default = ContactView;
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19540,7 +19585,7 @@ var RetailLocationsView = function RetailLocationsView() {
 exports.default = RetailLocationsView;
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

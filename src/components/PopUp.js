@@ -1,0 +1,18 @@
+import React from 'react';
+
+const PopUpDiscount = () => {
+  return (
+    <div className="pop-up">
+      <p dangerouslySetInnerHTML={{__html: data.popUp.message}}></p>
+      <div
+        onClick={function(e) {
+          const target = e.target.parentNode;
+          target.style.opacity = 0;
+          setTimeout(function(){target.parentNode.removeChild(target);}, 1000);
+        }}
+        className="x">&#x2715;</div>
+    </div>
+  );
+};
+
+export default PopUpDiscount;

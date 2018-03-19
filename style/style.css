@@ -727,6 +727,34 @@ a .roast-container {
   h1 {
     font-size: 8vw; } }
 
+.pop-up {
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(35, 31, 32, 0.5);
+  background: #57935c;
+  bottom: 10px;
+  color: gold;
+  left: 10px;
+  margin: 10px;
+  text-align: center;
+  position: fixed;
+  width: calc(100vw - 40px);
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease; }
+  .pop-up .x {
+    color: white;
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;
+    right: 13px;
+    top: 10px; }
+
+@media (max-width: 550px) {
+  .pop-up {
+    font-size: 2.8vw; }
+    .pop-up .x {
+      font-size: 4vw;
+      top: 2vw; } }
+
 footer {
   background: #231F20;
   padding-bottom: 10px; }
