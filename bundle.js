@@ -15473,10 +15473,19 @@ var App = function (_Component) {
       }
     };
 
+    _this.exitPopUp = function () {
+      _this.setState(function () {
+        return {
+          popUp: false
+        };
+      });
+    };
+
     _this.state = {
       roasts: data.roasts,
       shopItems: data.shop,
-      currentRoast: null
+      currentRoast: null,
+      popUp: true
     };
     return _this;
   }
@@ -15516,7 +15525,7 @@ var App = function (_Component) {
         _react2.default.createElement(_ShopSection2.default, { shopItems: this.state.shopItems, updateUrl: this.updateUrl }),
         _react2.default.createElement(_Contact2.default, null),
         _react2.default.createElement(_Footer2.default, null),
-        _react2.default.createElement(_PopUp2.default, null)
+        this.state.popUp ? _react2.default.createElement(_PopUp2.default, { exitPopUp: this.exitPopUp }) : null
       );
     }
   }]);
@@ -19429,7 +19438,7 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var PopUpDiscount = function PopUpDiscount() {
+var PopUpDiscount = function PopUpDiscount(props) {
   return _react2.default.createElement(
     "div",
     { className: "pop-up" },
@@ -19443,6 +19452,7 @@ var PopUpDiscount = function PopUpDiscount() {
           setTimeout(function () {
             target.parentNode.removeChild(target);
           }, 1000);
+          props.exitPopUp();
         },
         className: "x" },
       "\u2715"
