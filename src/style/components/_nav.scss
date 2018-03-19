@@ -38,3 +38,9 @@
     color: white;
   }
 }
+
+@media (max-width: $xs-break) {
+  .nav__list__item a {
+    font-size: 4vw;
+  }
+}
