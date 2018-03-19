@@ -40,6 +40,9 @@ a {
   .back-button:hover {
     text-decoration: underline; }
 
+input {
+  border-radius: 0; }
+
 .nav {
   box-sizing: border-box;
   color: white;
@@ -522,7 +525,7 @@ a .roast-container {
 
 @media (max-width: 550px) {
   .shop-view-container {
-    padding: 50px 20px; } }
+    padding: 50px 100px 100px 100px; } }
 
 .instafeed-wrapper {
   background: #322F30;
