@@ -735,7 +735,6 @@ a .roast-container {
   box-sizing: border-box;
   box-shadow: 0 1px 4px rgba(35, 31, 32, 0.5);
   background: #57935c;
-  background: linear-gradient(to left, mediumslateblue, coral);
   border-radius: 2px;
   bottom: 10px;
   color: gold;
