@@ -8,8 +8,9 @@ const PopUpDiscount = (props) => {
         onClick={function(e) {
           const target = e.target.parentNode;
           target.style.opacity = 0;
+          target.style.bottom = 0;
           setTimeout(function(){target.parentNode.removeChild(target);}, 1000);
-          props.exitPopUp();
+          // props.exitPopUp();
         }}
         className="x">&#x2715;</div>
     </div>

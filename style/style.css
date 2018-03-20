@@ -746,8 +746,8 @@ a .roast-container {
   text-align: center;
   position: fixed;
   width: calc(100vw - 20px);
-  -webkit-transition: opacity 200ms ease;
-  transition: opacity 200ms ease; }
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease; }
   .pop-up .x {
     color: white;
     cursor: pointer;
@@ -758,6 +758,7 @@ a .roast-container {
 
 @media (max-width: 550px) {
   .pop-up {
+    border-radius: 0;
     bottom: 0;
     font-size: 2.8vw;
     left: 0;
