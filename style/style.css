@@ -40,7 +40,10 @@ a {
   .back-button:hover {
     text-decoration: underline; }
 
-input {
+div {
+  -webkit-overflow-scrolling: touch; }
+
+input, textarea {
   border-radius: 0; }
 
 .nav {

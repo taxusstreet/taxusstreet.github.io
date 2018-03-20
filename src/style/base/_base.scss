@@ -50,6 +50,10 @@ a {
   }
 }
 
-input {
+div {
+  -webkit-overflow-scrolling: touch;
+}
+
+input, textarea {
   border-radius: 0;
 }
