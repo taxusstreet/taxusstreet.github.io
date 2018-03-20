@@ -428,7 +428,6 @@ a .roast-container {
     margin: auto;
     max-width: 700px; }
   .shop-view-container .shop-item-image__wrapper {
-    background: white;
     position: relative;
     width: auto; }
     .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs {
@@ -491,19 +490,20 @@ a .roast-container {
   .shop-view-container {
     padding: 50px 100px 100px 100px; }
     .shop-view-container .shop-item-image__wrapper {
-      background: white;
       position: relative;
       width: auto; }
       .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs {
-        bottom: -80px;
-        height: 70px;
-        left: 0px;
-        position: absolute;
+        bottom: auto;
+        height: auto;
+        left: auto;
+        margin-top: 10px;
+        position: relative;
         top: auto;
         width: 100%;
         white-space: nowrap; }
         .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs .shop-item-image__thumb {
           display: inline-block;
+          margin-bottom: 0;
           margin-right: 10px;
           width: auto; }
           .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs .shop-item-image__thumb img {
@@ -514,7 +514,6 @@ a .roast-container {
           outline-offset: -3px; }
   .shop-text-wrapper__left {
     border-right: none;
-    margin-top: 100px;
     padding: 0;
     text-align: left;
     width: 100%; }
@@ -525,7 +524,7 @@ a .roast-container {
 
 @media (max-width: 550px) {
   .shop-view-container {
-    padding: 50px 100px 100px 100px; } }
+    padding: 50px 20px 100px 20px; } }
 
 .instafeed-wrapper {
   background: #322F30;

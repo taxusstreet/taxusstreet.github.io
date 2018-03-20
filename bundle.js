@@ -4483,6 +4483,7 @@ var ShopView = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'shop-item-image__wrapper' },
+            _react2.default.createElement('img', { src: "images/" + this.state.currentImage }),
             this.state.item.images.length > 1 ? _react2.default.createElement(
               'div',
               { className: 'shop-item-image__thumbs' },
@@ -4503,8 +4504,7 @@ var ShopView = function (_Component) {
                   _react2.default.createElement('img', { src: "images/" + image })
                 );
               })
-            ) : null,
-            _react2.default.createElement('img', { src: "images/" + this.state.currentImage })
+            ) : null
           ),
           _react2.default.createElement(
             'div',
@@ -19510,7 +19510,7 @@ var ContactView = function ContactView() {
           method: 'POST' },
         _react2.default.createElement('input', { type: 'text', name: 'name', required: true, placeholder: 'Name' }),
         _react2.default.createElement('input', { type: 'email', name: '_replyto', required: true, placeholder: 'Email' }),
-        _react2.default.createElement('textarea', { required: true, placeholder: 'Message' }),
+        _react2.default.createElement('textarea', { required: true, name: 'message', placeholder: 'Message' }),
         _react2.default.createElement('input', { className: 'button', type: 'submit', value: 'Send' })
       )
     )

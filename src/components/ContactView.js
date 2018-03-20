@@ -13,7 +13,7 @@ const ContactView = () => {
         method="POST">
           <input type="text" name="name" required placeholder="Name" />
           <input type="email" name="_replyto" required placeholder="Email" />
-          <textarea required placeholder="Message"></textarea>
+          <textarea required name="message" placeholder="Message"></textarea>
           <input className="button" type="submit" value="Send" />
         </form>
       </div>

@@ -262,6 +262,7 @@ export default class ShopView extends Component {
         <div className="shop-view-wrapper">
         <Link className="back-button" to="/shop">back</Link>
           <div className="shop-item-image__wrapper">
+            <img src={"images/" + this.state.currentImage}/>
             {this.state.item.images.length > 1 ? (
               <div className="shop-item-image__thumbs">
                 {this.state.item.images.map((image, i) => {
@@ -277,7 +278,6 @@ export default class ShopView extends Component {
                 })}
               </div>
             ) : (null)}
-            <img src={"images/" + this.state.currentImage}/>
           </div>
           <div className="shop-text-wrapper">
             <div className="shop-text-wrapper__left">
