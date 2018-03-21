@@ -730,7 +730,8 @@ a .roast-container {
   #retail-locations-view h2 {
     color: #f6a942; }
   #retail-locations-view p {
-    margin: 0; }
+    margin: 0;
+    padding-left: 20px; }
 
 @media (max-width: 550px) {
   h1 {
