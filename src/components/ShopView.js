@@ -16,6 +16,20 @@ export default class ShopView extends Component {
       item
     }
   }
+  componentDidUpdate() {
+    const container = document.querySelector(".shop-item-image__inner-wrapper");
+    const newHeight = container.getElementsByTagName("img")[0].offsetHeight;
+
+    console.log(container.getElementsByTagName("img")[0].offsetHeight);
+
+    container.style.height = `${newHeight}px`;
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      const container = document.querySelector(".shop-item-image__inner-wrapper");
+      container.style.height = container.getElementsByTagName("img")[0].offsetHeight + 'px';
+    }, 1000);
+  }
   render() {
     const button = this.state.item.button;
     (function () {
@@ -262,7 +276,9 @@ export default class ShopView extends Component {
         <div className="shop-view-wrapper">
         <Link className="back-button" to="/shop">back</Link>
           <div className="shop-item-image__wrapper">
-            <img src={"images/" + this.state.currentImage}/>
+            <div className="shop-item-image__inner-wrapper">
+              <img src={"images/" + this.state.currentImage}/>
+            </div>
             {this.state.item.images.length > 1 ? (
               <div className="shop-item-image__thumbs">
                 {this.state.item.images.map((image, i) => {
@@ -272,8 +288,9 @@ export default class ShopView extends Component {
                       this.setState(() => ({
                         currentImage: image
                       }));
+
                     }.bind(this)}
-                    className={"shop-item-image__thumb " + (this.state.currentImage == image ? 'shop-item-image__thumb--active' : ' ')}
+                    className={"shop-item-image__thumb " + (this.state.currentImage == image ? "shop-item-image__thumb--active" : " ")}
                     ><img src={"images/" + image} /></div>
                 })}
               </div>

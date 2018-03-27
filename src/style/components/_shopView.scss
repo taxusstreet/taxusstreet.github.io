@@ -23,6 +23,13 @@
     position: relative;
     width: auto;
 
+    .shop-item-image__inner-wrapper {
+      background: rgba(0, 0, 0, .5);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .5);
+      overflow: hidden;
+      transition: height .2s;
+    }
+
     .shop-item-image__thumbs {
       left: -130px;
       position: absolute;
@@ -88,7 +95,7 @@
   }
 
   .shop__price {
-    color: gold;
+    color: $orange;
   }
 
   .buy-button {

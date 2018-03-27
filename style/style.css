@@ -433,6 +433,11 @@ a .roast-container {
   .shop-view-container .shop-item-image__wrapper {
     position: relative;
     width: auto; }
+    .shop-view-container .shop-item-image__wrapper .shop-item-image__inner-wrapper {
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      transition: height .2s; }
     .shop-view-container .shop-item-image__wrapper .shop-item-image__thumbs {
       left: -130px;
       position: absolute;
@@ -482,7 +487,7 @@ a .roast-container {
   line-height: 1.3em; }
 
 .shop__price {
-  color: gold; }
+  color: #f6a942; }
 
 .buy-button {
   position: absolute;

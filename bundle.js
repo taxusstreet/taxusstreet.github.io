@@ -4225,6 +4225,24 @@ var ShopView = function (_Component) {
   }
 
   _createClass(ShopView, [{
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      var container = document.querySelector(".shop-item-image__inner-wrapper");
+      var newHeight = container.getElementsByTagName("img")[0].offsetHeight;
+
+      console.log(container.getElementsByTagName("img")[0].offsetHeight);
+
+      container.style.height = newHeight + 'px';
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      setTimeout(function () {
+        var container = document.querySelector(".shop-item-image__inner-wrapper");
+        container.style.height = container.getElementsByTagName("img")[0].offsetHeight + 'px';
+      }, 1000);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
@@ -4483,7 +4501,11 @@ var ShopView = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'shop-item-image__wrapper' },
-            _react2.default.createElement('img', { src: "images/" + this.state.currentImage }),
+            _react2.default.createElement(
+              'div',
+              { className: 'shop-item-image__inner-wrapper' },
+              _react2.default.createElement('img', { src: "images/" + this.state.currentImage })
+            ),
             this.state.item.images.length > 1 ? _react2.default.createElement(
               'div',
               { className: 'shop-item-image__thumbs' },
@@ -4499,7 +4521,7 @@ var ShopView = function (_Component) {
                         };
                       });
                     }.bind(_this2),
-                    className: "shop-item-image__thumb " + (_this2.state.currentImage == image ? 'shop-item-image__thumb--active' : ' ')
+                    className: "shop-item-image__thumb " + (_this2.state.currentImage == image ? "shop-item-image__thumb--active" : " ")
                   },
                   _react2.default.createElement('img', { src: "images/" + image })
                 );
