@@ -46,6 +46,12 @@ div {
 input, textarea {
   border-radius: 0; }
 
+.not-found {
+  padding-top: 180px;
+  text-align: center; }
+  .not-found span {
+    color: #f6a942; }
+
 .nav {
   box-sizing: border-box;
   color: white;

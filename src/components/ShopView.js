@@ -11,9 +11,15 @@ export default class ShopView extends Component {
       return norm(obj.title) == props.match.params.id;
     })[0];
 
-    this.state={
-      currentImage: item.images[0],
-      item
+    if(item) {
+      this.state={
+        currentImage: item.images[0],
+        item
+      }
+    } else {
+      this.state={
+        item
+      }
     }
   }
   componentDidUpdate() {
@@ -31,6 +37,18 @@ export default class ShopView extends Component {
     }, 1000);
   }
   render() {
+    console.log('test');
+    if(!this.state.item) {
+      console.log('test');
+      return(
+        <div className="roast-view-container">
+          <div className="not-found">
+            <h1>no such shop item <span>:/</span></h1>
+            <Link className="back-button" to="/shop">home</Link>
+          </div>
+        </div>
+      )
+    }
     const button = this.state.item.button;
     (function () {
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';

@@ -24,6 +24,16 @@ class RoastView extends Component {
   }
 
   render() {
+    if(!this.state.roast) {
+      return(
+        <div className="roast-view-container">
+          <div className="not-found">
+            <h1>no such roast <span>:/</span></h1>
+            <Link className="back-button" to="/coffees">home</Link>
+          </div>
+        </div>
+      )
+    }
     const button = this.state.roast.button;
     (function () {
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';

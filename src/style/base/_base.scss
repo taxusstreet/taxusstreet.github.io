@@ -57,3 +57,11 @@ div {
 input, textarea {
   border-radius: 0;
 }
+
+.not-found {
+  padding-top: 180px;
+  text-align: center;
+  span {
+    color: $orange;
+  }
+}

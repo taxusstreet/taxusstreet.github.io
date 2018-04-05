@@ -22,7 +22,7 @@ class App extends Component {
       roasts: data.roasts,
       shopItems: data.shop,
       currentRoast: null,
-      popUp: true
+      popUp: props.popUp
     }
   }
 
@@ -56,11 +56,11 @@ class App extends Component {
     if(elem) { window.scrollTo(0, elem.offsetTop); }
   }
 
-  exitPopUp = () => {
-    this.setState(() => ({
-      popUp: false
-    }))
-  }
+  // exitPopUp = () => {
+  //   this.setState(() => ({
+  //     popUp: false
+  //   }))
+  // }
 
   render() {
     return (
@@ -94,7 +94,7 @@ class App extends Component {
         <ShopSection shopItems={this.state.shopItems} updateUrl={this.updateUrl} />
         <Contact />
         <Footer />
-        {this.state.popUp ? <PopUp exitPopUp={this.exitPopUp}/> : null}
+        {this.state.popUp ? <PopUp exitPopUp={this.props.exitPopUp}/> : null}
       </div>
     )
   }
