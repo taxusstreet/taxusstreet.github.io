@@ -4724,15 +4724,14 @@ var Container = function (_Component) {
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/info', render: function render() {
               return _react2.default.createElement(_App2.default, { exitPopUp: _this2.exitPopUp, popUp: _this2.state.popUp });
             } }),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/contact', render: function render() {
-              return _react2.default.createElement(_App2.default, { exitPopUp: _this2.exitPopUp, popUp: _this2.state.popUp });
-            } }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/coffees', render: function render() {
               return _react2.default.createElement(_App2.default, { exitPopUp: _this2.exitPopUp, popUp: _this2.state.popUp });
             } }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/shop', render: function render() {
               return _react2.default.createElement(_App2.default, { exitPopUp: _this2.exitPopUp, popUp: _this2.state.popUp });
             } }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/contact', component: _ContactView2.default }),
+          '} />',
           _react2.default.createElement(_reactRouterDom.Route, { path: '/coffees/:id', component: _RoastView2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/shop/:id', component: _ShopView2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/retail-locations', component: _RetailLocationsView2.default }),
