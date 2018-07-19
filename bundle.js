@@ -4702,7 +4702,7 @@ var Container = function (_Component) {
     };
 
     _this.state = {
-      popUp: true
+      popUp: data.popUp["is-active"]
     };
     return _this;
   }
@@ -15608,6 +15608,7 @@ var App = function (_Component) {
       currentRoast: null,
       popUp: props.popUp
     };
+
     return _this;
   }
 

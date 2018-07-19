@@ -24,6 +24,7 @@ class App extends Component {
       currentRoast: null,
       popUp: props.popUp
     }
+
   }
 
   static propTypes = {

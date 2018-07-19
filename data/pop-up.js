@@ -1,4 +1,4 @@
 data.popUp = {
-    "is-active": true,
-    "message": "Recieve 20% off your order with offer code: <i>Roast</i>"
+    "is-active": false,
+    "message": "Recieve 10% off your order with offer code: <i>Roast</i>"
   };

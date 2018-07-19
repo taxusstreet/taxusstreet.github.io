@@ -13,7 +13,7 @@ class Container extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      popUp: true
+      popUp: data.popUp["is-active"]
     }
   }
 
