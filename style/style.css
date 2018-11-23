@@ -152,6 +152,13 @@ input, textarea {
 .roasts-section {
   background: gold;
   overflow: auto; }
+  .roasts-section .roasts-section__sub-section {
+    border-bottom: 1px dotted #f6a942;
+    font-weight: 400;
+    margin-top: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase; }
 
 a .roast-container {
   background: #231F20;
@@ -249,10 +256,10 @@ a .roast-container {
 .taste-notes-container {
   margin-top: 10px; }
   .taste-notes-container .taste-note {
-    color: gold;
+    color: white;
     font-size: .8em;
     margin-right: 8px;
-    outline: 1px solid gold;
+    outline: 1px solid white;
     padding: 2px 4px; }
 
 @media (max-width: 850px) {
@@ -263,6 +270,22 @@ a .roast-container {
     a .roast-container:hover .heading-container__text {
       left: 20px;
       position: absolute; } }
+
+.blend-container .heading-container {
+  height: 70px; }
+  .blend-container .heading-container .heading-container__text {
+    left: 20px;
+    position: absolute;
+    top: 30px;
+    transition: .5s; }
+  .blend-container .heading-container h2 {
+    text-transform: uppercase; }
+  .blend-container .heading-container .origin {
+    margin: 0;
+    text-transform: capitalize; }
+
+.blend-container .roast-container__price {
+  color: white !important; }
 
 .roast-view-container {
   animation-fill-mode: forwards;
@@ -298,6 +321,9 @@ a .roast-container {
         transform: rotate(-10deg); }
       .roast-view-container .buy-button .out-of-stock p {
         margin-top: 25px; }
+  .roast-view-container .blend-description {
+    line-height: 1.4em;
+    text-align: left; }
 
 .roast-view-wrapper {
   margin: auto;

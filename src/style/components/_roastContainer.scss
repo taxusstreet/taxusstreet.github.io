@@ -125,10 +125,10 @@ a .roast-container {
 .taste-notes-container {
   margin-top: 10px;
   .taste-note {
-    color: gold;
+    color: white;
     font-size: .8em;
     margin-right: 8px;
-    outline: 1px solid gold;
+    outline: 1px solid white;
     padding: 2px 4px;
   }
 }
@@ -150,4 +150,27 @@ a .roast-container {
   }
 
 
+}
+
+.blend-container {
+  .heading-container {
+    height: 70px;
+    .heading-container__text {
+      left: 20px;
+      position: absolute;
+      top: 30px;
+      transition: .5s;
+    }
+    h2 {
+      text-transform: uppercase;
+    }
+    .origin {
+      margin: 0;
+      text-transform: capitalize;
+    }
+  }
+
+  .roast-container__price {
+    color: white !important;
+  }
 }

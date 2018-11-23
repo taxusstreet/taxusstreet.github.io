@@ -20,6 +20,7 @@ class App extends Component {
 
     this.state = {
       roasts: data.roasts,
+      blends: data.blends,
       shopItems: data.shop,
       currentRoast: null,
       popUp: props.popUp
@@ -91,7 +92,7 @@ class App extends Component {
         }>
         <Nav updateUrl={this.updateUrl}/>
         <Intro />
-        <RoastsSection roasts={this.state.roasts} updateUrl={this.updateUrl} currentRoast={this.state.currentRoast}/>
+        <RoastsSection roasts={this.state.roasts} blends={this.state.blends} updateUrl={this.updateUrl} currentRoast={this.state.currentRoast}/>
         <ShopSection shopItems={this.state.shopItems} updateUrl={this.updateUrl} />
         <Contact />
         <Footer />

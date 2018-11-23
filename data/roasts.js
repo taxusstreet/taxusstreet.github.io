@@ -18,7 +18,7 @@ data.roasts = [{
 },{
   "title": "Wote Konga",
   "origin": "Yergacheffe, Ethiopia",
-  "price": 16,
+  "price": 15,
   "size": 12,
   "level": 10,
   "color": "#924da8",
@@ -35,7 +35,7 @@ data.roasts = [{
 },{
   "title": "El Obraje",
   "origin": "Nariño, Colombia",
-  "price": 14,
+  "price": 15,
   "size": 12,
   "level": 65,
   "color": "#448473",

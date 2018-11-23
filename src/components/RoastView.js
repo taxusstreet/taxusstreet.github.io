@@ -17,14 +17,27 @@ class RoastView extends Component {
     var roast = data.roasts.filter(function( obj ) {
       return norm(obj.title) == id;
     })[0];
-    this.setState(() => ({
-      roast
-    }))
 
+    var blend = data.blends.filter(function( obj ) {
+      return norm(obj.title) == id;
+    })[0];
+
+    console.log('roast:', roast);
+    console.log('blend:', blend);
+
+    if(roast) {
+      this.setState(() => ({
+        roast
+      }))
+    } else if(blend) {
+      this.setState(() => ({
+        blend
+      }))
+    }
   }
 
   render() {
-    if(!this.state.roast) {
+    if(!this.state.roast && !this.state.blend) {
       return(
         <div className="roast-view-container">
           <div className="not-found">
@@ -34,7 +47,16 @@ class RoastView extends Component {
         </div>
       )
     }
-    const button = this.state.roast.button;
+
+    let button = undefined;
+
+    if(this.state.roast) {
+      button = this.state.roast.button;
+    } else if(this.state.blend) {
+      button = this.state.blend.button;
+    }
+
+
     (function () {
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
       if (window.ShopifyBuy) {
@@ -311,8 +333,47 @@ class RoastView extends Component {
           </div>
         </div>
       );
-    } else {
-      return(<div>Roast Not Found</div>)
+    } else if(this.state.blend) {
+      return(
+        <div className="roast-view-container">
+          <div className="roast-view-wrapper">
+            <Link className="back-button" to="/coffees">back</Link>
+            <img className="roast-image" src={`images/${this.state.blend.image}`}/>
+            <div className="roast-text-wrapper">
+              <div className="roast-text-wrapper__left">
+              <h1
+                className="roast__title"
+                style={{textShadow: '1px 1px ' + this.state.blend.color + ', 2px 2px ' + this.state.blend.color + ', 3px 3px ' + this.state.blend.color + ', 4px 4px ' + this.state.blend.color}}
+              >{this.state.blend.title}</h1>
+              <p className="sub-head">{this.state.blend.origin}</p>
+              <p className="desc-label">Notes:</p>
+              <div className="taste-notes-container">
+                {this.state.blend.taste.map((note, i) => {
+                  return <span key={i} style={{color: this.state.blend.color, outlineColor: this.state.blend.color}} className="taste-note">{note}</span>
+                })}
+              </div>
+              <p className="desc-label">Roast level:</p>
+              <div className="roast-level">
+                <div
+                  style={{width: this.state.blend.level + "%"}}
+                  className="roast-level__bar"></div>
+              </div>
+              <p className="blend-description">{this.state.blend.description}</p>
+              <div className="buy-button">
+                <h1>${this.state.blend.price} - {this.state.blend.size}oz.</h1>
+                {this.state.blend["in-stock"] ?
+                  <div id={"product-component-" + this.state.blend.button.container}></div> :
+                  <div className="out-of-stock">
+                    <h2>Out of stock!</h2>
+                    <p>Check back soon...</p>
+                  </div>
+                }
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
     }
   }
 };

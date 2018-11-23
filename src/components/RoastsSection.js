@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import RoastContainer from './RoastContainer';
+import BlendContainer from './BlendContainer';
 import RoastView from './RoastView';
 
 export default class RoastsSection extends Component {
@@ -41,12 +42,24 @@ export default class RoastsSection extends Component {
       <div className="roasts-section page-section" id="coffees">
         <div className="page-section__wrapper">
           <h1>Coffees</h1>
+          <h2 className="roasts-section__sub-section">Single Origins</h2>
             <div className="page-section__items-centered">
             {this.props.roasts.map((roast, i) => {
               return (
                 <RoastContainer
                   key={i}
                   roast={roast}
+                  updateUrl={this.props.updateUrl}
+                  handleViewRoast={this.handleViewRoast}/>              )
+            })}
+            </div>
+            <h2 className="roasts-section__sub-section">Blends</h2>
+            <div className="page-section__items-centered">
+            {this.props.blends.map((blend, i) => {
+              return (
+                <BlendContainer
+                  key={i}
+                  blend={blend}
                   updateUrl={this.props.updateUrl}
                   handleViewRoast={this.handleViewRoast}/>              )
             })}
