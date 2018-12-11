@@ -13,12 +13,12 @@ data.blends = [{
   },
   "in-stock": true
 },{
-  "title": "Chesapeake Stocking Stuffer",
+  "title": "Stocking Stuffer",
   "price": 7,
   "size": 5,
   "level": 50,
   "taste": ["fruits", "nuts"],
-  "description": "Your favorite medium roasted blend available for a limited time in stocking stuffer size. Get two dollars off each bag when you buy ten or more!",
+  "description": "Our popular Chesapeake Blend available for a limited time in stocking stuffer size. Get two dollars off each bag when you buy ten or more!",
   "image": "chesapeake-stocking.jpg",
   "background-image": "chesapeake-stocking-background.jpg",
   "button": {
