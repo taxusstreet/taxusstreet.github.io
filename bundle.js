@@ -19354,7 +19354,7 @@ var BlendContainer = function BlendContainer(props) {
       'div',
       {
         className: props.blend['in-stock'] ? "blend-container roast-container" : "blend-container roast-container roast-container--out-of-stock",
-        style: { backgroundImage: "url(images/chesapeake-background.jpg)", backgroundSize: '100% 100%' } },
+        style: { backgroundImage: 'url(images/' + props.blend["background-image"] + ')', backgroundSize: '100% 100%' } },
       _react2.default.createElement(
         'div',
         { className: 'heading-container' },

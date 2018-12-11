@@ -179,7 +179,8 @@ a .roast-container {
     a .roast-container .heading-container .heading-container__text {
       left: 20px;
       position: absolute;
-      transition: .5s; }
+      transition: .5s;
+      width: 225px; }
     a .roast-container .heading-container h2 {
       text-transform: uppercase;
       margin-bottom: 0; }

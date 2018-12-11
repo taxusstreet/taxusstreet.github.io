@@ -10,7 +10,7 @@ const BlendContainer = (props) => {
     <Link to={`coffees/${norm(props.blend.title)}`}>
       <div
         className={props.blend['in-stock'] ? "blend-container roast-container" : "blend-container roast-container roast-container--out-of-stock"}
-        style={{backgroundImage: "url(images/chesapeake-background.jpg)", backgroundSize: '100% 100%'}}>
+        style={{backgroundImage: `url(images/${props.blend["background-image"]})`, backgroundSize: '100% 100%'}}>
         <div className="heading-container">
           <div className="bean-container">
             <BeanSvg color="white"/>

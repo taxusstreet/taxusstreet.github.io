@@ -1,4 +1,4 @@
 data.popUp = {
     "is-active": true,
-    "message": "Any bag of coffee is $12 with promo code BLACKFRIDAY12"
+    "message": "Stocking Stuffer Bags $7 each, $5 if you order 10 or more!"
   };
