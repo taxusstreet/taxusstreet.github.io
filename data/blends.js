@@ -12,18 +12,20 @@ data.blends = [{
     "id": 1491342393453
   },
   "in-stock": true
-},{
-  "title": "Stocking Stuffer",
-  "price": 7,
-  "size": 5,
-  "level": 50,
-  "taste": ["fruits", "nuts"],
-  "description": "Our popular Chesapeake Blend available for a limited time in stocking stuffer size. Get two dollars off each bag when you buy ten or more!",
-  "image": "chesapeake-stocking.jpg",
-  "background-image": "chesapeake-stocking-background.jpg",
-  "button": {
-    "container": "1544490418318",
-    "id": 1496841879661
-  },
-  "in-stock": true
-}];
+}
+// ,{
+//   "title": "Stocking Stuffer",
+//   "price": 7,
+//   "size": 5,
+//   "level": 50,
+//   "taste": ["fruits", "nuts"],
+//   "description": "Our popular Chesapeake Blend available for a limited time in stocking stuffer size. Get two dollars off each bag when you buy ten or more!",
+//   "image": "chesapeake-stocking.jpg",
+//   "background-image": "chesapeake-stocking-background.jpg",
+//   "button": {
+//     "container": "1544490418318",
+//     "id": 1496841879661
+//   },
+//   "in-stock": true
+// }
+];

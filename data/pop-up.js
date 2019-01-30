@@ -1,4 +1,4 @@
 data.popUp = {
     "is-active": true,
-    "message": "Stocking Stuffer Bags $7 each, $5 if you order 10 or more with promo code STOCKING"
+    "message": "Pop Up Coffee Shop at Big Ugly Brewing Co. in Chesapeake! 7-12, Tues - Thurs!"
   };
