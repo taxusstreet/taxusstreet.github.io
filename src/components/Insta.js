@@ -13,7 +13,7 @@ class Insta extends Component {
     const feed = new Instafeed({
         get: 'user',
         userId: '4053916290',
-        accessToken: '4053916290.92c0ad8.768ac09a33804711a7ba5f04a091577c',
+        accessToken: '4053916290.92c0ad8.b3a89c2b0c2a4e76a72541538e20db2c',
         resolution: 'standard_resolution',
         template: '<div class="img_container"><a href="{{link}}"><img src="{{image}}" /></a><p>{{caption}}</p></div>'
     });
