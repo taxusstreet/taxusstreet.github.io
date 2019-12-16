@@ -47,6 +47,7 @@ data.roasts = [
   "variety": "Castillo, Caturra",
   "altitude": "2000m",
   "image": "colombian.jpg",
+  "coordinates": "1.0945970,-77.3942409",
   "button": {
     "container": "1521069648001",
     "id": 10620411588
@@ -60,11 +61,29 @@ data.roasts = [
   "level": 65,
   "color": "#F37A6A",
   "taste": ["raspberry", "limeade", "buttercream"],
-  "image": "peru.jpg",
+  "image": "junin.png",
+  "coordinates": "-11.3258673,-75.3396118",
   "button": {
-    "container": "1521069648001",
-    "id": 10620411588
+    "container": "1576464023998",
+    "id": 615224836128
   },
-  "in-stock": false
+  "in-stock": true,
+  "organic": true
+
+},{
+  "title": "Kateshi",
+  "origin": "Kasama, Zambia",
+  "price": 15,
+  "size": 12,
+  "level": 65,
+  "color": "#DFC723",
+  "taste": ["grapefruit", "lime", "blackberry"],
+  "image": "kateshi.png",
+  "coordinates": "-10.0148726,31.204943",
+  "button": {
+    "container": "1576463394038",
+    "id": 615240204320
+  },
+  "in-stock": true
 }
 ];

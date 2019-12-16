@@ -4123,6 +4123,7 @@ var RoastView = function (_Component) {
           });
         }
       })();
+      console.log('test');
       if (this.state.roast) {
         return _react2.default.createElement(
           'div',
@@ -4171,7 +4172,17 @@ var RoastView = function (_Component) {
                     );
                   })
                 ),
-                _react2.default.createElement(
+                this.state.roast.coordinates ? _react2.default.createElement(
+                  'p',
+                  { className: 'desc-label' },
+                  'Coordinates: ',
+                  _react2.default.createElement(
+                    'span',
+                    { style: { color: this.state.roast.color } },
+                    this.state.roast.coordinates
+                  )
+                ) : null,
+                this.state.roast.processing ? _react2.default.createElement(
                   'p',
                   { className: 'desc-label' },
                   'Processing: ',
@@ -4180,8 +4191,8 @@ var RoastView = function (_Component) {
                     { style: { color: this.state.roast.color } },
                     this.state.roast.processing
                   )
-                ),
-                _react2.default.createElement(
+                ) : null,
+                this.state.roast.altitude ? _react2.default.createElement(
                   'p',
                   { className: 'desc-label' },
                   'Growing Altitude: ',
@@ -4190,8 +4201,8 @@ var RoastView = function (_Component) {
                     { style: { color: this.state.roast.color } },
                     this.state.roast.altitude
                   )
-                ),
-                _react2.default.createElement(
+                ) : null,
+                this.state.roast.variety ? _react2.default.createElement(
                   'p',
                   { className: 'desc-label' },
                   'Variety: ',
@@ -4200,7 +4211,7 @@ var RoastView = function (_Component) {
                     { style: { color: this.state.roast.color } },
                     this.state.roast.variety
                   )
-                ),
+                ) : null,
                 _react2.default.createElement(
                   'p',
                   { className: 'desc-label' },
@@ -19310,6 +19321,11 @@ var RoastContainer = function RoastContainer(props) {
         'div',
         { className: 'out-of-stock' },
         'OUT OF STOCK'
+      ) : null,
+      props.roast.organic ? _react2.default.createElement(
+        'div',
+        { className: 'organic' },
+        _react2.default.createElement('img', { src: '/images/organic.png' })
       ) : null
     )
   );
@@ -19759,7 +19775,7 @@ var Fb = function Fb() {
 			xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", xmlnsa: "http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/",
 			x: "0px", y: "0px", width: "50px", height: "41", viewBox: "0 0 250 203.1",
 			xmlSpace: "preserve" },
-		_react2.default.createElement("path", { className: "st0", d: "M78.6,203.1c94.3,0,145.9-78.2,145.9-145.9c0-2.2,0-4.4-0.1-6.6c10-7.3,18.7-16.3,25.6-26.5\r c-9.4,4.1-19.3,6.9-29.5,8.1c10.7-6.4,18.7-16.5,22.5-28.4c-10.1,6-21.1,10.2-32.6,12.4c-19.4-20.7-51.9-21.7-72.6-2.2\r c-13.3,12.5-19,31.2-14.8,49C81.9,60.9,43.4,41.4,17.4,9.4C3.8,32.8,10.7,62.8,33.3,77.8c-8.2-0.2-16.1-2.4-23.3-6.4\r c0,0.2,0,0.4,0,0.6c0,24.4,17.2,45.4,41.2,50.3c-7.6,2.1-15.5,2.4-23.2,0.9c6.7,20.9,26,35.2,47.9,35.6c-18.2,14.3-40.6,22-63.7,22\r c-4.1,0-8.2-0.3-12.2-0.7C23.5,195.2,50.7,203.1,78.6,203.1" })
+		_react2.default.createElement("path", { className: "st0", d: "M78.6,203.1c94.3,0,145.9-78.2,145.9-145.9c0-2.2,0-4.4-0.1-6.6c10-7.3,18.7-16.3,25.6-26.5 c-9.4,4.1-19.3,6.9-29.5,8.1c10.7-6.4,18.7-16.5,22.5-28.4c-10.1,6-21.1,10.2-32.6,12.4c-19.4-20.7-51.9-21.7-72.6-2.2 c-13.3,12.5-19,31.2-14.8,49C81.9,60.9,43.4,41.4,17.4,9.4C3.8,32.8,10.7,62.8,33.3,77.8c-8.2-0.2-16.1-2.4-23.3-6.4 c0,0.2,0,0.4,0,0.6c0,24.4,17.2,45.4,41.2,50.3c-7.6,2.1-15.5,2.4-23.2,0.9c6.7,20.9,26,35.2,47.9,35.6c-18.2,14.3-40.6,22-63.7,22 c-4.1,0-8.2-0.3-12.2-0.7C23.5,195.2,50.7,203.1,78.6,203.1" })
 	);
 };
 

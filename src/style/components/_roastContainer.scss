@@ -13,6 +13,17 @@ a .roast-container {
   width: 225px;
   transition: box-shadow .2s;
 
+  .organic {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 70px;
+
+    img {
+      width: 100%;
+    }
+  }
+
   & * {
     pointer-events: none;
   }

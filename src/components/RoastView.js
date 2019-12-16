@@ -290,6 +290,7 @@ class RoastView extends Component {
         });
       }
     })();
+    console.log('test');
     if(this.state.roast) {
       return(
         <div className="roast-view-container">
@@ -309,9 +310,22 @@ class RoastView extends Component {
                   return <span key={i} style={{color: this.state.roast.color, outlineColor: this.state.roast.color}} className="taste-note">{note}</span>
                 })}
               </div>
-              <p className="desc-label">Processing: <span style={{color: this.state.roast.color}}>{this.state.roast.processing}</span></p>
-              <p className="desc-label">Growing Altitude: <span style={{color: this.state.roast.color}}>{this.state.roast.altitude}</span></p>
-              <p className="desc-label">Variety: <span style={{color: this.state.roast.color}}>{this.state.roast.variety}</span></p>
+              {this.state.roast.coordinates ?
+                <p className="desc-label">Coordinates: <span style={{color: this.state.roast.color}}>{this.state.roast.coordinates}</span></p> :
+                null
+              }
+              {this.state.roast.processing ?
+                <p className="desc-label">Processing: <span style={{color: this.state.roast.color}}>{this.state.roast.processing}</span></p> :
+                null
+              }
+              {this.state.roast.altitude ?
+                <p className="desc-label">Growing Altitude: <span style={{color: this.state.roast.color}}>{this.state.roast.altitude}</span></p> :
+                null
+              }
+              {this.state.roast.variety ?
+                <p className="desc-label">Variety: <span style={{color: this.state.roast.color}}>{this.state.roast.variety}</span></p> :
+                null
+              }
               <p className="desc-label">Roast level:</p>
               <div className="roast-level">
                 <div

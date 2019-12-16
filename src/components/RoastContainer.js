@@ -34,6 +34,10 @@ const RoastContainer = (props) => {
         <div className="roast-container__bar roast-container__top-bar" style={{backgroundColor: props.roast.color}}></div>
         <div className="roast-container__bar roast-container__bottom-bar" style={{backgroundColor: props.roast.color}}></div>
         {!props.roast['in-stock'] ? <div className="out-of-stock">OUT OF STOCK</div> : null}
+        {props.roast.organic ?
+          <div className="organic"><img src="/images/organic.png"/></div> :
+          null
+        }
       </div>
     </Link>
   );

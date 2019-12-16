@@ -172,6 +172,13 @@ a .roast-container {
   position: relative;
   width: 225px;
   transition: box-shadow .2s; }
+  a .roast-container .organic {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 70px; }
+    a .roast-container .organic img {
+      width: 100%; }
   a .roast-container * {
     pointer-events: none; }
   a .roast-container .heading-container {
@@ -242,7 +249,7 @@ a .roast-container {
   bottom: 0; }
 
 .roast-level {
-  background: linear-gradient(to right, white, transparent);
+  background: linear-gradient(to right, white, rgba(0, 0, 0, 0));
   height: 10px;
   margin: 10px 0;
   max-width: 200px;
@@ -615,7 +622,8 @@ a .roast-container {
     margin: 15px;
     margin-right: 0;
     margin-top: 3px;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .instafeed-wrapper .img_container a {
       position: relative; }
     .instafeed-wrapper .img_container p {
