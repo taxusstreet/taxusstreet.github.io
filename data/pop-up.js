@@ -1,4 +1,4 @@
 data.popUp = {
     "is-active": true,
-    "message": "Pop Up Coffee Shop at Big Ugly Brewing Co. in Chesapeake! 7-12, Wed - Fri!"
+    "message": "Pop Up Coffee Shop at Big Ugly Brewing Co. in Chesapeake! 7-12, Wed - Sat!"
   };
