@@ -48,4 +48,20 @@
       display: inline-block;
     }
   }
+  @media (max-width: $xs-break) {
+
+      .coffee-shop-section__image {
+        width: 100%;
+        img {
+          width: 100%;
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+        }
+      }
+
+      .coffee-shop-section__text-wrapper {
+        width: 100%;
+      }
+
+
+    }
 }

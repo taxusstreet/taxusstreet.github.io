@@ -181,6 +181,14 @@ input, textarea {
       color: gold; }
     .coffee-shop-section .coffee-shop-section__text-wrapper ul {
       display: inline-block; }
+  @media (max-width: 550px) {
+    .coffee-shop-section .coffee-shop-section__image {
+      width: 100%; }
+      .coffee-shop-section .coffee-shop-section__image img {
+        width: 100%;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); }
+    .coffee-shop-section .coffee-shop-section__text-wrapper {
+      width: 100%; } }
 
 .roasts-section {
   background: gold;
