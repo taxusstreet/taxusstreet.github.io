@@ -29,6 +29,7 @@ class Container extends Component {
         <Switch>
           <Route exact path="/" render={()=><App exitPopUp={this.exitPopUp} popUp={this.state.popUp}/>} />
           <Route exact path="/info" render={()=><App exitPopUp={this.exitPopUp} popUp={this.state.popUp}/>} />
+          <Route exact path="/coffee-shop" render={()=><App exitPopUp={this.exitPopUp} popUp={this.state.popUp}/>} />
           <Route exact path="/coffees" render={()=><App exitPopUp={this.exitPopUp} popUp={this.state.popUp}/>} />
           <Route exact path="/shop" render={()=><App exitPopUp={this.exitPopUp} popUp={this.state.popUp}/>} />
           <Route exact path="/contact" component={ContactView}/>} />

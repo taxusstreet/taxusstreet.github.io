@@ -1,0 +1,51 @@
+.coffee-shop-section {
+  background: #7B68EE;
+  color: white;
+  overflow: auto;
+  padding: 40px;
+
+  div {
+    float: left
+  }
+  .coffee-shop-section__image {
+    width: 30vw;
+    img {
+      width: 100%;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+    }
+  }
+
+  .coffee-shop-section__text-wrapper {
+    box-sizing: border-box;
+    padding: 40px 30px;
+    width: calc(60vw - 60px);
+
+    .menu {
+      background-color: gold;
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, .3);
+      display: inline-block;
+      padding: 10px 20px;
+      text-transform: uppercase;
+
+      a {
+        color: $grey;
+      }
+
+      &:hover {
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+      }
+    }
+
+    h1 {
+      text-align: left;
+    }
+
+    h2 {
+      color: gold;
+    }
+
+    ul {
+      display: inline-block;
+    }
+  }
+}

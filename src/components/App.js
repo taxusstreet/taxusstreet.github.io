@@ -7,6 +7,7 @@ import { withRouter } from 'react-router-dom';
 
 import Nav from './Nav';
 import Intro from './Intro';
+import CoffeeShop from './CoffeeShop';
 import RoastsSection from './RoastsSection';
 import ShopSection from './ShopSection';
 import Insta from './Insta';
@@ -92,8 +93,8 @@ class App extends Component {
         }>
         <Nav updateUrl={this.updateUrl}/>
         <Intro />
+        <CoffeeShop />
         <RoastsSection roasts={this.state.roasts} blends={this.state.blends} updateUrl={this.updateUrl} currentRoast={this.state.currentRoast}/>
-        <ShopSection shopItems={this.state.shopItems} updateUrl={this.updateUrl} />
         <Contact />
         <Footer />
         {this.state.popUp ? <PopUp exitPopUp={this.props.exitPopUp}/> : null}
@@ -103,3 +104,5 @@ class App extends Component {
 };
 
 export default withRouter(App);
+
+// <ShopSection shopItems={this.state.shopItems} updateUrl={this.updateUrl} />
