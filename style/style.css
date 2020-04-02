@@ -163,7 +163,7 @@ input, textarea {
       box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); }
   .coffee-shop-section .coffee-shop-section__text-wrapper {
     box-sizing: border-box;
-    padding: 40px 30px;
+    padding: 0px 30px;
     width: calc(60vw - 60px); }
     .coffee-shop-section .coffee-shop-section__text-wrapper .menu {
       background-color: gold;
@@ -181,13 +181,14 @@ input, textarea {
       color: gold; }
     .coffee-shop-section .coffee-shop-section__text-wrapper ul {
       display: inline-block; }
-  @media (max-width: 550px) {
+  @media (max-width: 850px) {
     .coffee-shop-section .coffee-shop-section__image {
       width: 100%; }
       .coffee-shop-section .coffee-shop-section__image img {
         width: 100%;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); }
     .coffee-shop-section .coffee-shop-section__text-wrapper {
+      padding: 40px 0;
       width: 100%; } }
 
 .roasts-section {

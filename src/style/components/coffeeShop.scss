@@ -17,7 +17,7 @@
 
   .coffee-shop-section__text-wrapper {
     box-sizing: border-box;
-    padding: 40px 30px;
+    padding: 0px 30px;
     width: calc(60vw - 60px);
 
     .menu {
@@ -48,20 +48,22 @@
       display: inline-block;
     }
   }
-  @media (max-width: $xs-break) {
 
-      .coffee-shop-section__image {
-        width: 100%;
-        img {
+    @media (max-width: $sm-break) {
+
+        .coffee-shop-section__image {
           width: 100%;
-          box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+          img {
+            width: 100%;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+          }
         }
+
+        .coffee-shop-section__text-wrapper {
+          padding: 40px 0;
+          width: 100%;
+        }
+
+
       }
-
-      .coffee-shop-section__text-wrapper {
-        width: 100%;
-      }
-
-
-    }
 }
