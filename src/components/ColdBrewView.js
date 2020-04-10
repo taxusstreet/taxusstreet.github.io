@@ -294,7 +294,7 @@ class ColdBrewView extends Component {
                 <div id="location-warning">
                   <p>***please read before ordering***</p>
                   <h1>***SOUTH HAMPTON ROADS ONLY***</h1>
-                  <p>Cold Brews are only available in the area of Hampton Roads, Virginia. We are offering same day delivery on orders received before 12:00pm local time. </p>
+                  <p>Cold Brews are only available in the area of South Hampton Roads, Virginia. We are offering same day delivery on orders received before 12:00pm local time. </p>
                   <p>We will deliver between 1pm-5pm. Please allow for one of the following options:</p>
                   <ul>
                     <li>Plan to be at home during the delivery window timeframe to refrigerate the jar inside upon delivery </li>

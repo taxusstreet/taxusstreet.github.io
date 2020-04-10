@@ -4120,7 +4120,7 @@ var ColdBrewView = function (_Component) {
                 _react2.default.createElement(
                   'p',
                   null,
-                  'Cold Brews are only available in the area of Hampton Roads, Virginia. We are offering same day delivery on orders received before 12:00pm local time. '
+                  'Cold Brews are only available in the area of South Hampton Roads, Virginia. We are offering same day delivery on orders received before 12:00pm local time. '
                 ),
                 _react2.default.createElement(
                   'p',
