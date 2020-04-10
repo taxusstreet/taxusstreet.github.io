@@ -10,6 +10,9 @@ const Nav = (props) => {
         <li id="info-link" className="nav__list__item nav__list__item--active">
           <a href="/#info">Info</a>
         </li>
+        <li id="cold-brews-link" className="nav__list__item">
+          <a href="/#cold-brews">Cold Brews</a>
+        </li>
         <li id="coffee-shop-link" className="nav__list__item">
           <a href="/#coffee-shop">Coffee Shop</a>
         </li>

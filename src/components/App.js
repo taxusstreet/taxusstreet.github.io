@@ -7,6 +7,7 @@ import { withRouter } from 'react-router-dom';
 
 import Nav from './Nav';
 import Intro from './Intro';
+import ColdBrewsSection from './ColdBrewsSection';
 import CoffeeShop from './CoffeeShop';
 import RoastsSection from './RoastsSection';
 import ShopSection from './ShopSection';
@@ -93,6 +94,7 @@ class App extends Component {
         }>
         <Nav updateUrl={this.updateUrl}/>
         <Intro />
+        <ColdBrewsSection />
         <CoffeeShop />
         <RoastsSection roasts={this.state.roasts} blends={this.state.blends} updateUrl={this.updateUrl} currentRoast={this.state.currentRoast}/>
         <Contact />

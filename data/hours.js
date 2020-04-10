@@ -7,16 +7,16 @@ data.hours = [
     "hours": "Closed",
   },{
     "day": "Wednesday",
-    "hours": "7am - 12pm",
+    "hours": "Closed",
   },{
     "day": "Thursday",
-    "hours": "7am - 12pm",
+    "hours": "Closed",
   },{
     "day": "Friday",
-    "hours": "7am - 12pm",
+    "hours": "Closed",
   },{
     "day": "Saturday",
-    "hours": "8am - 11:30pm",
+    "hours": "Closed",
   },{
     "day": "Sunday",
     "hours": "Closed",

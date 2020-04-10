@@ -1,0 +1,159 @@
+
+.cold-brew-view-container {
+  animation-fill-mode: forwards;
+  background: $grey;
+  box-sizing: border-box;
+  color: white;
+  position: fixed;
+  // text-align: center;
+
+  padding: 50px 100px 100px 100px;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  .cold-brew-text-wrapper {
+    padding-top: 30px;
+
+    p {
+      line-height: 1.3em;
+      max-width: 500px;
+    }
+
+    #location-warning {
+      border: 1px solid grey;
+      box-shadow: 1px 1px 7px rgba(100, 95, 95, .9);
+      padding: 20px;
+
+      h1 {
+        color: orange;
+        border-top: 2px solid orange;
+        border-bottom: 2px solid orange;
+        box-sizing: border-box;
+        left: -20px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        width: calc(100% + 40px);
+      }
+
+      p, li{
+        color: grey;
+      }
+    }
+  }
+
+  .buy-button {
+    position: relative;
+    right: auto;
+    text-align: left;
+    top: 20px;
+    width: 100%;
+    h1 {
+      color: $orange;
+      margin-bottom: 0;
+    }
+
+    .out-of-stock {
+      display: inline-block;
+
+      h2 {
+        background: orangered;
+        color: white;
+        margin-left: -17px;
+        padding: 10px 15px;
+        transform: rotate(-10deg);
+      }
+
+      p {
+        margin-top: 25px;
+      }
+    }
+  }
+
+}
+
+  .cold-brew-view-wrapper {
+    margin: auto;
+    max-width: 700px;
+    position: relative;
+  }
+
+  .cold-brew-text-wrapper {
+    position: relative;
+  }
+
+
+  .cold-brew-image {
+    // border: 1px dotted orange;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .5);
+    width: 100%;
+    height: auto;
+  }
+
+  .cold-brew__title {
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+
+  .sub-head {
+    margin: 3px 0;
+    text-transform: capitalize;
+  }
+
+  .desc-label {
+    margin: 15px 0 10px 0;
+    line-height: 1.4;
+
+    span {
+      color: gold;
+    }
+  }
+
+
+@media (max-width: $sm-break) {
+  .cold-brew-view-container {
+    padding: 50px 50px 100px 50px;
+  }
+
+  .cold-brew-image {
+    // height: 250px;
+  }
+
+  .cold-brew-text-wrapper__left {
+    border-right: none;
+    margin-top: 10px;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+
+    .taste-note {
+      margin: 0 8px 0 0;
+    }
+
+    .cold-brew-level {
+      margin: 0 0 20px 0;
+    }
+
+    .buy-button {
+      position: relative;
+      right: auto;
+      left: auto;
+      top: auto;
+    }
+  }
+
+}
+
+@media (max-width: $xs-break) {
+  .cold-brew-view-container {
+    padding: 50px 20px 100px 20px;
+  }
+}

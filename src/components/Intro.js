@@ -30,5 +30,3 @@ class Intro extends Component {
 }
 
 export default Intro;
-
-console.log(data);

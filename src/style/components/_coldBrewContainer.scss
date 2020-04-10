@@ -1,0 +1,184 @@
+$color: purple;
+
+a .cold-brew-container {
+  background: $grey;
+  color: white;
+  cursor: pointer;
+  border-top: 8px solid salmon;
+  border-bottom: 8px solid gold;
+  box-shadow: 0 0 8px rgba(255, 255, 255, .3);
+  margin: 10px;
+  height: 300px;
+  overflow: hidden;
+  padding: 20px;
+  padding-bottom: 45px;
+  position: relative;
+  width: 225px;
+  transition: box-shadow .2s;
+
+  .organic {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 70px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  & * {
+    pointer-events: none;
+  }
+
+  .heading-container {
+    height: 70px;
+    .heading-container__text {
+      left: 20px;
+      position: absolute;
+      transition: .5s;
+      width: 225px;
+    }
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    .origin {
+      margin: 0;
+      text-transform: capitalize;
+    }
+  }
+
+  .bean-container {
+    float: left;
+    height: 40px;
+    left: -80px;
+    overflow: hidden;
+    position: relative;
+    top: 25px;
+    transition: .5s;
+    width: 50px;
+
+    svg {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 1px 5px $grey;
+  }
+
+  .desc-label {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .out-of-stock {
+    background: orangered;
+    color: white;
+    font-size: .9em;
+    font-weight: 600;
+    position: absolute;
+    right: -30px;
+    text-align: center;
+    top: 40px;
+    transform: rotate(45deg);
+    width: 155px;
+  }
+
+}
+
+.roast-container__price {
+  color: $orange;
+  margin: 20px 0 0 0;
+}
+
+.roast-container--out-of-stock {
+  cursor: not-allowed;
+}
+
+.roast-container__bar {
+  height: 8px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.roast-container__top-bar {
+  top: 0;
+}
+
+.roast-container__bottom-bar {
+  bottom: 0;
+}
+
+.roast-level {
+  background: linear-gradient(to right, white, rgba(0,0,0,0));
+  height: 10px;
+  margin: 10px 0;
+  max-width: 200px;
+  position: relative;
+
+  .roast-level__bar {
+    border-right: 3px solid $orange;
+    height: calc(100% + 4px);
+    left: 0;
+    position: absolute;
+    top: -4px;
+  }
+}
+
+.taste-notes-container {
+  margin-top: 10px;
+  .taste-note {
+    color: white;
+    font-size: .8em;
+    margin-right: 8px;
+    outline: 1px solid white;
+    padding: 2px 4px;
+  }
+}
+
+@media (max-width: $sm-break) {
+  a .roast-container {
+    // width: 100%;
+
+    &:hover {
+      box-shadow: none;
+      .bean-container {
+        left: -80px;
+      }
+      .heading-container__text {
+        left: 20px;
+        position: absolute;
+      }
+    }
+  }
+
+
+}
+
+.blend-container {
+  .heading-container {
+    height: 70px;
+    .heading-container__text {
+      left: 20px;
+      position: absolute;
+      top: 30px;
+      transition: .5s;
+    }
+    h2 {
+      text-transform: uppercase;
+    }
+    .origin {
+      margin: 0;
+      text-transform: capitalize;
+    }
+  }
+
+  .roast-container__price {
+    color: white !important;
+  }
+}

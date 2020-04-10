@@ -4,7 +4,7 @@ const Footer = () => {
   return(
     <footer>
       <img className="footer-image" src="images/footer-logo-thing.png" />
-      <p className="footer__copyright">©Taxus Street Coffee 2018 • All rights reserved</p>
+      <p className="footer__copyright">©Taxus Street Coffee 2020 • All rights reserved</p>
     </footer>
   );
 };

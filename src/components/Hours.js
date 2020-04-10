@@ -4,6 +4,7 @@ const Hours = (props) => {
   return (
     <div className="hours">
       <h2>Hours of Operation</h2>
+      <p style={{"color": "gold"}}>Our Coffee Shop is currently <b>closed</b> due to the Covid-19 Pandemic.</p>
       <ul>
         {data.hours.map((item, i) => {
           return (<li key={i}>{item["day"]}: {item["hours"]}</li>);
