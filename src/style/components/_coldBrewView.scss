@@ -150,6 +150,17 @@
     }
   }
 
+  #location-warning {
+    border: 1px solid grey;
+    box-shadow: 1px 1px 7px rgba(100, 95, 95, .9);
+    padding: 20px;
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+  }
+
 }
 
 @media (max-width: $xs-break) {
