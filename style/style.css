@@ -174,6 +174,8 @@ a .cold-brew-container {
   position: relative;
   width: 225px;
   transition: box-shadow .2s; }
+  a .cold-brew-container .cold-brew-container-desc {
+    height: 130px; }
   a .cold-brew-container .organic {
     position: absolute;
     right: 20px;

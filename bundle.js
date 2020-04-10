@@ -4115,7 +4115,7 @@ var ColdBrewView = function (_Component) {
                 _react2.default.createElement(
                   'h1',
                   null,
-                  '***HAMPTON ROADS ONLY***'
+                  '***SOUTH HAMPTON ROADS ONLY***'
                 ),
                 _react2.default.createElement(
                   'p',
@@ -16279,8 +16279,8 @@ var App = function (_Component) {
         _react2.default.createElement(_Nav2.default, { updateUrl: this.updateUrl }),
         _react2.default.createElement(_Intro2.default, null),
         _react2.default.createElement(_ColdBrewsSection2.default, null),
-        _react2.default.createElement(_CoffeeShop2.default, null),
         _react2.default.createElement(_RoastsSection2.default, { roasts: this.state.roasts, blends: this.state.blends, updateUrl: this.updateUrl, currentRoast: this.state.currentRoast }),
+        _react2.default.createElement(_CoffeeShop2.default, null),
         _react2.default.createElement(_Contact2.default, null),
         _react2.default.createElement(_Footer2.default, null),
         this.state.popUp ? _react2.default.createElement(_PopUp2.default, { exitPopUp: this.props.exitPopUp }) : null
@@ -16350,20 +16350,20 @@ var Nav = function Nav(props) {
       ),
       _react2.default.createElement(
         'li',
-        { id: 'coffee-shop-link', className: 'nav__list__item' },
-        _react2.default.createElement(
-          'a',
-          { href: '/#coffee-shop' },
-          'Coffee Shop'
-        )
-      ),
-      _react2.default.createElement(
-        'li',
         { id: 'coffees-link', className: 'nav__list__item' },
         _react2.default.createElement(
           'a',
           { href: '/#coffees' },
           'Coffees'
+        )
+      ),
+      _react2.default.createElement(
+        'li',
+        { id: 'coffee-shop-link', className: 'nav__list__item' },
+        _react2.default.createElement(
+          'a',
+          { href: '/#coffee-shop' },
+          'Coffee Shop'
         )
       ),
       _react2.default.createElement(
@@ -19658,9 +19658,9 @@ var ColdBrewsSection = function (_Component) {
             _react2.default.createElement(
               'b',
               null,
-              'FOR HAMPTON ROADS BASED CUSTOMERS ONLY:'
+              'FOR SOUTH HAMPTON ROADS BASED CUSTOMERS ONLY:'
             ),
-            ' We are offering two cold brew varieties roasted and brewed fresh each week for the duration of the Covid-19 crisis so you can stay home and stay safe.'
+            ' We are offering two cold brew varieties roasted and brewed fresh each week for the duration of the COVID-19 crisis so you can stay home and stay safe.'
           ),
           _react2.default.createElement(
             'div',
@@ -19734,7 +19734,7 @@ var ColdBrewContainer = function ColdBrewContainer(props) {
       ),
       _react2.default.createElement(
         'p',
-        null,
+        { className: 'cold-brew-container-desc' },
         props.coldBrew.desc
       ),
       _react2.default.createElement(

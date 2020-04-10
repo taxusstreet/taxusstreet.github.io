@@ -13,7 +13,7 @@ const ColdBrewContainer = (props) => {
           </div>
         </div>
         <p className="desc-label">Notes:</p>
-        <p>{props.coldBrew.desc}</p>
+        <p className="cold-brew-container-desc">{props.coldBrew.desc}</p>
         <h3 className="roast-container__price">${props.coldBrew.price}</h3>
         {!props.coldBrew['in-stock'] ? <div className="out-of-stock">OUT OF STOCK</div> : null}
         {props.coldBrew.organic ?

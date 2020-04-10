@@ -42,7 +42,7 @@ export default class ColdBrewsSection extends Component {
       <div className="cold-brews-section page-section" id="cold-brews">
         <div className="page-section__wrapper">
           <h1>Cold Brews</h1>
-          <p className="cold-brew-message"><b>FOR HAMPTON ROADS BASED CUSTOMERS ONLY:</b> We are offering two cold brew varieties roasted and brewed fresh each week for the duration of the Covid-19 crisis so you can stay home and stay safe.</p>
+          <p className="cold-brew-message"><b>FOR SOUTH HAMPTON ROADS BASED CUSTOMERS ONLY:</b> We are offering two cold brew varieties roasted and brewed fresh each week for the duration of the COVID-19 crisis so you can stay home and stay safe.</p>
             <div className="page-section__items-centered">
             {data.coldBrews.map((coldBrew, i) => {
               return (

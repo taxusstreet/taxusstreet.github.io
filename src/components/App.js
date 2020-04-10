@@ -95,8 +95,8 @@ class App extends Component {
         <Nav updateUrl={this.updateUrl}/>
         <Intro />
         <ColdBrewsSection />
-        <CoffeeShop />
         <RoastsSection roasts={this.state.roasts} blends={this.state.blends} updateUrl={this.updateUrl} currentRoast={this.state.currentRoast}/>
+        <CoffeeShop />
         <Contact />
         <Footer />
         {this.state.popUp ? <PopUp exitPopUp={this.props.exitPopUp}/> : null}

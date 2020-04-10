@@ -16,6 +16,10 @@ a .cold-brew-container {
   width: 225px;
   transition: box-shadow .2s;
 
+  .cold-brew-container-desc {
+    height: 130px;
+  }
+
   .organic {
     position: absolute;
     right: 20px;

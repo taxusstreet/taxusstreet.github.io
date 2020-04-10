@@ -13,11 +13,11 @@ const Nav = (props) => {
         <li id="cold-brews-link" className="nav__list__item">
           <a href="/#cold-brews">Cold Brews</a>
         </li>
-        <li id="coffee-shop-link" className="nav__list__item">
-          <a href="/#coffee-shop">Coffee Shop</a>
-        </li>
         <li id="coffees-link" className="nav__list__item">
           <a href="/#coffees">Coffees</a>
+        </li>
+        <li id="coffee-shop-link" className="nav__list__item">
+          <a href="/#coffee-shop">Coffee Shop</a>
         </li>
         <li id="shop-link" className="nav__list__item">
           <a href="/Contact">Contact</a>
