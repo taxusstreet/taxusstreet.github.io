@@ -149,6 +149,257 @@ input, textarea {
     .intro-section__text-wrapper h1 {
       font-size: 7vw; } }
 
+.cold-brews-section {
+  background: DARKSEAGREEN;
+  overflow: auto; }
+  .cold-brews-section .cold-brew-message {
+    background: white;
+    padding: 10px 20px;
+    max-width: 600px;
+    text-align: left;
+    margin: 30px auto; }
+
+a .cold-brew-container {
+  background: #231F20;
+  color: white;
+  cursor: pointer;
+  border-top: 8px solid salmon;
+  border-bottom: 8px solid gold;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  margin: 10px;
+  height: 300px;
+  overflow: hidden;
+  padding: 20px;
+  padding-bottom: 45px;
+  position: relative;
+  width: 225px;
+  transition: box-shadow .2s; }
+  a .cold-brew-container .organic {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 70px; }
+    a .cold-brew-container .organic img {
+      width: 100%; }
+  a .cold-brew-container * {
+    pointer-events: none; }
+  a .cold-brew-container .heading-container {
+    height: 70px; }
+    a .cold-brew-container .heading-container .heading-container__text {
+      left: 20px;
+      position: absolute;
+      transition: .5s;
+      width: 225px; }
+    a .cold-brew-container .heading-container h2 {
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    a .cold-brew-container .heading-container .origin {
+      margin: 0;
+      text-transform: capitalize; }
+  a .cold-brew-container .bean-container {
+    float: left;
+    height: 40px;
+    left: -80px;
+    overflow: hidden;
+    position: relative;
+    top: 25px;
+    transition: .5s;
+    width: 50px; }
+    a .cold-brew-container .bean-container svg {
+      position: absolute;
+      right: 0;
+      top: 0; }
+  a .cold-brew-container:hover {
+    box-shadow: 0px 1px 5px #231F20; }
+  a .cold-brew-container .desc-label {
+    margin-top: 20px;
+    margin-bottom: 0; }
+  a .cold-brew-container .out-of-stock {
+    background: orangered;
+    color: white;
+    font-size: .9em;
+    font-weight: 600;
+    position: absolute;
+    right: -30px;
+    text-align: center;
+    top: 40px;
+    transform: rotate(45deg);
+    width: 155px; }
+
+.roast-container__price {
+  color: #f6a942;
+  margin: 20px 0 0 0; }
+
+.roast-container--out-of-stock {
+  cursor: not-allowed; }
+
+.roast-container__bar {
+  height: 8px;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+
+.roast-container__top-bar {
+  top: 0; }
+
+.roast-container__bottom-bar {
+  bottom: 0; }
+
+.roast-level {
+  background: linear-gradient(to right, white, rgba(0, 0, 0, 0));
+  height: 10px;
+  margin: 10px 0;
+  max-width: 200px;
+  position: relative; }
+  .roast-level .roast-level__bar {
+    border-right: 3px solid #f6a942;
+    height: calc(100% + 4px);
+    left: 0;
+    position: absolute;
+    top: -4px; }
+
+.taste-notes-container {
+  margin-top: 10px; }
+  .taste-notes-container .taste-note {
+    color: white;
+    font-size: .8em;
+    margin-right: 8px;
+    outline: 1px solid white;
+    padding: 2px 4px; }
+
+@media (max-width: 850px) {
+  a .roast-container:hover {
+    box-shadow: none; }
+    a .roast-container:hover .bean-container {
+      left: -80px; }
+    a .roast-container:hover .heading-container__text {
+      left: 20px;
+      position: absolute; } }
+
+.blend-container .heading-container {
+  height: 70px; }
+  .blend-container .heading-container .heading-container__text {
+    left: 20px;
+    position: absolute;
+    top: 30px;
+    transition: .5s; }
+  .blend-container .heading-container h2 {
+    text-transform: uppercase; }
+  .blend-container .heading-container .origin {
+    margin: 0;
+    text-transform: capitalize; }
+
+.blend-container .roast-container__price {
+  color: white !important; }
+
+.cold-brew-view-container {
+  animation-fill-mode: forwards;
+  background: #231F20;
+  box-sizing: border-box;
+  color: white;
+  position: fixed;
+  padding: 50px 100px 100px 100px;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 100; }
+  .cold-brew-view-container .cold-brew-text-wrapper {
+    padding-top: 30px; }
+    .cold-brew-view-container .cold-brew-text-wrapper p {
+      line-height: 1.3em;
+      max-width: 500px; }
+    .cold-brew-view-container .cold-brew-text-wrapper #location-warning {
+      border: 1px solid grey;
+      box-shadow: 1px 1px 7px rgba(100, 95, 95, 0.9);
+      padding: 20px; }
+      .cold-brew-view-container .cold-brew-text-wrapper #location-warning h1 {
+        color: orange;
+        border-top: 2px solid orange;
+        border-bottom: 2px solid orange;
+        box-sizing: border-box;
+        left: -20px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        width: calc(100% + 40px); }
+      .cold-brew-view-container .cold-brew-text-wrapper #location-warning p, .cold-brew-view-container .cold-brew-text-wrapper #location-warning li {
+        color: grey; }
+  .cold-brew-view-container .buy-button {
+    position: relative;
+    right: auto;
+    text-align: left;
+    top: 20px;
+    width: 100%; }
+    .cold-brew-view-container .buy-button h1 {
+      color: #f6a942;
+      margin-bottom: 0; }
+    .cold-brew-view-container .buy-button .out-of-stock {
+      display: inline-block; }
+      .cold-brew-view-container .buy-button .out-of-stock h2 {
+        background: orangered;
+        color: white;
+        margin-left: -17px;
+        padding: 10px 15px;
+        transform: rotate(-10deg); }
+      .cold-brew-view-container .buy-button .out-of-stock p {
+        margin-top: 25px; }
+
+.cold-brew-view-wrapper {
+  margin: auto;
+  max-width: 700px;
+  position: relative; }
+
+.cold-brew-text-wrapper {
+  position: relative; }
+
+.cold-brew-image {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: auto; }
+
+.cold-brew__title {
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 800;
+  margin: 0;
+  margin-top: 0;
+  text-transform: uppercase; }
+
+.sub-head {
+  margin: 3px 0;
+  text-transform: capitalize; }
+
+.desc-label {
+  margin: 15px 0 10px 0;
+  line-height: 1.4; }
+  .desc-label span {
+    color: gold; }
+
+@media (max-width: 850px) {
+  .cold-brew-view-container {
+    padding: 50px 50px 100px 50px; }
+  .cold-brew-text-wrapper__left {
+    border-right: none;
+    margin-top: 10px;
+    padding: 0;
+    text-align: left;
+    width: 100%; }
+    .cold-brew-text-wrapper__left .taste-note {
+      margin: 0 8px 0 0; }
+    .cold-brew-text-wrapper__left .cold-brew-level {
+      margin: 0 0 20px 0; }
+    .cold-brew-text-wrapper__left .buy-button {
+      position: relative;
+      right: auto;
+      left: auto;
+      top: auto; } }
+
+@media (max-width: 550px) {
+  .cold-brew-view-container {
+    padding: 50px 20px 100px 20px; } }
+
 .coffee-shop-section {
   background: #7B68EE;
   color: white;
