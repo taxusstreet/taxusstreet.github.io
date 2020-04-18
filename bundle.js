@@ -4148,6 +4148,11 @@ var ColdBrewView = function (_Component) {
                 )
               ),
               _react2.default.createElement(
+                'p',
+                null,
+                'You may also choose to get cold brew delivered weekly for 4 or 8 weeks for a discounted price. 4 weeks is $48. 8 weeks is $96. Please note what day you would like us to deliver on.'
+              ),
+              _react2.default.createElement(
                 'h1',
                 null,
                 '$',
