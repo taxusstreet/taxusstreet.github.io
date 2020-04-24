@@ -303,7 +303,7 @@ class ColdBrewView extends Component {
 
                   <p>We cannot guarantee the quality of the cold brew left at room temperature for an extended period of time. Please assure you make one of the above options available. If neither are available we will leave the cold brew at your door with a text notification of its arrival.</p>
                 </div>
-                <p>You may also choose to get cold brew delivered weekly for 4 or 8 weeks for a discounted price. 4 weeks is $48. 8 weeks is $96. Please note what day you would like us to deliver on.</p>
+                <p>You may also choose to get cold brew delivered weekly! Save a dollar on every jar when you select to receive 1, 2 or 3 jars a week in a month long subscription. Select variety subscription to recieve alternating blends each week.</p>
                 <h1>${this.state.coldBrew.price} - {this.state.coldBrew.size}oz.</h1>
                 {this.state.coldBrew["in-stock"] ?
                   <div id={"product-component-" + this.state.coldBrew.button.container}></div> :
