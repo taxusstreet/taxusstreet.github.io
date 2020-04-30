@@ -12,7 +12,7 @@
   "dependencies": {
     "debounce": "^1.1.0",
     "instafeed.js": "^1.4.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
