@@ -167,7 +167,7 @@ a .cold-brew-container {
   border-bottom: 8px solid gold;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
   margin: 10px;
-  height: 300px;
+  height: 420px;
   overflow: hidden;
   padding: 20px;
   padding-bottom: 45px;
@@ -175,7 +175,7 @@ a .cold-brew-container {
   width: 225px;
   transition: box-shadow .2s; }
   a .cold-brew-container .cold-brew-container-desc {
-    height: 130px; }
+    height: 260px; }
   a .cold-brew-container .organic {
     position: absolute;
     right: 20px;
