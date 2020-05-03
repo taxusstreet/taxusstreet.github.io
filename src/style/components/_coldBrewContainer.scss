@@ -146,8 +146,9 @@ a .cold-brew-container {
 }
 
 @media (max-width: $sm-break) {
-  a .roast-container {
+  a .cold-brew-container {
     // width: 100%;
+    height: auto;
 
     &:hover {
       box-shadow: none;
@@ -158,6 +159,10 @@ a .cold-brew-container {
         left: 20px;
         position: absolute;
       }
+    }
+
+    .cold-brew-container-desc {
+      height: auto;
     }
   }
 

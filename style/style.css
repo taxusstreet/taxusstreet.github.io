@@ -270,13 +270,17 @@ a .cold-brew-container {
     padding: 2px 4px; }
 
 @media (max-width: 850px) {
-  a .roast-container:hover {
-    box-shadow: none; }
-    a .roast-container:hover .bean-container {
-      left: -80px; }
-    a .roast-container:hover .heading-container__text {
-      left: 20px;
-      position: absolute; } }
+  a .cold-brew-container {
+    height: auto; }
+    a .cold-brew-container:hover {
+      box-shadow: none; }
+      a .cold-brew-container:hover .bean-container {
+        left: -80px; }
+      a .cold-brew-container:hover .heading-container__text {
+        left: 20px;
+        position: absolute; }
+    a .cold-brew-container .cold-brew-container-desc {
+      height: auto; } }
 
 .blend-container .heading-container {
   height: 70px; }

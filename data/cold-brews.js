@@ -26,7 +26,7 @@ data.coldBrews = [
       "id": 4562922700909
     }
   },{
-    "title": "Horchata Cold Brew",
+    "title": "Horchata Blend",
     "desc": "Cold brew with a sweet tooth; we have blended traditional Mexican Horchata with our Original Blend Cold Brew for a blast of rich sweetness from cinnamon sugar, and creaminess from rice milk. Dairy free and delicious, add your favorite creamer to take it to the next level.",
     "level": "light",
     "price": 13,
