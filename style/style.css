@@ -385,7 +385,7 @@ a .cold-brew-container {
 
 @media (max-width: 850px) {
   .cold-brew-view-container {
-    padding: 50px 50px 100px 50px; }
+    padding: 50px 50px 200px 50px; }
   .cold-brew-text-wrapper__left {
     border-right: none;
     margin-top: 10px;
