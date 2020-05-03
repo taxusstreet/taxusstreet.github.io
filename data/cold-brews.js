@@ -25,18 +25,19 @@ data.coldBrews = [
       "container": "1586478026199",
       "id": 4562922700909
     }
-  },{
-    "title": "Horchata Blend",
-    "desc": "Cold brew with a sweet tooth; we have blended traditional Mexican Horchata with our Original Blend Cold Brew for a blast of rich sweetness from cinnamon sugar, and creaminess from rice milk. Dairy free and delicious, add your favorite creamer to take it to the next level.",
-    "level": "light",
-    "price": 13,
-    "in-stock": true,
-    "image": "horchata.jpg",
-    "color": "salmon",
-    "size": 32,
-    "button": {
-      "container": "1588467436161",
-      "id": 4603926937709
-    }
   }
+  // ,{
+  //   "title": "Horchata Blend",
+  //   "desc": "Cold brew with a sweet tooth; we have blended traditional Mexican Horchata with our Original Blend Cold Brew for a blast of rich sweetness from cinnamon sugar, and creaminess from rice milk. Dairy free and delicious, add your favorite creamer to take it to the next level.",
+  //   "level": "light",
+  //   "price": 13,
+  //   "in-stock": true,
+  //   "image": "horchata.jpg",
+  //   "color": "salmon",
+  //   "size": 32,
+  //   "button": {
+  //     "container": "1588467436161",
+  //     "id": 4603926937709
+  //   }
+  // }
 ];
