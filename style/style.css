@@ -54,7 +54,7 @@ input, textarea {
 
 .nav {
   box-sizing: border-box;
-  color: white;
+  color: gold;
   height: 50px;
   left: 0;
   position: fixed;
@@ -68,7 +68,7 @@ input, textarea {
   text-align: center; }
 
 .nav__list__item {
-  color: white;
+  color: gold;
   cursor: pointer;
   display: inline;
   font-size: 1.1em;
@@ -76,7 +76,7 @@ input, textarea {
   margin: 2px 10px; }
 
 .nav__list__item a {
-  color: white; }
+  color: gold; }
 
 .nav__list__item--active a {
   color: #f6a942; }
@@ -150,7 +150,7 @@ input, textarea {
       font-size: 7vw; } }
 
 .cold-brews-section {
-  background: DARKSEAGREEN;
+  background: white;
   overflow: auto; }
   .cold-brews-section .cold-brew-message {
     background: white;
@@ -455,7 +455,7 @@ a .cold-brew-container {
       width: 100%; } }
 
 .roasts-section {
-  background: gold;
+  background: white;
   overflow: auto; }
   .roasts-section .roasts-section__sub-section {
     border-bottom: 1px dotted #f6a942;
@@ -916,6 +916,7 @@ a .roast-container {
     color: gold;
     height: 400px;
     overflow-x: scroll;
+    padding-bottom: 20px;
     padding-left: 5px;
     padding-right: 150px;
     position: relative;
@@ -948,6 +949,7 @@ a .roast-container {
     filter: grayscale(80%) brightness(0.4) contrast(120%); }
   .instafeed-wrapper img {
     box-shadow: 0 0 5px #231F20;
+    box-sizing: border-box;
     height: 100%;
     transition: all .2s; }
   .instafeed-wrapper .instafeed-fade {
