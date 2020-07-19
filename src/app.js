@@ -38,7 +38,6 @@ class Container extends Component {
           <Route path="/coffees/:id" component={RoastView} />
           <Route path="/shop/:id" component={ShopView} />
           <Route path="/cold-brews/:id" component={ColdBrewView} />
-          <Route exact path="/retail-locations" component={RetailLocationsView} />
           <Route path='*' exact={true} component={NotFound} />
         </Switch>
       </BrowserRouter>

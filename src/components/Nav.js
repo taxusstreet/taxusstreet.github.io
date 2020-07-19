@@ -22,9 +22,6 @@ const Nav = (props) => {
         <li id="shop-link" className="nav__list__item">
           <a href="/Contact">Contact</a>
         </li>
-        <li id="shop-link" className="nav__list__item">
-          <a href="/retail-locations">Locations</a>
-        </li>
       </ul>
     </div>
   );
