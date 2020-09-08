@@ -18,7 +18,6 @@ class CoffeeShop extends Component {
           <div className="coffee-shop-section__image"><img src="images/coffee-shop.jpg"/></div>
           <div className="coffee-shop-section__text-wrapper">
             <h1>Our Location</h1>
-            <p>Check social media for limited coffee shop hours, and special events as we navigate phase one of reopening.</p>
               {data.shopInfo.map((item, i) => {
                 return (<p key={i}>{item}</p>);
               })}

@@ -95,7 +95,6 @@ class App extends Component {
         <Nav updateUrl={this.updateUrl}/>
         <Intro />
         <CoffeeShop />
-        <ColdBrewsSection />
         <RoastsSection roasts={this.state.roasts} blends={this.state.blends} updateUrl={this.updateUrl} currentRoast={this.state.currentRoast}/>
         <ColdBrewsSection />
         <Contact />
