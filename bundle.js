@@ -18522,7 +18522,6 @@ var App = function (_Component) {
         _react2.default.createElement(_Nav2.default, { updateUrl: this.updateUrl }),
         _react2.default.createElement(_Intro2.default, null),
         _react2.default.createElement(_CoffeeShop2.default, null),
-        _react2.default.createElement(_ColdBrewsSection2.default, null),
         _react2.default.createElement(_RoastsSection2.default, { roasts: this.state.roasts, blends: this.state.blends, updateUrl: this.updateUrl, currentRoast: this.state.currentRoast }),
         _react2.default.createElement(_ColdBrewsSection2.default, null),
         _react2.default.createElement(_Contact2.default, null),
@@ -22392,11 +22391,6 @@ var CoffeeShop = function (_Component) {
               'h1',
               null,
               'Our Location'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'Check social media for limited coffee shop hours, and special events as we navigate phase one of reopening.'
             ),
             data.shopInfo.map(function (item, i) {
               return _react2.default.createElement(
