@@ -70,20 +70,21 @@ data.roasts = [
   "in-stock": true,
   "organic": true
 
-},{
-  "title": "Kateshi",
-  "origin": "Kasama, Zambia",
-  "price": 15,
-  "size": 12,
-  "level": 65,
-  "color": "#DFC723",
-  "taste": ["grapefruit", "lime", "blackberry"],
-  "image": "kateshi.png",
-  "coordinates": "-10.0148726,31.204943",
-  "button": {
-    "container": "1576463394038",
-    "id": 615240204320
-  },
-  "in-stock": true
 }
+// ,{
+//   "title": "Kateshi",
+//   "origin": "Kasama, Zambia",
+//   "price": 15,
+//   "size": 12,
+//   "level": 65,
+//   "color": "#DFC723",
+//   "taste": ["grapefruit", "lime", "blackberry"],
+//   "image": "kateshi.png",
+//   "coordinates": "-10.0148726,31.204943",
+//   "button": {
+//     "container": "1576463394038",
+//     "id": 615240204320
+//   },
+//   "in-stock": true
+// }
 ];
