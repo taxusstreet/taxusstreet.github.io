@@ -17,24 +17,25 @@ data.roasts = [
 //   },
 //   "in-stock": true
 // },
-//                {
-//   "title": "Wote Konga",
-//   "origin": "Yergacheffe, Ethiopia",
-//   "price": 15,
-//   "size": 12,
-//   "level": 10,
-//   "color": "#924da8",
-//   "taste": ["pineapple", "blueberry", "pine"],
-//   "processing": "Natural/Dry Processed",
-//   "altitude": "1800m-2200m",
-//   "variety": "Heirloom",
-//   "image": "fix.jpg",
-//   "button": {
-//     "container": "1521071458284",
-//     "id": 615240204320
-//   },
-//   "in-stock": true
-// },
+               {
+  "title": "Wote Konga",
+  "origin": "Yergacheffe, Ethiopia",
+  "price": 15,
+  "size": 12,
+  "level": 10,
+  "color": "#924da8",
+  "taste": ["pineapple", "blueberry", "pine"],
+  "processing": "Natural/Dry Processed",
+  "altitude": "1800m-2200m",
+  "variety": "Heirloom",
+  "image": "fix.jpg",
+  "coordinates": "6.1610796,38.2044959",
+  "button": {
+    "container": "1521071458284",
+    "id": 615240204320
+  },
+  "in-stock": true
+},
   {
   "title": "El Obraje",
   "origin": "Nariño, Colombia",
