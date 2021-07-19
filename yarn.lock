@@ -3061,9 +3061,9 @@ inherits@2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 instafeed.js@^2.0.0:
-  version "2.0.0-rc2"
-  resolved "https://registry.yarnpkg.com/instafeed.js/-/instafeed.js-2.0.0-rc2.tgz#8da0aa4008fa3288ee4d6f99c9bf31326d03cffd"
-  integrity sha512-HWTURCrIicdk040sLzphP0w9Dqk2JsnNeD9J0SbuKOL7gOiixmIDzTi0ps8BZQcXzppGoWU976N6jBub99P9lw==
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/instafeed.js/-/instafeed.js-2.0.0.tgz#7cf46ad6fe6addf8a71cc984e2c9b3d27190fed2"
+  integrity sha512-k7khLgozabWoUNoZtU1UV5+hTyYI+hJJi7GosWV0TFp7xaT+buL7eNt6utN7Af+3TeMGHc59DFrcXddtS+X0qw==
 
 internal-ip@1.2.0:
   version "1.2.0"
@@ -6324,9 +6324,9 @@ xtend@^4.0.0:
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 y18n@^4.0.0:
   version "4.0.0"
