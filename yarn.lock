@@ -3061,9 +3061,9 @@ inherits@2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 instafeed.js@^2.0.0:
-  version "2.0.0-rc2"
-  resolved "https://registry.yarnpkg.com/instafeed.js/-/instafeed.js-2.0.0-rc2.tgz#8da0aa4008fa3288ee4d6f99c9bf31326d03cffd"
-  integrity sha512-HWTURCrIicdk040sLzphP0w9Dqk2JsnNeD9J0SbuKOL7gOiixmIDzTi0ps8BZQcXzppGoWU976N6jBub99P9lw==
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/instafeed.js/-/instafeed.js-2.0.0.tgz#7cf46ad6fe6addf8a71cc984e2c9b3d27190fed2"
+  integrity sha512-k7khLgozabWoUNoZtU1UV5+hTyYI+hJJi7GosWV0TFp7xaT+buL7eNt6utN7Af+3TeMGHc59DFrcXddtS+X0qw==
 
 internal-ip@1.2.0:
   version "1.2.0"
@@ -3586,9 +3586,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.0.0, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@~4.17.10:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loglevel@^1.4.1:
   version "1.6.8"
