@@ -1921,9 +1921,9 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2, decamelize@^1.2.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1:
   version "1.1.1"
@@ -3061,9 +3061,9 @@ inherits@2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 instafeed.js@^2.0.0:
-  version "2.0.0-rc2"
-  resolved "https://registry.yarnpkg.com/instafeed.js/-/instafeed.js-2.0.0-rc2.tgz#8da0aa4008fa3288ee4d6f99c9bf31326d03cffd"
-  integrity sha512-HWTURCrIicdk040sLzphP0w9Dqk2JsnNeD9J0SbuKOL7gOiixmIDzTi0ps8BZQcXzppGoWU976N6jBub99P9lw==
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/instafeed.js/-/instafeed.js-2.0.0.tgz#7cf46ad6fe6addf8a71cc984e2c9b3d27190fed2"
+  integrity sha512-k7khLgozabWoUNoZtU1UV5+hTyYI+hJJi7GosWV0TFp7xaT+buL7eNt6utN7Af+3TeMGHc59DFrcXddtS+X0qw==
 
 internal-ip@1.2.0:
   version "1.2.0"
